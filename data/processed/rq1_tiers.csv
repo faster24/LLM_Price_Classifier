@@ -1,0 +1,145 @@
+model_id,model_name,lab,open_weights,blended_price,log_price,performance,n_tests,value_score,cluster,tier_id,tier,hc_cluster
+nvidia/nemotron-3.5-lightning,Nemotron 3.5 Lightning 30B A3B,nvidia,1,0.085,-1.0705810742857071,0.0,4,0.0,1,1,Low-price / Low-performance,6
+zhipuai/glm-4.7-flash,GLM-4.7-Flash,zhipuai,1,0.145375,-0.8375102722634952,0.030303030303030304,1,0.02457525573822195,1,1,Low-price / Low-performance,6
+mistral/devstral-small-2507,Devstral Small,mistral,1,0.15000000000000002,-0.8239087409443187,0.0,1,0.0,1,1,Low-price / Low-performance,6
+google/gemini-2.5-flash-lite,Gemini 2.5 Flash-Lite,google,0,0.17500000000000002,-0.7569619513137056,0.031746031746031744,3,0.02416684653174646,1,1,Low-price / Low-performance,6
+openai/gpt-4.1-nano,GPT-4.1 nano,openai,0,0.17500000000000002,-0.7569619513137056,0.03571428571428571,1,0.02718770234821477,1,1,Low-price / Low-performance,6
+openai/gpt-4o-mini,GPT-4o mini,openai,0,0.26249999999999996,-0.5808706922580245,0.0673076923076923,2,0.04518173003270481,1,1,Low-price / Low-performance,6
+stepfun/step-3.5-flash-2603,Step 3.5 Flash 2603,stepfun,1,0.15000000000000002,-0.8239087409443187,0.8774847374847375,3,0.7038615633130019,4,2,Low-price / High-performance,4
+stepfun/step-3.5-flash,Step 3.5 Flash,stepfun,1,0.15000000000000002,-0.8239087409443187,0.7649034299034299,4,0.613556112096673,4,2,Low-price / High-performance,4
+xiaomi/mimo-v2.6-flash,MiMo-V2.6-Flash,xiaomi,1,0.17500000000000002,-0.7569619513137056,0.7244588744588745,7,0.551498422784696,4,2,Low-price / High-performance,4
+openai/gpt-6-luna,GPT-6 Luna,openai,0,0.2,-0.6989700043360187,0.6666666666666666,1,0.48604643201889614,4,2,Low-price / High-performance,4
+zhipuai/glm-5.3-flash,GLM-5.3-Flash,zhipuai,1,0.2375,-0.6243363860391147,0.6027272727272728,5,0.4167533181802114,4,2,Low-price / High-performance,4
+mistral/mistral-small-2603,Mistral Small 4,mistral,1,0.26249999999999996,-0.5808706922580245,0.6320390720390721,3,0.4242697638844321,4,2,Low-price / High-performance,4
+deepseek/deepseek-chat,DeepSeek Chat,deepseek,1,0.26249999999999996,-0.5808706922580245,0.75,1,0.5034535632215679,4,2,Low-price / High-performance,4
+deepseek/deepseek-v4.1-flash,DeepSeek V4.1 Flash,deepseek,1,0.3225,-0.4914702810287134,1.0,3,0.6332677885998428,4,2,Low-price / High-performance,4
+deepseek/deepseek-reasoner,DeepSeek Reasoner,deepseek,1,0.4545,-0.34246611244201375,0.8571428571428571,1,0.49599874780806685,4,2,Low-price / High-performance,4
+xiaomi/mimo-v2.6-pro,MiMo-V2.6-Pro,xiaomi,1,0.54375,-0.2646007300373063,0.8795454545454545,8,0.4870182875171308,4,2,Low-price / High-performance,4
+alibaba/qwen3-coder-30b-a3b-instruct,Qwen3-Coder 30B-A3B Instruct,alibaba,1,0.14875,-0.8275430255994128,0.35311355311355314,3,0.2840730044319572,2,3,Low-price / Mid-performance,5
+deepseek/deepseek-v4-flash-0731,DeepSeek V4 Flash 0731,deepseek,1,0.17500000000000002,-0.7569619513137056,0.2873737373737374,6,0.21876488576351402,2,3,Low-price / Mid-performance,5
+deepseek/deepseek-v4-flash,DeepSeek V4 Flash,deepseek,1,0.17500000000000002,-0.7569619513137056,0.4202020202020202,3,0.31988116863838956,2,3,Low-price / Mid-performance,5
+xiaomi/mimo-v2.5,MiMo-V2.5,xiaomi,1,0.17500000000000002,-0.7569619513137056,0.3333333333333333,1,0.25375188858333786,2,3,Low-price / Mid-performance,5
+tencent/hy3,Hy3,tencent,1,0.2315,-0.635449004646028,0.35238095238095235,5,0.2455390412043577,2,3,Low-price / Mid-performance,5
+alibaba/qwen3-32b,Qwen3 32B,alibaba,1,0.26,-0.585026652029182,0.35714285714285715,1,0.2404104836498449,2,3,Low-price / Mid-performance,5
+tencent/hy3-preview,Hy3 preview,tencent,1,0.272,-0.5654310959658013,0.4393939393939394,1,0.2919270143991925,2,3,Low-price / Mid-performance,5
+alibaba/qwen3.8-flash-next,Qwen3.8 Flash Next,alibaba,1,0.275,-0.5606673061697374,0.37445887445887444,6,0.24800017217282166,2,3,Low-price / Mid-performance,5
+zhipuai/glm-4.5-air,GLM-4.5-Air,zhipuai,1,0.31,-0.5086383061657274,0.5168498168498169,3,0.3309018917971746,2,3,Low-price / Mid-performance,5
+deepseek/deepseek-v4-flash-vision-exp,DeepSeek V4 Flash Vision Exp,deepseek,1,0.3234,-0.49025998442961766,0.4716759431045145,7,0.29846842273519697,2,3,Low-price / Mid-performance,5
+alibaba/qwen3.6-35b-a3b,Qwen3.6 35B-A3B,alibaba,1,0.376375,-0.4243792314791842,0.3333333333333333,1,0.20248630797609293,2,3,Low-price / Mid-performance,5
+stepfun/step-3.7-flash,Step 3.7 Flash,stepfun,1,0.4375,-0.359021942641668,0.45425261694826913,10,0.26540281813806604,2,3,Low-price / Mid-performance,5
+openai/gpt-5.6-luna,GPT-5.6 Luna,openai,0,0.45,-0.3467874862246563,0.4624913733609386,9,0.2682985808533816,2,3,Low-price / Mid-performance,5
+minimax/MiniMax-M3,MiniMax-M3,minimax,1,0.5249999999999999,-0.2798406965940432,0.3723924022837067,6,0.20795443433499577,2,3,Low-price / Mid-performance,5
+minimax/MiniMax-M2.7,MiniMax-M2.7,minimax,1,0.5249999999999999,-0.2798406965940432,0.4271284271284272,3,0.23852057643275618,2,3,Low-price / Mid-performance,5
+meta/llama-4-maverick-17b-instruct,Llama 4 Maverick 17B Instruct,meta,1,0.445,-0.3516399890190684,0.07142857142857142,2,0.04155382173408902,5,4,Mid-price / Low-performance,3
+mistral/codestral-latest,Codestral (latest),mistral,1,0.44999999999999996,-0.3467874862246564,0.07142857142857142,1,0.04143684715112288,5,4,Mid-price / Low-performance,3
+openai/gpt-5.4-nano,GPT-5.4 nano,openai,0,0.4625,-0.33488826292494855,0.11038961038961038,6,0.06359973934734828,5,4,Mid-price / Low-performance,3
+meta/muse-glimmer-30b,Muse Glimmer 30B,meta,1,0.5249999999999999,-0.2798406965940432,0.16911806993328735,6,0.09444030638952103,5,4,Mid-price / Low-performance,3
+minimax/MiniMax-M2.5,MiniMax-M2.5,minimax,1,0.5249999999999999,-0.2798406965940432,0.173989898989899,4,0.0971608733222283,5,4,Mid-price / Low-performance,3
+minimax/MiniMax-M2.1,MiniMax-M2.1,minimax,1,0.5249999999999999,-0.2798406965940432,0.2564935064935065,2,0.1432332177733865,5,4,Mid-price / Low-performance,3
+minimax/MiniMax-M2,MiniMax-M2,minimax,1,0.5249999999999999,-0.2798406965940432,0.09090909090909091,1,0.050766203767782556,5,4,Mid-price / Low-performance,3
+xiaomi/mimo-v2.5-pro,MiMo-V2.5-Pro,xiaomi,1,0.54375,-0.2646007300373063,0.16278368096549914,11,0.09013590955401302,5,4,Mid-price / Low-performance,3
+alibaba/qwen3-235b-a22b,Qwen3 235B-A22B,alibaba,1,0.654,-0.1844222516757327,0.29166666666666663,2,0.15463526356867052,5,4,Mid-price / Low-performance,3
+meta/llama-3.3-70b-instruct,Llama-3.3-70B-Instruct,meta,1,0.6695606249999999,-0.17421009391567308,0.08410256410256411,3,0.04434921488102153,5,4,Mid-price / Low-performance,3
+openai/gpt-4.1-mini,GPT-4.1 mini,openai,0,0.7000000000000001,-0.15490195998574313,0.32142857142857145,1,0.16778831539645891,5,4,Mid-price / Low-performance,3
+alibaba/qwen3.5-27b,Qwen3.5 27B,alibaba,1,0.725,-0.13966199342900631,0.2727272727272727,1,0.14124220710806296,5,4,Mid-price / Low-performance,3
+alibaba/qwen3-coder-480b-a35b-instruct,Qwen3-Coder 480B-A35B Instruct,alibaba,1,0.7350000000000001,-0.13371266091580503,0.14285714285714285,1,0.07375676213780046,5,4,Mid-price / Low-performance,3
+openai/gpt-3.5-turbo,GPT-3.5-turbo,openai,0,0.75,-0.12493873660829993,0.06,1,0.030838144728914794,5,4,Mid-price / Low-performance,3
+mistral/devstral-medium-2507,Devstral Medium,mistral,0,0.8,-0.09691001300805639,0.06060606060606061,1,0.030707275287720655,5,4,Mid-price / Low-performance,3
+mistral/mistral-medium-2505,Mistral Medium 3,mistral,0,0.8,-0.09691001300805639,0.2363858363858364,3,0.11976962170829654,5,4,Mid-price / Low-performance,3
+alibaba/qwen3.5-122b-a10b,Qwen3.5 122B-A10B,alibaba,1,0.80375,-0.09487901406772153,0.24242424242424243,1,0.1227028342509776,5,4,Mid-price / Low-performance,3
+google/gemini-3.5-flash-lite,Gemini 3.5 Flash Lite,google,0,0.85,-0.07058107428570727,0.20253968253968252,5,0.10126984126984126,5,4,Mid-price / Low-performance,3
+zhipuai/glm-4.5v,GLM-4.5V,zhipuai,1,0.8999999999999999,-0.04575749056067517,0.10043956043956044,3,0.0496041044004355,5,4,Mid-price / Low-performance,3
+nvidia/nemotron-3-ultra-550b-a55b,Nemotron 3 Ultra 550B A55B,nvidia,1,0.925,-0.03385826726096737,0.08285024154589372,6,0.040678211713513435,5,4,Mid-price / Low-performance,3
+alibaba/qwen3.8-27b,Qwen3.8 27B,alibaba,1,0.93125,-0.03093371424365073,0.2878787878787879,6,0.14114145097751213,5,4,Mid-price / Low-performance,3
+zhipuai/glm-4.7,GLM-4.7,zhipuai,1,1.0,0.0,0.36363636363636365,1,0.17562044208377983,5,4,Mid-price / Low-performance,3
+perplexity/sonar,Sonar,perplexity,0,1.0,0.0,0.1346153846153846,1,0.06501333673293772,5,4,Mid-price / Low-performance,3
+moonshotai/kimi-k2-thinking,Kimi K2 Thinking,moonshotai,1,1.075,0.031408464251624114,0.18181818181818182,1,0.086498138304104,5,4,Mid-price / Low-performance,3
+google/gemini-3-flash-preview,Gemini 3 Flash Preview,google,0,1.125,0.05115252244738129,0.1349206349206349,4,0.06358980935607429,5,4,Mid-price / Low-performance,3
+moonshotai/kimi-k2.5,Kimi K2.5,moonshotai,1,1.1825999999999999,0.0728378746630868,0.1712121212121212,4,0.07987804777786886,5,4,Mid-price / Low-performance,3
+meituan/longcat-2.0,LongCat-2.0,meituan,0,1.3,0.11394335230683678,0.3689855072463768,5,0.1689088493379432,5,4,Mid-price / Low-performance,3
+zhipuai/glm-5,GLM-5,zhipuai,1,1.55,0.1903316981702915,0.3174242424242424,4,0.14039650104653476,5,4,Mid-price / Low-performance,3
+xai/grok-4.3,Grok 4.3,xai,0,1.5625,0.19382002601611284,0.275,2,0.12144491537446503,5,4,Mid-price / Low-performance,3
+microsoft/mai-code-1-flash,MAI-Code-1-Flash,microsoft,0,1.6875,0.22724378150306254,0.2027456239412761,4,0.088233715215723,5,4,Mid-price / Low-performance,2
+openai/gpt-5.4-mini,GPT-5.4 mini,openai,0,1.6875,0.22724378150306254,0.28738275613275616,6,0.1250673024137459,5,4,Mid-price / Low-performance,3
+anthropic/claude-haiku-4-5,Claude Haiku 4.5 (latest),anthropic,0,2.0,0.3010299956639812,0.16666666666666666,1,0.07027571627509832,5,4,Mid-price / Low-performance,2
+mistral/mistral-large-2512,Mistral Large 3,mistral,1,0.75,-0.12493873660829993,0.55001221001221,3,0.28268926891711355,6,5,Mid-price / Mid-performance,1
+mistral/devstral-2512,Devstral 2,mistral,1,0.8,-0.09691001300805639,0.530989010989011,3,0.2690362246307024,6,5,Mid-price / Mid-performance,1
+google/gemini-2.5-flash,Gemini 2.5 Flash,google,0,0.85,-0.07058107428570727,0.5428479853479853,4,0.27142399267399264,6,5,Mid-price / Mid-performance,1
+alibaba/qwen3.6-27b,Qwen3.6 27B,alibaba,1,0.915,-0.038578905933551705,0.5757575757575758,1,0.2833449613021251,6,5,Mid-price / Mid-performance,1
+zhipuai/glm-4.6,GLM-4.6,zhipuai,1,0.9625000000000001,-0.016599261819461652,0.5887362637362638,4,0.28663168298913005,6,5,Mid-price / Mid-performance,1
+zhipuai/glm-4.5,GLM-4.5,zhipuai,1,1.0,0.0,0.6704029304029304,3,0.32377526228196635,6,5,Mid-price / Mid-performance,1
+deepseek/deepseek-r1,DeepSeek-R1,deepseek,1,1.19776,0.07836980543432784,0.4024175824175824,4,0.18726234564747676,6,5,Mid-price / Mid-performance,3
+alibaba/qwen3.5-397b-a17b,Qwen3.5 397B-A17B,alibaba,1,1.2875,0.10974723771322864,0.5151515151515151,1,0.23627245140857786,6,5,Mid-price / Mid-performance,1
+google/gemini-3.8-flash,Gemini 3.8 Flash,google,0,1.5,0.17609125905568124,0.49444444444444446,3,0.22007857447956217,6,5,Mid-price / Mid-performance,1
+google/gemini-3.7-flash,Gemini 3.7 Flash,google,0,1.5,0.17609125905568124,0.6388888888888888,2,0.2843711917432544,6,5,Mid-price / Mid-performance,1
+google/gemini-3.6-flash,Gemini 3.6 Flash,google,0,1.5,0.17609125905568124,0.5441468253968255,6,0.24220124017263212,6,5,Mid-price / Mid-performance,1
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,1,1.7055,0.23185172374341603,0.42752525252525253,7,0.1856841393552129,6,5,Mid-price / Mid-performance,1
+moonshotai/kimi-k2.7-code,Kimi K2.7 Code,moonshotai,1,1.7125,0.23363058016446314,0.42857142857142855,1,0.18599481855050945,6,5,Mid-price / Mid-performance,1
+moonshotai/kimi-k2.6,Kimi K2.6,moonshotai,1,1.7125,0.23363058016446314,0.4559090909090909,5,0.19785903349138284,6,5,Mid-price / Mid-performance,1
+deepseek/deepseek-v4-pro-0813,DeepSeek V4 Pro 0813,deepseek,1,1.865,0.2706788361447064,0.5783820346320346,8,0.2470387982365041,6,5,Mid-price / Mid-performance,1
+alibaba/qwen3-max,Qwen3 Max,alibaba,0,1.899375,0.27861071742401805,0.7112087912087913,3,0.3027461587932668,6,5,Mid-price / Mid-performance,1
+openai/o4-mini,o4-mini,openai,0,1.9250000000000003,0.2844307338445195,0.8035714285714286,1,0.3412175793757179,6,5,Mid-price / Mid-performance,1
+openai/o3-mini,o3-mini,openai,0,1.9250000000000003,0.2844307338445195,0.5714285714285714,1,0.24264361200051046,6,5,Mid-price / Mid-performance,1
+mistral/mistral-medium-latest,Mistral Medium (latest),mistral,1,1.94,0.287801729930226,0.6212121212121212,1,0.2634059746796064,6,5,Mid-price / Mid-performance,1
+meta/muse-spark-1.3,Muse Spark 1.3,meta,0,2.0,0.3010299956639812,0.6375,4,0.2688046147522511,6,5,Mid-price / Mid-performance,1
+meta/muse-spark-1.1,Muse Spark 1.1,meta,0,2.0,0.3010299956639812,0.6821055497297733,7,0.2876127364948771,6,5,Mid-price / Mid-performance,1
+zhipuai/glm-5.3,GLM-5.3,zhipuai,1,2.15,0.33243845991560533,0.6948051948051948,6,0.2891383881471966,6,5,Mid-price / Mid-performance,1
+zhipuai/glm-5.2,GLM-5.2,zhipuai,1,2.15,0.33243845991560533,0.48687809774766294,5,0.20261096125857578,6,5,Mid-price / Mid-performance,1
+zhipuai/glm-5.1,GLM-5.1,zhipuai,1,2.15,0.33243845991560533,0.5625,4,0.23408049414253188,6,5,Mid-price / Mid-performance,1
+alibaba/qwen3.8-max-preview,Qwen3.8 Max Preview,alibaba,0,3.0,0.47712125471966244,0.6504779942279942,8,0.25531946445326786,6,5,Mid-price / Mid-performance,1
+xai/grok-4.5,Grok 4.5,xai,0,3.0,0.47712125471966244,0.6368788819875777,4,0.24998166965456164,6,5,Mid-price / Mid-performance,1
+mistral/mistral-medium-2604,Mistral Medium 3.5,mistral,1,3.0,0.47712125471966244,0.6212121212121212,1,0.24383230102656625,6,5,Mid-price / Mid-performance,1
+google/gemini-3.5-flash,Gemini 3.5 Flash,google,0,3.375,0.5282737771670437,0.5402202145680406,10,0.20786855959503062,6,5,Mid-price / Mid-performance,1
+openai/gpt-5,GPT-5,openai,0,3.4375,0.5362427068383191,0.6071428571428571,2,0.23290521650875284,6,5,Mid-price / Mid-performance,1
+alibaba/qwen3.7-max,Qwen3.7 Max,alibaba,0,3.75,0.5740312677277188,0.5538598047914818,7,0.20942948650455553,6,5,Mid-price / Mid-performance,1
+anthropic/claude-sonnet-5-5,Claude Sonnet 5.5,anthropic,0,4.0,0.6020599913279624,0.6628571428571429,5,0.2480157741290049,6,5,Mid-price / Mid-performance,1
+openai/gpt-5.6-terra,GPT-5.6 Terra,openai,0,4.5,0.6532125137753437,0.6307261713058814,9,0.23156166240734402,6,5,Mid-price / Mid-performance,1
+openai/gpt-5.4,GPT-5.4,openai,0,5.625,0.7501225267834001,0.5507179485760049,17,0.19524133920603035,6,5,Mid-price / Mid-performance,1
+meta/muse-spark-1.2,Muse Spark 1.2,meta,0,2.0,0.3010299956639812,0.37083333333333335,4,0.15636346871209378,0,6,High-price / Mid-performance,1
+alibaba/qwen-max,Qwen Max,alibaba,0,2.7988875,0.446985442549365,0.21428571428571427,1,0.08511620759681096,0,6,High-price / Mid-performance,2
+xai/grok-4.7,Grok 4.7,xai,0,3.0,0.47712125471966244,0.4166666666666667,3,0.16354605556659932,0,6,High-price / Mid-performance,2
+xai/grok-4.6,Grok 4.6,xai,0,3.0,0.47712125471966244,0.19444444444444445,3,0.07632149259774634,0,6,High-price / Mid-performance,2
+alibaba/qwen3.8-max,Qwen3.8 Max,alibaba,0,3.0,0.47712125471966244,0.43326118326118324,6,0.1700595781259617,0,6,High-price / Mid-performance,2
+mistral/mistral-large-2411,Mistral Large 2.1,mistral,1,3.0,0.47712125471966244,0.24117216117216114,3,0.09466261361322986,0,6,High-price / Mid-performance,2
+openai/gpt-4.1,GPT-4.1,openai,0,3.5,0.5440680443502757,0.42857142857142855,1,0.16391164134291444,0,6,High-price / Mid-performance,2
+cohere/command-a-03-2025,Command A,cohere,1,4.375,0.640978057358332,0.10714285714285714,1,0.039513376600382524,0,6,High-price / Mid-performance,2
+openai/gpt-4o-2024-11-20,GPT-4o (2024-11-20),openai,0,4.375,0.640978057358332,0.34663919413919414,4,0.12783759354310084,0,6,High-price / Mid-performance,2
+openai/gpt-4o-2024-08-06,GPT-4o (2024-08-06),openai,0,4.375,0.640978057358332,0.3397298534798535,4,0.12528948733412748,0,6,High-price / Mid-performance,2
+openai/gpt-4o,GPT-4o,openai,0,4.375,0.640978057358332,0.26785714285714285,1,0.09878344150095632,0,6,High-price / Mid-performance,2
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,0,4.5,0.6532125137753437,0.3512120658540096,17,0.1289422470900308,0,6,High-price / Mid-performance,2
+google/gemini-3-pro-preview,Gemini 3 Pro Preview,google,0,4.5,0.6532125137753437,0.2619047619047619,1,0.09615440870877459,0,6,High-price / Mid-performance,2
+openai/gpt-5.2-codex,GPT-5.2 Codex,openai,0,4.8125,0.682370742516557,0.19047619047619047,1,0.06918980176610616,0,6,High-price / Mid-performance,2
+openai/gpt-5.2,GPT-5.2,openai,0,4.8125,0.682370742516557,0.07142857142857142,1,0.025946175662289808,0,6,High-price / Mid-performance,2
+anthropic/claude-sonnet-4-0,Claude Sonnet 4 (latest),anthropic,0,5.989,0.7773543130842088,0.43154761904761907,2,0.15152998939563572,0,6,High-price / Mid-performance,2
+anthropic/claude-sonnet-4-6,Claude Sonnet 4.6,anthropic,0,6.0,0.7781512503836436,0.3489619016249451,10,0.12249725908012389,0,6,High-price / Mid-performance,2
+anthropic/claude-sonnet-4-5,Claude Sonnet 4.5 (latest),anthropic,0,6.0,0.7781512503836436,0.2857142857142857,1,0.10029523772383502,0,6,High-price / Mid-performance,2
+anthropic/claude-3-5-sonnet-20241022,Claude Sonnet 3.5 v2,anthropic,0,6.0,0.7781512503836436,0.39285714285714285,1,0.13790595187027316,0,6,High-price / Mid-performance,2
+perplexity/sonar-pro,Sonar Pro,perplexity,0,6.0,0.7781512503836436,0.07692307692307693,1,0.027002564002570967,0,6,High-price / Mid-performance,2
+openai/gpt-4o-2024-05-13,GPT-4o (2024-05-13),openai,0,7.5,0.8750612633917001,0.4930769230769231,2,0.1673919867222259,0,6,High-price / Mid-performance,2
+anthropic/claude-opus-4-6,Claude Opus 4.6,anthropic,0,10.0,1.0,0.49067460317460315,8,0.15979861508419743,0,6,High-price / Mid-performance,2
+anthropic/claude-opus-4-5-20251101,Claude Opus 4.5,anthropic,0,10.0,1.0,0.30952380952380953,1,0.100803008302203,0,6,High-price / Mid-performance,2
+openai/gpt-4-turbo,GPT-4 Turbo,openai,0,15.0,1.1760912590556813,0.4123076923076923,2,0.1269939340886169,0,6,High-price / Mid-performance,2
+openai/gpt-4,GPT-4,openai,0,37.5,1.5740312677277188,0.16,1,0.043900416556129467,0,6,High-price / Mid-performance,2
+openai/gpt-5-codex,GPT-5-Codex,openai,0,3.4375,0.5362427068383191,0.9871794871794872,3,0.37869053302629807,3,7,High-price / High-performance,0
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,0,3.4375,0.5362427068383191,0.9045238095238095,4,0.34698310490853024,3,7,High-price / High-performance,0
+openai/o3,o3,openai,0,3.5,0.5440680443502757,0.8928571428571429,1,0.3414825861310718,3,7,High-price / High-performance,0
+openai/gpt-6-sol,GPT-6 Sol,openai,0,4.0,0.6020599913279624,0.8111111111111112,3,0.30348673510517604,3,7,High-price / High-performance,0
+anthropic/claude-sonnet-5,Claude Sonnet 5,anthropic,0,4.0,0.6020599913279624,0.7273778154212936,6,0.27215694048099914,3,7,High-price / High-performance,0
+openai/gpt-5.3-codex,GPT-5.3 Codex,openai,0,4.8125,0.682370742516557,0.7148148148148148,3,0.2596539505166928,3,7,High-price / High-performance,0
+moonshotai/kimi-k3,Kimi K3,moonshotai,1,6.0,0.7781512503836436,0.746938775510204,7,0.2622004071923115,3,7,High-price / High-performance,0
+anthropic/claude-sonnet-4-20250514,Claude Sonnet 4,anthropic,0,6.0,0.7781512503836436,0.625,1,0.2193958325208891,3,7,High-price / High-performance,1
+anthropic/claude-3-7-sonnet-20250219,Claude Sonnet 3.7,anthropic,0,6.0,0.7781512503836436,0.7142857142857143,1,0.25073809430958754,3,7,High-price / High-performance,0
+anthropic/claude-opus-5-5,Claude Opus 5.5,anthropic,0,8.0,0.9030899869919435,0.8033333333333333,5,0.2701486871880771,3,7,High-price / High-performance,0
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,0,8.0,0.9030899869919435,0.8915343915343915,9,0.2998093511900875,3,7,High-price / High-performance,0
+anthropic/claude-opus-5,Claude Opus 5,anthropic,0,10.0,1.0,0.8925925925925926,9,0.2906917521466948,3,7,High-price / High-performance,0
+anthropic/claude-opus-4-8,Claude Opus 4.8,anthropic,0,10.0,1.0,0.8122482589873894,5,0.2645259119811185,3,7,High-price / High-performance,0
+anthropic/claude-opus-4-7,Claude Opus 4.7,anthropic,0,10.0,1.0,0.736616240040153,10,0.2398947372563703,3,7,High-price / High-performance,0
+openai/gpt-5.5,GPT-5.5,openai,0,11.25,1.0511525224473812,0.6911413084754046,19,0.22139663333177687,3,7,High-price / High-performance,0
+openai/gpt-6-astra,GPT-6 Astra,openai,0,20.0,1.3010299956639813,0.8087176108915239,9,0.23986088374765946,3,7,High-price / High-performance,0
+anthropic/claude-fable-5-1,Claude Fable 5.1,anthropic,0,20.0,1.3010299956639813,0.7047619047619047,5,0.20902823313260188,3,7,High-price / High-performance,0
+anthropic/claude-fable-5,Claude Fable 5,anthropic,0,20.0,1.3010299956639813,0.8311805947675514,7,0.2465232725611956,3,7,High-price / High-performance,0
+openai/o1,o1,openai,0,26.25,1.4191293077419758,0.6785714285714286,1,0.19444921047492408,3,7,High-price / High-performance,0
+anthropic/claude-opus-4-20250514,Claude Opus 4,anthropic,0,30.0,1.4771212547196624,0.8035714285714286,1,0.22650474984938126,3,7,High-price / High-performance,0
+openai/o3-pro,o3-pro,openai,0,35.0,1.5440680443502757,0.9642857142857143,1,0.26677159597985967,3,7,High-price / High-performance,0
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,0,67.5,1.8293037728310249,0.6118506493506494,4,0.15688941426129635,3,7,High-price / High-performance,0
+openai/gpt-5.4-pro,GPT-5.4 Pro,openai,0,67.5,1.8293037728310249,0.5821308321308322,6,0.1492687232960773,3,7,High-price / High-performance,0

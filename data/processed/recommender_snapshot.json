@@ -1,0 +1,6219 @@
+{
+ "meta": {
+  "snapshot_version": "2026-09-28",
+  "as_of_week": "2026-09-28",
+  "built_at": "2026-10-25T07:45:25+00:00",
+  "source": "data/processed (notebooks 00, 01; rules of notebook 04)",
+  "price_rule": "cheapest provider per request; free / zero-price offers excluded; USD per 1M tokens",
+  "score_rule": "mean within-test percentile (0 = worst, 1 = best) among models available at as_of_week",
+  "task_benchmarks": {
+   "coding": [
+    "SWE-Bench Pro",
+    "SWE-Bench Verified",
+    "Aider Polyglot",
+    "Terminal-Bench",
+    "Terminal-Bench Hard",
+    "Terminal Bench 2.0",
+    "SciCode",
+    "LiveCodeBench"
+   ],
+   "reasoning": [
+    "Humanity's Last Exam",
+    "GPQA Diamond",
+    "AIME"
+   ],
+   "vision": [
+    "MMMU Pro",
+    "MathVision"
+   ]
+  },
+  "trend_source": "placeholder: 12-week price momentum (RQ3 not available yet)",
+  "n_models": 132,
+  "n_linked_of_candidates": "143/147"
+ },
+ "models": [
+  {
+   "model_id": "alibaba/qwen-max",
+   "model_name": "Qwen Max",
+   "lab": "alibaba",
+   "open_weights": false,
+   "release_date": "2024-04-03",
+   "context_window": 32768,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": false,
+   "tier": "High-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.2222
+   },
+   "offers": [
+    {
+     "provider": "dashscope",
+     "input_price_per_1m": 1.6,
+     "output_price_per_1m": 6.4
+    },
+    {
+     "provider": "qwen_ai_platform",
+     "input_price_per_1m": 1.6,
+     "output_price_per_1m": 6.4
+    },
+    {
+     "provider": "qwencloud",
+     "input_price_per_1m": 1.6,
+     "output_price_per_1m": 6.4
+    }
+   ]
+  },
+  {
+   "model_id": "alibaba/qwen3-235b-a22b",
+   "model_name": "Qwen3 235B-A22B",
+   "lab": "alibaba",
+   "open_weights": true,
+   "release_date": "2025-04-01",
+   "context_window": 131072,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "rising",
+   "scores": {
+    "coding": 0.3028
+   },
+   "offers": [
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.18,
+     "output_price_per_1m": 0.54
+    },
+    {
+     "provider": "fireworks_ai",
+     "input_price_per_1m": 0.22,
+     "output_price_per_1m": 0.88
+    },
+    {
+     "provider": "hyperbolic",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 2.0
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 0.6
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.455,
+     "output_price_per_1m": 1.82
+    }
+   ]
+  },
+  {
+   "model_id": "alibaba/qwen3-32b",
+   "model_name": "Qwen3 32B",
+   "lab": "alibaba",
+   "open_weights": true,
+   "release_date": "2025-04-01",
+   "context_window": 131072,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Low-price / Mid-performance",
+   "trend": "rising",
+   "scores": {
+    "coding": 0.3704
+   },
+   "offers": [
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.6
+    },
+    {
+     "provider": "bedrock_mantle",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.6
+    },
+    {
+     "provider": "cerebras",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 0.8
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.08,
+     "output_price_per_1m": 0.28
+    },
+    {
+     "provider": "fireworks_ai",
+     "input_price_per_1m": 0.9,
+     "output_price_per_1m": 0.9
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 0.1,
+     "output_price_per_1m": 0.3
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.08,
+     "output_price_per_1m": 0.28
+    },
+    {
+     "provider": "ovhcloud",
+     "input_price_per_1m": 0.08,
+     "output_price_per_1m": 0.23
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 0.1,
+     "output_price_per_1m": 0.3
+    }
+   ]
+  },
+  {
+   "model_id": "alibaba/qwen3-coder-30b-a3b-instruct",
+   "model_name": "Qwen3-Coder 30B-A3B Instruct",
+   "lab": "alibaba",
+   "open_weights": true,
+   "release_date": "2025-04-01",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Low-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.345
+   },
+   "offers": [
+    {
+     "provider": "bedrock_mantle",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.6
+    },
+    {
+     "provider": "fireworks_ai",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.6
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.07,
+     "output_price_per_1m": 0.27
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.07,
+     "output_price_per_1m": 0.28
+    },
+    {
+     "provider": "scaleway",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 0.8
+    }
+   ]
+  },
+  {
+   "model_id": "alibaba/qwen3-coder-480b-a35b-instruct",
+   "model_name": "Qwen3-Coder 480B-A35B Instruct",
+   "lab": "alibaba",
+   "open_weights": true,
+   "release_date": "2025-04-01",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "rising",
+   "scores": {
+    "coding": 0.15
+   },
+   "offers": [
+    {
+     "provider": "bedrock_mantle",
+     "input_price_per_1m": 0.45,
+     "output_price_per_1m": 1.8
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 1.6
+    },
+    {
+     "provider": "fireworks_ai",
+     "input_price_per_1m": 0.45,
+     "output_price_per_1m": 1.8
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.38,
+     "output_price_per_1m": 1.55
+    }
+   ]
+  },
+  {
+   "model_id": "alibaba/qwen3-max",
+   "model_name": "Qwen3 Max",
+   "lab": "alibaba",
+   "open_weights": false,
+   "release_date": "2025-09-23",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.7175
+   },
+   "offers": [
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 1.2,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 2.11,
+     "output_price_per_1m": 8.45
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.78,
+     "output_price_per_1m": 3.9
+    }
+   ]
+  },
+  {
+   "model_id": "alibaba/qwen3.5-122b-a10b",
+   "model_name": "Qwen3.5 122B-A10B",
+   "lab": "alibaba",
+   "open_weights": true,
+   "release_date": "2026-02-23",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.2188
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.1126,
+     "output_price_per_1m": 0.9008
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.29,
+     "output_price_per_1m": 2.4
+    },
+    {
+     "provider": "libertai",
+     "input_price_per_1m": 0.25,
+     "output_price_per_1m": 1.75
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 3.2
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.26,
+     "output_price_per_1m": 2.08
+    }
+   ]
+  },
+  {
+   "model_id": "alibaba/qwen3.5-27b",
+   "model_name": "Qwen3.5 27B",
+   "lab": "alibaba",
+   "open_weights": true,
+   "release_date": "2026-02-23",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.25
+   },
+   "offers": [
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.26,
+     "output_price_per_1m": 2.6
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 2.4
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.195,
+     "output_price_per_1m": 1.56
+    }
+   ]
+  },
+  {
+   "model_id": "alibaba/qwen3.5-397b-a17b",
+   "model_name": "Qwen3.5 397B-A17B",
+   "lab": "alibaba",
+   "open_weights": true,
+   "release_date": "2026-02-15",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.5
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.1644,
+     "output_price_per_1m": 0.9864
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.45,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 3.6
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 3.6
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.55,
+     "output_price_per_1m": 3.5
+    },
+    {
+     "provider": "scaleway",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 3.6
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 3.6
+    }
+   ]
+  },
+  {
+   "model_id": "alibaba/qwen3.6-27b",
+   "model_name": "Qwen3.6 27B",
+   "lab": "alibaba",
+   "open_weights": true,
+   "release_date": "2026-04-22",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.5625
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.422,
+     "output_price_per_1m": 2.532
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.32,
+     "output_price_per_1m": 3.2
+    },
+    {
+     "provider": "libertai",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.5
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 3.6
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.32,
+     "output_price_per_1m": 3.2
+    },
+    {
+     "provider": "wandb",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 3.6
+    }
+   ]
+  },
+  {
+   "model_id": "alibaba/qwen3.6-35b-a3b",
+   "model_name": "Qwen3.6 35B-A3B",
+   "lab": "alibaba",
+   "open_weights": true,
+   "release_date": "2026-04-17",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Low-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.3125
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.254,
+     "output_price_per_1m": 1.524
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.1,
+     "output_price_per_1m": 0.95
+    },
+    {
+     "provider": "libertai",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.5
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.248,
+     "output_price_per_1m": 1.485
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 1.0
+    },
+    {
+     "provider": "pinstripes",
+     "input_price_per_1m": 0.14,
+     "output_price_per_1m": 0.45
+    },
+    {
+     "provider": "sail",
+     "input_price_per_1m": 0.05,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "scaleway",
+     "input_price_per_1m": 0.25,
+     "output_price_per_1m": 1.5
+    },
+    {
+     "provider": "wandb",
+     "input_price_per_1m": 0.25,
+     "output_price_per_1m": 1.25
+    }
+   ]
+  },
+  {
+   "model_id": "alibaba/qwen3.7-max",
+   "model_name": "Qwen3.7 Max",
+   "lab": "alibaba",
+   "open_weights": false,
+   "release_date": "2026-05-21",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.6429,
+    "reasoning": 0.3599
+   },
+   "offers": [
+    {
+     "provider": "dashscope",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 7.5
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 7.5
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 3.75
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.475,
+     "output_price_per_1m": 4.425
+    },
+    {
+     "provider": "qwen_ai_platform",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 7.5
+    },
+    {
+     "provider": "qwencloud",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 7.5
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 1.5,
+     "output_price_per_1m": 4.5
+    }
+   ]
+  },
+  {
+   "model_id": "alibaba/qwen3.8-27b",
+   "model_name": "Qwen3.8 27B",
+   "lab": "alibaba",
+   "open_weights": true,
+   "release_date": "2026-08-14",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.6667,
+    "reasoning": 0.0
+   },
+   "offers": [
+    {
+     "provider": "cerebras",
+     "input_price_per_1m": 0.99,
+     "output_price_per_1m": 1.49
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "groq",
+     "input_price_per_1m": 0.8,
+     "output_price_per_1m": 4.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.42,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "wandb",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 3.0
+    }
+   ]
+  },
+  {
+   "model_id": "alibaba/qwen3.8-max",
+   "model_name": "Qwen3.8 Max",
+   "lab": "alibaba",
+   "open_weights": false,
+   "release_date": "2026-08-03",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "reasoning": 0.3333
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 1.69,
+     "output_price_per_1m": 5.07
+    },
+    {
+     "provider": "dashscope",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 1.65,
+     "output_price_per_1m": 4.951
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "qwen_ai_platform",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "qwencloud",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "scx-ai",
+     "input_price_per_1m": 1.65,
+     "output_price_per_1m": 4.99
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-3-5-sonnet-20241022",
+   "model_name": "Claude Sonnet 3.5 v2",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2024-10-22",
+   "context_window": 200000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.4074
+   },
+   "offers": [
+    {
+     "provider": "bedrock",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "replicate",
+     "input_price_per_1m": 3.75,
+     "output_price_per_1m": 18.75
+    },
+    {
+     "provider": "snowflake",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "vertex_ai-anthropic_models",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-3-7-sonnet-20250219",
+   "model_name": "Claude Sonnet 3.7",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2025-02-19",
+   "context_window": 200000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.7037
+   },
+   "offers": [
+    {
+     "provider": "bedrock",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "replicate",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "snowflake",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-fable-5",
+   "model_name": "Claude Fable 5",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2026-06-09",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.9751,
+    "reasoning": 0.9524
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 11.0,
+     "output_price_per_1m": 55.0
+    },
+    {
+     "provider": "anthropic",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 50.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 50.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 50.0
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 50.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 50.0
+    },
+    {
+     "provider": "vertex_ai-anthropic_models",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 50.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-fable-5-1",
+   "model_name": "Claude Fable 5.1",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2026-09-01",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.1667,
+    "reasoning": 0.8333
+   },
+   "offers": [
+    {
+     "provider": "anthropic",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 50.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 50.0
+    },
+    {
+     "provider": "bedrock",
+     "input_price_per_1m": 12.0,
+     "output_price_per_1m": 60.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 50.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "vertex_ai-anthropic_models",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 50.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-haiku-4-5",
+   "model_name": "Claude Haiku 4.5 (latest)",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2025-10-15",
+   "context_window": 200000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.175
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 1.1,
+     "output_price_per_1m": 5.5
+    },
+    {
+     "provider": "anthropic",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 5.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 5.0
+    },
+    {
+     "provider": "bedrock",
+     "input_price_per_1m": 1.2,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 5.0
+    },
+    {
+     "provider": "bedrock_mantle",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 5.0
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 5.0
+    },
+    {
+     "provider": "github_copilot",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 5.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.5,
+     "output_price_per_1m": 2.5
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 5.0
+    },
+    {
+     "provider": "snowflake",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 5.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 5.0
+    },
+    {
+     "provider": "vertex_ai-anthropic_models",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 5.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-opus-4-20250514",
+   "model_name": "Claude Opus 4",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2025-05-22",
+   "context_window": 200000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.7963
+   },
+   "offers": [
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 15.0,
+     "output_price_per_1m": 75.0
+    },
+    {
+     "provider": "gmi",
+     "input_price_per_1m": 15.0,
+     "output_price_per_1m": 75.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 15.0,
+     "output_price_per_1m": 75.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-opus-4-5-20251101",
+   "model_name": "Claude Opus 4.5",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2025-11-01",
+   "context_window": 200000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.3
+   },
+   "offers": [
+    {
+     "provider": "anthropic",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "gmi",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 12.5
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "vertex_ai-anthropic_models",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-opus-4-6",
+   "model_name": "Claude Opus 4.6",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2026-02-05",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.2583
+   },
+   "offers": [
+    {
+     "provider": "anthropic",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 12.5
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "vertex_ai-anthropic_models",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-opus-4-7",
+   "model_name": "Claude Opus 4.7",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2026-04-16",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.6615,
+    "reasoning": 0.6562
+   },
+   "offers": [
+    {
+     "provider": "anthropic",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 12.5
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "vertex_ai-anthropic_models",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-opus-4-8",
+   "model_name": "Claude Opus 4.8",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2026-05-28",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.8031,
+    "reasoning": 0.7619
+   },
+   "offers": [
+    {
+     "provider": "anthropic",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "bedrock",
+     "input_price_per_1m": 6.0,
+     "output_price_per_1m": 30.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 12.5
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "vertex_ai-anthropic_models",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-opus-5",
+   "model_name": "Claude Opus 5",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2026-07-24",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.9875,
+    "reasoning": 1.0
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "anthropic",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "bedrock",
+     "input_price_per_1m": 6.0,
+     "output_price_per_1m": 30.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 12.5
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    },
+    {
+     "provider": "vertex_ai-anthropic_models",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-opus-5-5",
+   "model_name": "Claude Opus 5.5",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2026-09-22",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.4167,
+    "reasoning": 1.0
+   },
+   "offers": [
+    {
+     "provider": "anthropic",
+     "input_price_per_1m": 4.0,
+     "output_price_per_1m": 20.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 4.0,
+     "output_price_per_1m": 20.0
+    },
+    {
+     "provider": "bedrock",
+     "input_price_per_1m": 4.8,
+     "output_price_per_1m": 24.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 4.0,
+     "output_price_per_1m": 20.0
+    },
+    {
+     "provider": "bedrock_mantle",
+     "input_price_per_1m": 4.4,
+     "output_price_per_1m": 22.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "vertex_ai-anthropic_models",
+     "input_price_per_1m": 4.0,
+     "output_price_per_1m": 20.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-sonnet-4-20250514",
+   "model_name": "Claude Sonnet 4",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2025-05-22",
+   "context_window": 200000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.6296
+   },
+   "offers": [
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "github_copilot",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "gmi",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-sonnet-4-5",
+   "model_name": "Claude Sonnet 4.5 (latest)",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2025-09-29",
+   "context_window": 200000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.275
+   },
+   "offers": [
+    {
+     "provider": "anthropic",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "bedrock",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "gmi",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.5,
+     "output_price_per_1m": 7.5
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "snowflake",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "vertex_ai-anthropic_models",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-sonnet-4-6",
+   "model_name": "Claude Sonnet 4.6",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2026-02-17",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.1576,
+    "reasoning": 0.3333
+   },
+   "offers": [
+    {
+     "provider": "anthropic",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.5,
+     "output_price_per_1m": 7.5
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "snowflake",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "vertex_ai-anthropic_models",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-sonnet-5",
+   "model_name": "Claude Sonnet 5",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2026-06-30",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.809
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "anthropic",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "bedrock",
+     "input_price_per_1m": 2.4,
+     "output_price_per_1m": 12.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 5.0
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "vertex_ai-anthropic_models",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 10.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-sonnet-5-5",
+   "model_name": "Claude Sonnet 5.5",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2026-09-28",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.5,
+    "reasoning": 0.6667
+   },
+   "offers": [
+    {
+     "provider": "anthropic",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "bedrock",
+     "input_price_per_1m": 2.4,
+     "output_price_per_1m": 12.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "bedrock_mantle",
+     "input_price_per_1m": 2.2,
+     "output_price_per_1m": 11.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 5.0
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "vertex_ai-anthropic_models",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 10.0
+    }
+   ]
+  },
+  {
+   "model_id": "cohere/command-a-03-2025",
+   "model_name": "Command A",
+   "lab": "cohere",
+   "open_weights": true,
+   "release_date": "2025-03-13",
+   "context_window": 256000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.1111
+   },
+   "offers": [
+    {
+     "provider": "cohere_chat",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "oci",
+     "input_price_per_1m": 1.56,
+     "output_price_per_1m": 1.56
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 10.0
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek/deepseek-chat",
+   "model_name": "DeepSeek Chat",
+   "lab": "deepseek",
+   "open_weights": true,
+   "release_date": "2025-12-01",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Low-price / High-performance",
+   "trend": "rising",
+   "scores": {
+    "coding": 0.7407
+   },
+   "offers": [
+    {
+     "provider": "deepseek",
+     "input_price_per_1m": 0.28,
+     "output_price_per_1m": 0.42
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.2574,
+     "output_price_per_1m": 1.0287
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek/deepseek-r1",
+   "model_name": "DeepSeek-R1",
+   "lab": "deepseek",
+   "open_weights": true,
+   "release_date": "2025-01-20",
+   "context_window": 128000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.4612
+   },
+   "offers": [
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 1.35,
+     "output_price_per_1m": 5.4
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.7,
+     "output_price_per_1m": 2.4
+    },
+    {
+     "provider": "deepseek",
+     "input_price_per_1m": 0.55,
+     "output_price_per_1m": 2.19
+    },
+    {
+     "provider": "fireworks_ai",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 8.0
+    },
+    {
+     "provider": "hyperbolic",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 0.8,
+     "output_price_per_1m": 2.4
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 4.0,
+     "output_price_per_1m": 4.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.7,
+     "output_price_per_1m": 2.5
+    },
+    {
+     "provider": "replicate",
+     "input_price_per_1m": 3.75,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "sambanova",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 7.0
+    },
+    {
+     "provider": "snowflake",
+     "input_price_per_1m": 1.35,
+     "output_price_per_1m": 5.4
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 0.55,
+     "output_price_per_1m": 2.19
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek/deepseek-reasoner",
+   "model_name": "DeepSeek Reasoner",
+   "lab": "deepseek",
+   "open_weights": true,
+   "release_date": "2025-12-01",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Low-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.8519
+   },
+   "offers": [
+    {
+     "provider": "deepseek",
+     "input_price_per_1m": 0.28,
+     "output_price_per_1m": 0.42
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek/deepseek-v4-flash",
+   "model_name": "DeepSeek V4 Flash",
+   "lab": "deepseek",
+   "open_weights": true,
+   "release_date": "2026-04-24",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Low-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.5469
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.142,
+     "output_price_per_1m": 0.284
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 0.19,
+     "output_price_per_1m": 0.51
+    },
+    {
+     "provider": "dashscope",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.09,
+     "output_price_per_1m": 0.18
+    },
+    {
+     "provider": "deepseek",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "fireworks_ai",
+     "input_price_per_1m": 0.14,
+     "output_price_per_1m": 0.28
+    },
+    {
+     "provider": "libertai",
+     "input_price_per_1m": 0.25,
+     "output_price_per_1m": 1.75
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 0.14,
+     "output_price_per_1m": 0.28
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.14,
+     "output_price_per_1m": 0.28
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.14,
+     "output_price_per_1m": 0.28
+    },
+    {
+     "provider": "pinstripes",
+     "input_price_per_1m": 0.1,
+     "output_price_per_1m": 0.2
+    },
+    {
+     "provider": "prism",
+     "input_price_per_1m": 0.17,
+     "output_price_per_1m": 0.21
+    },
+    {
+     "provider": "qwen_ai_platform",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "qwencloud",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "tencent",
+     "input_price_per_1m": 0.14,
+     "output_price_per_1m": 0.28
+    },
+    {
+     "provider": "tensormesh",
+     "input_price_per_1m": 0.14,
+     "output_price_per_1m": 0.28
+    },
+    {
+     "provider": "wandb",
+     "input_price_per_1m": 0.14,
+     "output_price_per_1m": 0.28
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek/deepseek-v4-flash-0731",
+   "model_name": "DeepSeek V4 Flash 0731",
+   "lab": "deepseek",
+   "open_weights": true,
+   "release_date": "2026-07-31",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Low-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.5333
+   },
+   "offers": [
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 0.44,
+     "output_price_per_1m": 1.32
+    },
+    {
+     "provider": "baseten",
+     "input_price_per_1m": 0.13,
+     "output_price_per_1m": 0.26
+    },
+    {
+     "provider": "dashscope",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.08,
+     "output_price_per_1m": 0.18
+    },
+    {
+     "provider": "fireworks_ai",
+     "input_price_per_1m": 0.22,
+     "output_price_per_1m": 0.66
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 0.14,
+     "output_price_per_1m": 0.28
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.44,
+     "output_price_per_1m": 1.32
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.018,
+     "output_price_per_1m": 0.32
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 0.13,
+     "output_price_per_1m": 0.26
+    },
+    {
+     "provider": "qwen_ai_platform",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "qwencloud",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "sail",
+     "input_price_per_1m": 0.09,
+     "output_price_per_1m": 0.18
+    },
+    {
+     "provider": "scaleway",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 0.8
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 0.14,
+     "output_price_per_1m": 0.28
+    },
+    {
+     "provider": "wandb",
+     "input_price_per_1m": 0.13,
+     "output_price_per_1m": 0.28
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek/deepseek-v4-flash-vision-exp",
+   "model_name": "DeepSeek V4 Flash Vision Exp",
+   "lab": "deepseek",
+   "open_weights": true,
+   "release_date": "2026-08-21",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Low-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.75
+   },
+   "offers": [
+    {
+     "provider": "deepseek",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "fireworks_ai",
+     "input_price_per_1m": 0.22,
+     "output_price_per_1m": 0.66
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.44,
+     "output_price_per_1m": 1.32
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.2156,
+     "output_price_per_1m": 0.6468
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek/deepseek-v4-pro",
+   "model_name": "DeepSeek V4 Pro",
+   "lab": "deepseek",
+   "open_weights": true,
+   "release_date": "2026-04-24",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.5021
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 1.69,
+     "output_price_per_1m": 3.38
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 1.74,
+     "output_price_per_1m": 3.48
+    },
+    {
+     "provider": "baseten",
+     "input_price_per_1m": 1.74,
+     "output_price_per_1m": 3.48
+    },
+    {
+     "provider": "dashscope",
+     "input_price_per_1m": 2.4,
+     "output_price_per_1m": 4.8
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 1.3,
+     "output_price_per_1m": 2.6
+    },
+    {
+     "provider": "deepseek",
+     "input_price_per_1m": 1.32,
+     "output_price_per_1m": 3.96
+    },
+    {
+     "provider": "fireworks_ai",
+     "input_price_per_1m": 1.2,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 1.75,
+     "output_price_per_1m": 3.5
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 1.6,
+     "output_price_per_1m": 3.2
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.9483,
+     "output_price_per_1m": 1.8966
+    },
+    {
+     "provider": "qwen_ai_platform",
+     "input_price_per_1m": 2.4,
+     "output_price_per_1m": 4.8
+    },
+    {
+     "provider": "qwencloud",
+     "input_price_per_1m": 2.4,
+     "output_price_per_1m": 4.8
+    },
+    {
+     "provider": "tencent",
+     "input_price_per_1m": 0.435,
+     "output_price_per_1m": 0.87
+    },
+    {
+     "provider": "wandb",
+     "input_price_per_1m": 1.15,
+     "output_price_per_1m": 2.55
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek/deepseek-v4-pro-0813",
+   "model_name": "DeepSeek V4 Pro 0813",
+   "lab": "deepseek",
+   "open_weights": true,
+   "release_date": "2026-08-12",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.9167,
+    "reasoning": 0.5
+   },
+   "offers": [
+    {
+     "provider": "baseten",
+     "input_price_per_1m": 1.32,
+     "output_price_per_1m": 3.96
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 1.3,
+     "output_price_per_1m": 2.6
+    },
+    {
+     "provider": "fireworks_ai",
+     "input_price_per_1m": 1.32,
+     "output_price_per_1m": 3.96
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 1.32,
+     "output_price_per_1m": 3.96
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 1.32,
+     "output_price_per_1m": 3.96
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.24298,
+     "output_price_per_1m": 4.2
+    },
+    {
+     "provider": "sail",
+     "input_price_per_1m": 0.92,
+     "output_price_per_1m": 2.77
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 1.32,
+     "output_price_per_1m": 3.96
+    },
+    {
+     "provider": "wandb",
+     "input_price_per_1m": 1.31,
+     "output_price_per_1m": 3.96
+    }
+   ]
+  },
+  {
+   "model_id": "deepseek/deepseek-v4.1-flash",
+   "model_name": "DeepSeek V4.1 Flash",
+   "lab": "deepseek",
+   "open_weights": true,
+   "release_date": "2026-09-10",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Low-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 1.0
+   },
+   "offers": [
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "baseten",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.112,
+     "output_price_per_1m": 0.336
+    },
+    {
+     "provider": "prism",
+     "input_price_per_1m": 0.17,
+     "output_price_per_1m": 0.63
+    },
+    {
+     "provider": "sail",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.6
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "wandb",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 0.65
+    }
+   ]
+  },
+  {
+   "model_id": "google/gemini-2.5-flash",
+   "model_name": "Gemini 2.5 Flash",
+   "lab": "google",
+   "open_weights": false,
+   "release_date": "2025-06-17",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.5738
+   },
+   "offers": [
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 2.5
+    },
+    {
+     "provider": "gemini",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 2.5
+    },
+    {
+     "provider": "oci",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.6
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 1.25
+    },
+    {
+     "provider": "replicate",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 2.5
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 2.5
+    },
+    {
+     "provider": "vertex_ai-language-models",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 2.5
+    }
+   ]
+  },
+  {
+   "model_id": "google/gemini-2.5-flash-lite",
+   "model_name": "Gemini 2.5 Flash-Lite",
+   "lab": "google",
+   "open_weights": false,
+   "release_date": "2025-06-17",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Low-price / Low-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.05
+   },
+   "offers": [
+    {
+     "provider": "gemini",
+     "input_price_per_1m": 0.1,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "oci",
+     "input_price_per_1m": 0.075,
+     "output_price_per_1m": 0.3
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.05,
+     "output_price_per_1m": 0.2
+    },
+    {
+     "provider": "vertex_ai-language-models",
+     "input_price_per_1m": 0.1,
+     "output_price_per_1m": 0.4
+    }
+   ]
+  },
+  {
+   "model_id": "google/gemini-2.5-pro",
+   "model_name": "Gemini 2.5 Pro",
+   "lab": "google",
+   "open_weights": false,
+   "release_date": "2025-06-17",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.9253
+   },
+   "offers": [
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "gemini",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "oci",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.625,
+     "output_price_per_1m": 5.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "vertex_ai-language-models",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 10.0
+    }
+   ]
+  },
+  {
+   "model_id": "google/gemini-3-flash-preview",
+   "model_name": "Gemini 3 Flash Preview",
+   "lab": "google",
+   "open_weights": false,
+   "release_date": "2025-12-17",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.1
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.5,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "gemini",
+     "input_price_per_1m": 0.5,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "gmi",
+     "input_price_per_1m": 0.5,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.25,
+     "output_price_per_1m": 1.5
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 0.5,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "vertex_ai",
+     "input_price_per_1m": 0.5,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "vertex_ai-language-models",
+     "input_price_per_1m": 0.5,
+     "output_price_per_1m": 3.0
+    }
+   ]
+  },
+  {
+   "model_id": "google/gemini-3-pro-preview",
+   "model_name": "Gemini 3 Pro Preview",
+   "lab": "google",
+   "open_weights": false,
+   "release_date": "2025-11-18",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.25
+   },
+   "offers": [
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 12.0
+    },
+    {
+     "provider": "vertex_ai",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 12.0
+    }
+   ]
+  },
+  {
+   "model_id": "google/gemini-3.1-pro-preview",
+   "model_name": "Gemini 3.1 Pro Preview",
+   "lab": "google",
+   "open_weights": false,
+   "release_date": "2026-02-19",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.3472,
+    "reasoning": 0.5546,
+    "vision": 0.375
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 12.0
+    },
+    {
+     "provider": "gemini",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 12.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 12.0
+    },
+    {
+     "provider": "vertex_ai",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 12.0
+    },
+    {
+     "provider": "vertex_ai-language-models",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 12.0
+    }
+   ]
+  },
+  {
+   "model_id": "google/gemini-3.5-flash",
+   "model_name": "Gemini 3.5 Flash",
+   "lab": "google",
+   "open_weights": false,
+   "release_date": "2026-05-19",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.5543,
+    "reasoning": 0.1429,
+    "vision": 1.0
+   },
+   "offers": [
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 1.5,
+     "output_price_per_1m": 9.0
+    },
+    {
+     "provider": "gemini",
+     "input_price_per_1m": 1.5,
+     "output_price_per_1m": 9.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 4.5
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 1.5,
+     "output_price_per_1m": 9.0
+    },
+    {
+     "provider": "vertex_ai",
+     "input_price_per_1m": 1.5,
+     "output_price_per_1m": 9.0
+    },
+    {
+     "provider": "vertex_ai-language-models",
+     "input_price_per_1m": 1.5,
+     "output_price_per_1m": 9.0
+    }
+   ]
+  },
+  {
+   "model_id": "google/gemini-3.5-flash-lite",
+   "model_name": "Gemini 3.5 Flash Lite",
+   "lab": "google",
+   "open_weights": false,
+   "release_date": "2026-07-21",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.3438
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 2.499999
+    },
+    {
+     "provider": "gemini",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 2.5
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 1.25
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 2.5
+    },
+    {
+     "provider": "vertex_ai-language-models",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 2.5
+    }
+   ]
+  },
+  {
+   "model_id": "google/gemini-3.6-flash",
+   "model_name": "Gemini 3.6 Flash",
+   "lab": "google",
+   "open_weights": false,
+   "release_date": "2026-07-21",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.6875
+   },
+   "offers": [
+    {
+     "provider": "gemini",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 3.75
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.375,
+     "output_price_per_1m": 1.875
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 1.5,
+     "output_price_per_1m": 7.5
+    },
+    {
+     "provider": "vertex_ai",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 3.75
+    },
+    {
+     "provider": "vertex_ai-language-models",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 3.75
+    }
+   ]
+  },
+  {
+   "model_id": "google/gemini-3.7-flash",
+   "model_name": "Gemini 3.7 Flash",
+   "lab": "google",
+   "open_weights": false,
+   "release_date": "2026-08-13",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.875
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 3.75
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 3.75
+    },
+    {
+     "provider": "gemini",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 3.75
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.375,
+     "output_price_per_1m": 1.875
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 3.75
+    },
+    {
+     "provider": "vertex_ai",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 3.75
+    },
+    {
+     "provider": "vertex_ai-language-models",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 3.75
+    }
+   ]
+  },
+  {
+   "model_id": "google/gemini-3.8-flash",
+   "model_name": "Gemini 3.8 Flash",
+   "lab": "google",
+   "open_weights": false,
+   "release_date": "2026-09-02",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.9333
+   },
+   "offers": [
+    {
+     "provider": "gemini",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 3.75
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.375,
+     "output_price_per_1m": 1.875
+    },
+    {
+     "provider": "vertex_ai",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 3.75
+    },
+    {
+     "provider": "vertex_ai-language-models",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 3.75
+    }
+   ]
+  },
+  {
+   "model_id": "meituan/longcat-2.0",
+   "model_name": "LongCat-2.0",
+   "lab": "meituan",
+   "open_weights": false,
+   "release_date": "2026-06-30",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": false,
+   "tier": "Mid-price / Low-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.5891,
+    "reasoning": 0.3529
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.7746,
+     "output_price_per_1m": 3.0984
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    }
+   ]
+  },
+  {
+   "model_id": "meta/llama-3.3-70b-instruct",
+   "model_name": "Llama-3.3-70B-Instruct",
+   "lab": "meta",
+   "open_weights": true,
+   "release_date": "2024-12-06",
+   "context_window": 128000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "rising",
+   "scores": {
+    "coding": 0.1
+   },
+   "offers": [
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 0.71,
+     "output_price_per_1m": 0.71
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 0.72,
+     "output_price_per_1m": 0.72
+    },
+    {
+     "provider": "crusoe",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 0.2
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.23,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "gradient_ai",
+     "input_price_per_1m": 0.65,
+     "output_price_per_1m": 0.65
+    },
+    {
+     "provider": "hyperbolic",
+     "input_price_per_1m": 0.12,
+     "output_price_per_1m": 0.3
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 0.13,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.135,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "nscale",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 0.2
+    },
+    {
+     "provider": "oci",
+     "input_price_per_1m": 0.72,
+     "output_price_per_1m": 0.72
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.1,
+     "output_price_per_1m": 0.32
+    },
+    {
+     "provider": "scaleway",
+     "input_price_per_1m": 0.9,
+     "output_price_per_1m": 0.9
+    },
+    {
+     "provider": "wandb",
+     "input_price_per_1m": 0.71,
+     "output_price_per_1m": 0.71
+    },
+    {
+     "provider": "watsonx",
+     "input_price_per_1m": 0.7526,
+     "output_price_per_1m": 0.7526
+    }
+   ]
+  },
+  {
+   "model_id": "meta/llama-4-maverick-17b-instruct",
+   "model_name": "Llama 4 Maverick 17B Instruct",
+   "lab": "meta",
+   "open_weights": true,
+   "release_date": "2025-04-05",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": false,
+   "tier": "Mid-price / Low-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.0741
+   },
+   "offers": [
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 0.24,
+     "output_price_per_1m": 0.97
+    }
+   ]
+  },
+  {
+   "model_id": "meta/muse-glimmer-30b",
+   "model_name": "Muse Glimmer 30B",
+   "lab": "meta",
+   "open_weights": true,
+   "release_date": "2026-08-10",
+   "context_window": 131072,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.1905,
+    "reasoning": 0.1176
+   },
+   "offers": [
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "fireworks_ai",
+     "input_price_per_1m": 0.35,
+     "output_price_per_1m": 1.5
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 0.35,
+     "output_price_per_1m": 1.5
+    }
+   ]
+  },
+  {
+   "model_id": "meta/muse-spark-1.1",
+   "model_name": "Muse Spark 1.1",
+   "lab": "meta",
+   "open_weights": false,
+   "release_date": "2026-04-08",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.7011,
+    "reasoning": 0.8571
+   },
+   "offers": [
+    {
+     "provider": "meta",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 4.25
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 4.25
+    }
+   ]
+  },
+  {
+   "model_id": "meta/muse-spark-1.2",
+   "model_name": "Muse Spark 1.2",
+   "lab": "meta",
+   "open_weights": false,
+   "release_date": "2026-08-05",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.6
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 1.375,
+     "output_price_per_1m": 4.675
+    },
+    {
+     "provider": "meta",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 4.25
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 4.25
+    }
+   ]
+  },
+  {
+   "model_id": "meta/muse-spark-1.3",
+   "model_name": "Muse Spark 1.3",
+   "lab": "meta",
+   "open_weights": false,
+   "release_date": "2026-09-02",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.8667
+   },
+   "offers": [
+    {
+     "provider": "meta",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 4.25
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 4.25
+    }
+   ]
+  },
+  {
+   "model_id": "microsoft/mai-code-1-flash",
+   "model_name": "MAI-Code-1-Flash",
+   "lab": "microsoft",
+   "open_weights": false,
+   "release_date": "2026-06-02",
+   "context_window": 256000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.204,
+    "reasoning": 0.1765
+   },
+   "offers": [
+    {
+     "provider": "github_copilot",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 4.5
+    }
+   ]
+  },
+  {
+   "model_id": "minimax/MiniMax-M2",
+   "model_name": "MiniMax-M2",
+   "lab": "minimax",
+   "open_weights": true,
+   "release_date": "2025-10-27",
+   "context_window": 204800,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "rising",
+   "scores": {
+    "coding": 0.0625
+   },
+   "offers": [
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "fireworks_ai",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "minimax",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    }
+   ]
+  },
+  {
+   "model_id": "minimax/MiniMax-M2.1",
+   "model_name": "MiniMax-M2.1",
+   "lab": "minimax",
+   "open_weights": true,
+   "release_date": "2025-12-23",
+   "context_window": 204800,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.25
+   },
+   "offers": [
+    {
+     "provider": "bedrock",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "gmi",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "minimax",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    }
+   ]
+  },
+  {
+   "model_id": "minimax/MiniMax-M2.5",
+   "model_name": "MiniMax-M2.5",
+   "lab": "minimax",
+   "open_weights": true,
+   "release_date": "2026-02-12",
+   "context_window": 204800,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.4688
+   },
+   "offers": [
+    {
+     "provider": "baseten",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "bedrock",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "friendliai",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "minimax",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.27,
+     "output_price_per_1m": 1.08
+    },
+    {
+     "provider": "tensormesh",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    }
+   ]
+  },
+  {
+   "model_id": "minimax/MiniMax-M2.7",
+   "model_name": "MiniMax-M2.7",
+   "lab": "minimax",
+   "open_weights": true,
+   "release_date": "2026-03-18",
+   "context_window": 204800,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Low-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.425
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.2958,
+     "output_price_per_1m": 1.1832
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.25,
+     "output_price_per_1m": 1.0
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "pinstripes",
+     "input_price_per_1m": 0.255,
+     "output_price_per_1m": 0.55
+    },
+    {
+     "provider": "sambanova",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.4
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    }
+   ]
+  },
+  {
+   "model_id": "minimax/MiniMax-M3",
+   "model_name": "MiniMax-M3",
+   "lab": "minimax",
+   "open_weights": true,
+   "release_date": "2026-06-01",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Low-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.5849
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.288,
+     "output_price_per_1m": 1.152
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.28,
+     "output_price_per_1m": 1.1
+    },
+    {
+     "provider": "fireworks_ai",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "minimax",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "tencent",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "wandb",
+     "input_price_per_1m": 0.23,
+     "output_price_per_1m": 0.96
+    }
+   ]
+  },
+  {
+   "model_id": "mistral/codestral-latest",
+   "model_name": "Codestral (latest)",
+   "lab": "mistral",
+   "open_weights": true,
+   "release_date": "2024-05-29",
+   "context_window": 256000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.0741
+   },
+   "offers": [
+    {
+     "provider": "mistral",
+     "input_price_per_1m": 0.3,
+     "output_price_per_1m": 0.9
+    },
+    {
+     "provider": "vertex_ai-mistral_models",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 0.6
+    }
+   ]
+  },
+  {
+   "model_id": "mistral/devstral-2512",
+   "model_name": "Devstral 2",
+   "lab": "mistral",
+   "open_weights": true,
+   "release_date": "2025-12-09",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "rising",
+   "scores": {
+    "coding": 0.54
+   },
+   "offers": [
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 2.0
+    }
+   ]
+  },
+  {
+   "model_id": "mistral/devstral-small-2507",
+   "model_name": "Devstral Small",
+   "lab": "mistral",
+   "open_weights": true,
+   "release_date": "2025-07-10",
+   "context_window": 128000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Low-price / Low-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.0
+   },
+   "offers": [
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 0.07,
+     "output_price_per_1m": 0.28
+    }
+   ]
+  },
+  {
+   "model_id": "mistral/mistral-large-2411",
+   "model_name": "Mistral Large 2.1",
+   "lab": "mistral",
+   "open_weights": true,
+   "release_date": "2024-11-18",
+   "context_window": 131072,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": false,
+   "tier": "High-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.2525
+   },
+   "offers": [
+    {
+     "provider": "vertex_ai-mistral_models",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    }
+   ]
+  },
+  {
+   "model_id": "mistral/mistral-large-2512",
+   "model_name": "Mistral Large 3",
+   "lab": "mistral",
+   "open_weights": true,
+   "release_date": "2025-12-02",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.59
+   },
+   "offers": [
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 0.5,
+     "output_price_per_1m": 1.5
+    },
+    {
+     "provider": "mistral",
+     "input_price_per_1m": 0.5,
+     "output_price_per_1m": 1.5
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.25,
+     "output_price_per_1m": 0.75
+    }
+   ]
+  },
+  {
+   "model_id": "mistral/mistral-medium-2505",
+   "model_name": "Mistral Medium 3",
+   "lab": "mistral",
+   "open_weights": false,
+   "release_date": "2025-05-07",
+   "context_window": 131072,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.265
+   },
+   "offers": [
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 2.0
+    },
+    {
+     "provider": "mistral",
+     "input_price_per_1m": 1.5,
+     "output_price_per_1m": 7.5
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 2.0
+    },
+    {
+     "provider": "vertex_ai-mistral_models",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 2.0
+    },
+    {
+     "provider": "watsonx",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 10.0
+    }
+   ]
+  },
+  {
+   "model_id": "mistral/mistral-medium-2604",
+   "model_name": "Mistral Medium 3.5",
+   "lab": "mistral",
+   "open_weights": true,
+   "release_date": "2026-04-29",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.6094
+   },
+   "offers": [
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 1.5,
+     "output_price_per_1m": 7.5
+    },
+    {
+     "provider": "mistral",
+     "input_price_per_1m": 1.5,
+     "output_price_per_1m": 7.5
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 3.75
+    }
+   ]
+  },
+  {
+   "model_id": "mistral/mistral-medium-latest",
+   "model_name": "Mistral Medium (latest)",
+   "lab": "mistral",
+   "open_weights": true,
+   "release_date": "2026-04-29",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.6094
+   },
+   "offers": [
+    {
+     "provider": "mistral",
+     "input_price_per_1m": 1.5,
+     "output_price_per_1m": 7.5
+    }
+   ]
+  },
+  {
+   "model_id": "mistral/mistral-small-2603",
+   "model_name": "Mistral Small 4",
+   "lab": "mistral",
+   "open_weights": true,
+   "release_date": "2026-03-16",
+   "context_window": 256000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Low-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.635
+   },
+   "offers": [
+    {
+     "provider": "mistral",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.6
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.075,
+     "output_price_per_1m": 0.3
+    }
+   ]
+  },
+  {
+   "model_id": "moonshotai/kimi-k2-thinking",
+   "model_name": "Kimi K2 Thinking",
+   "lab": "moonshotai",
+   "open_weights": true,
+   "release_date": "2025-11-06",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.1562
+   },
+   "offers": [
+    {
+     "provider": "baseten",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.5
+    },
+    {
+     "provider": "bedrock",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.5
+    },
+    {
+     "provider": "bedrock_mantle",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.5
+    },
+    {
+     "provider": "crusoe",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 2.5
+    },
+    {
+     "provider": "fireworks_ai",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.5
+    },
+    {
+     "provider": "gmi",
+     "input_price_per_1m": 0.8,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.5
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.5
+    }
+   ]
+  },
+  {
+   "model_id": "moonshotai/kimi-k2.5",
+   "model_name": "Kimi K2.5",
+   "lab": "moonshotai",
+   "open_weights": true,
+   "release_date": "2026-01-01",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.125
+   },
+   "offers": [
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "baseten",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "bedrock",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.45,
+     "output_price_per_1m": 2.25
+    },
+    {
+     "provider": "moonshot",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.45,
+     "output_price_per_1m": 2.25
+    },
+    {
+     "provider": "wandb",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 3.0
+    }
+   ]
+  },
+  {
+   "model_id": "moonshotai/kimi-k2.6",
+   "model_name": "Kimi K2.6",
+   "lab": "moonshotai",
+   "open_weights": true,
+   "release_date": "2026-04-21",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.5326
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.95,
+     "output_price_per_1m": 3.9995
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 0.95,
+     "output_price_per_1m": 4.0
+    },
+    {
+     "provider": "baseten",
+     "input_price_per_1m": 0.95,
+     "output_price_per_1m": 4.0
+    },
+    {
+     "provider": "cloudflare",
+     "input_price_per_1m": 0.95,
+     "output_price_per_1m": 4.0
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 3.5
+    },
+    {
+     "provider": "moonshot",
+     "input_price_per_1m": 0.95,
+     "output_price_per_1m": 4.0
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 0.95,
+     "output_price_per_1m": 4.0
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.8,
+     "output_price_per_1m": 3.4
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.65,
+     "output_price_per_1m": 3.41
+    },
+    {
+     "provider": "sail",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 4.0
+    },
+    {
+     "provider": "tensormesh",
+     "input_price_per_1m": 0.96,
+     "output_price_per_1m": 4.0
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 1.2,
+     "output_price_per_1m": 4.5
+    },
+    {
+     "provider": "wandb",
+     "input_price_per_1m": 0.65,
+     "output_price_per_1m": 3.41
+    }
+   ]
+  },
+  {
+   "model_id": "moonshotai/kimi-k3",
+   "model_name": "Kimi K3",
+   "lab": "moonshotai",
+   "open_weights": true,
+   "release_date": "2026-07-16",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 1.0
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "baseten",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 2.85,
+     "output_price_per_1m": 14.25
+    },
+    {
+     "provider": "fireworks_ai",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "moonshot",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.28,
+     "output_price_per_1m": 11.4
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "sail",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 12.5
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    }
+   ]
+  },
+  {
+   "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
+   "model_name": "Nemotron 3 Ultra 550B A55B",
+   "lab": "nvidia",
+   "open_weights": true,
+   "release_date": "2026-06-04",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.1121,
+    "reasoning": 0.0476
+   },
+   "offers": [
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.4
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 0.25,
+     "output_price_per_1m": 2.5
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 3.6
+    }
+   ]
+  },
+  {
+   "model_id": "nvidia/nemotron-3.5-lightning",
+   "model_name": "Nemotron 3.5 Lightning 30B A3B",
+   "lab": "nvidia",
+   "open_weights": true,
+   "release_date": "2026-08-11",
+   "context_window": 262144,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Low-price / Low-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.0,
+    "reasoning": 0.0
+   },
+   "offers": [
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 0.06,
+     "output_price_per_1m": 0.24
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.06,
+     "output_price_per_1m": 0.16
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 0.0115,
+     "output_price_per_1m": 0.17
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-4-turbo",
+   "model_name": "GPT-4 Turbo",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2023-11-06",
+   "context_window": 128000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.4
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 30.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 30.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 30.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-4.1",
+   "model_name": "GPT-4.1",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2025-04-14",
+   "context_window": 1047576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.4444
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 8.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 8.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 4.0
+    },
+    {
+     "provider": "replicate",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 8.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 8.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-4.1-mini",
+   "model_name": "GPT-4.1 mini",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2025-04-14",
+   "context_window": 1047576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.3333
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 1.6
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 1.6
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 0.8
+    },
+    {
+     "provider": "replicate",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 1.6
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 1.6
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-4.1-nano",
+   "model_name": "GPT-4.1 nano",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2025-04-14",
+   "context_window": 1047576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Low-price / Low-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.037
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 0.1,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 0.1,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.05,
+     "output_price_per_1m": 0.2
+    },
+    {
+     "provider": "replicate",
+     "input_price_per_1m": 0.1,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 0.1,
+     "output_price_per_1m": 0.4
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-4o",
+   "model_name": "GPT-4o",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2024-05-13",
+   "context_window": 128000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.2778
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "gmi",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 5.0
+    },
+    {
+     "provider": "replicate",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 10.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-4o-2024-05-13",
+   "model_name": "GPT-4o (2024-05-13)",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2024-05-13",
+   "context_window": 128000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.36
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 15.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-4o-2024-08-06",
+   "model_name": "GPT-4o (2024-08-06)",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2024-08-06",
+   "context_window": 128000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.3609
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 10.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-4o-2024-11-20",
+   "model_name": "GPT-4o (2024-11-20)",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2024-11-20",
+   "context_window": 128000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.3567
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 10.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-4o-mini",
+   "model_name": "GPT-4o mini",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2024-07-18",
+   "context_window": 128000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Low-price / Low-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.07
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.6
+    },
+    {
+     "provider": "gmi",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.6
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.6
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.075,
+     "output_price_per_1m": 0.3
+    },
+    {
+     "provider": "replicate",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.6
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.6
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-5",
+   "model_name": "GPT-5",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2025-08-07",
+   "context_window": 400000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.6125
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "gmi",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "oci",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.625,
+     "output_price_per_1m": 5.0
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "replicate",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 10.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-5-codex",
+   "model_name": "GPT-5-Codex",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2025-09-15",
+   "context_window": 400000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.98
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 10.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 10.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-5.2",
+   "model_name": "GPT-5.2",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2025-12-11",
+   "context_window": 400000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.075
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 1.75,
+     "output_price_per_1m": 14.0
+    },
+    {
+     "provider": "gmi",
+     "input_price_per_1m": 1.75,
+     "output_price_per_1m": 14.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 1.75,
+     "output_price_per_1m": 14.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.875,
+     "output_price_per_1m": 7.0
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 1.75,
+     "output_price_per_1m": 14.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-5.2-codex",
+   "model_name": "GPT-5.2 Codex",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2025-12-11",
+   "context_window": 400000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.2
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 1.75,
+     "output_price_per_1m": 14.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 1.75,
+     "output_price_per_1m": 14.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.75,
+     "output_price_per_1m": 14.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-5.4",
+   "model_name": "GPT-5.4",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2026-03-05",
+   "context_window": 1050000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.5184,
+    "reasoning": 0.5084,
+    "vision": 0.6875
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "bedrock_mantle",
+     "input_price_per_1m": 2.75,
+     "output_price_per_1m": 16.5
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 7.5
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 15.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-5.4-mini",
+   "model_name": "GPT-5.4 mini",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2026-03-17",
+   "context_window": 400000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.4875,
+    "reasoning": 0.2661,
+    "vision": 0.125
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 4.5
+    },
+    {
+     "provider": "azure",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 4.5
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 4.5
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 4.5
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.375,
+     "output_price_per_1m": 2.25
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 4.5
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-5.4-nano",
+   "model_name": "GPT-5.4 nano",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2026-03-17",
+   "context_window": 400000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.2625,
+    "reasoning": 0.077,
+    "vision": 0.0
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 1.25
+    },
+    {
+     "provider": "azure",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 1.25
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 1.25
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 1.25
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.1,
+     "output_price_per_1m": 0.625
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 1.25
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-5.4-pro",
+   "model_name": "GPT-5.4 Pro",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2026-03-05",
+   "context_window": 1050000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "falling",
+   "scores": {
+    "reasoning": 0.8459
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 30.0,
+     "output_price_per_1m": 180.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 30.0,
+     "output_price_per_1m": 180.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 30.0,
+     "output_price_per_1m": 180.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 15.0,
+     "output_price_per_1m": 90.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-5.5",
+   "model_name": "GPT-5.5",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2026-04-23",
+   "context_window": 1050000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.7256,
+    "reasoning": 0.591,
+    "vision": 0.6875
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 30.0
+    },
+    {
+     "provider": "azure",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 30.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 30.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 30.0
+    },
+    {
+     "provider": "bedrock_mantle",
+     "input_price_per_1m": 5.5,
+     "output_price_per_1m": 33.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 30.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.5,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 30.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-5.5-pro",
+   "model_name": "GPT-5.5 Pro",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2026-04-23",
+   "context_window": 1050000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "falling",
+   "scores": {
+    "reasoning": 0.6905
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 30.0,
+     "output_price_per_1m": 180.0
+    },
+    {
+     "provider": "azure",
+     "input_price_per_1m": 30.0,
+     "output_price_per_1m": 180.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 30.0,
+     "output_price_per_1m": 180.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 15.0,
+     "output_price_per_1m": 90.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-5.6-luna",
+   "model_name": "GPT-5.6 Luna",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2026-07-09",
+   "context_window": 1050000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Low-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.8348,
+    "reasoning": 0.4706,
+    "vision": 0.25
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "azure",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "bedrock_mantle",
+     "input_price_per_1m": 0.22,
+     "output_price_per_1m": 1.32
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 1.2
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.1,
+     "output_price_per_1m": 0.6
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 1.2
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-5.6-sol",
+   "model_name": "GPT-5.6 Sol",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2026-07-09",
+   "context_window": 1050000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.95,
+    "reasoning": 0.9412,
+    "vision": 0.875
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 4.0,
+     "output_price_per_1m": 20.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 4.0,
+     "output_price_per_1m": 20.0
+    },
+    {
+     "provider": "bedrock_mantle",
+     "input_price_per_1m": 4.4,
+     "output_price_per_1m": 22.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 4.0,
+     "output_price_per_1m": 20.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 5.0
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 30.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-5.6-terra",
+   "model_name": "GPT-5.6 Terra",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2026-07-09",
+   "context_window": 1050000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.8815,
+    "reasoning": 0.6471,
+    "vision": 0.5
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 12.0
+    },
+    {
+     "provider": "azure",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 12.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 12.0
+    },
+    {
+     "provider": "bedrock_mantle",
+     "input_price_per_1m": 2.2,
+     "output_price_per_1m": 13.2
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 12.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 12.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-6-astra",
+   "model_name": "GPT-6 Astra",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2026-09-04",
+   "context_window": 1050000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.1739,
+    "reasoning": 0.8452
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 50.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 50.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 50.0
+    },
+    {
+     "provider": "bedrock_mantle",
+     "input_price_per_1m": 11.0,
+     "output_price_per_1m": 55.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 10.0,
+     "output_price_per_1m": 50.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 5.0,
+     "output_price_per_1m": 25.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/o1",
+   "model_name": "o1",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2024-12-05",
+   "context_window": 200000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.6667
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 15.0,
+     "output_price_per_1m": 60.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 15.0,
+     "output_price_per_1m": 60.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 15.0,
+     "output_price_per_1m": 60.0
+    },
+    {
+     "provider": "replicate",
+     "input_price_per_1m": 15.0,
+     "output_price_per_1m": 60.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 15.0,
+     "output_price_per_1m": 60.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/o3",
+   "model_name": "o3",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2025-04-16",
+   "context_window": 200000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.8889
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 8.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 8.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 4.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 8.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/o3-mini",
+   "model_name": "o3-mini",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2024-12-20",
+   "context_window": 200000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.5926
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 1.1,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 1.1,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.55,
+     "output_price_per_1m": 2.2
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 1.1,
+     "output_price_per_1m": 4.4
+    }
+   ]
+  },
+  {
+   "model_id": "openai/o3-pro",
+   "model_name": "o3-pro",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2025-06-10",
+   "context_window": 200000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.963
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 20.0,
+     "output_price_per_1m": 80.0
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 20.0,
+     "output_price_per_1m": 80.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 20.0,
+     "output_price_per_1m": 80.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/o4-mini",
+   "model_name": "o4-mini",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2025-04-16",
+   "context_window": 200000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.7963
+   },
+   "offers": [
+    {
+     "provider": "azure",
+     "input_price_per_1m": 1.1,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "openai",
+     "input_price_per_1m": 1.1,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.55,
+     "output_price_per_1m": 2.2
+    },
+    {
+     "provider": "replicate",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 4.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 1.1,
+     "output_price_per_1m": 4.4
+    }
+   ]
+  },
+  {
+   "model_id": "perplexity/sonar",
+   "model_name": "Sonar",
+   "lab": "perplexity",
+   "open_weights": false,
+   "release_date": "2024-01-01",
+   "context_window": 128000,
+   "tool_call": false,
+   "input_image": false,
+   "json_ok": false,
+   "tier": "Mid-price / Low-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.14
+   },
+   "offers": [
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 1.0
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 0.25,
+     "output_price_per_1m": 1.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 1.0
+    }
+   ]
+  },
+  {
+   "model_id": "perplexity/sonar-pro",
+   "model_name": "Sonar Pro",
+   "lab": "perplexity",
+   "open_weights": false,
+   "release_date": "2024-01-01",
+   "context_window": 200000,
+   "tool_call": false,
+   "input_image": true,
+   "json_ok": false,
+   "tier": "High-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.08
+   },
+   "offers": [
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 3.0,
+     "output_price_per_1m": 15.0
+    }
+   ]
+  },
+  {
+   "model_id": "stepfun/step-3.5-flash",
+   "model_name": "Step 3.5 Flash",
+   "lab": "stepfun",
+   "open_weights": true,
+   "release_date": "2026-01-29",
+   "context_window": 256000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": false,
+   "tier": "Low-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.7473
+   },
+   "offers": [
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.1,
+     "output_price_per_1m": 0.3
+    }
+   ]
+  },
+  {
+   "model_id": "stepfun/step-3.7-flash",
+   "model_name": "Step 3.7 Flash",
+   "lab": "stepfun",
+   "open_weights": true,
+   "release_date": "2026-05-29",
+   "context_window": 256000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Low-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.6257,
+    "reasoning": 0.381
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.22,
+     "output_price_per_1m": 1.32
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 1.15
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 1.15
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 1.15
+    }
+   ]
+  },
+  {
+   "model_id": "tencent/hy3",
+   "model_name": "Hy3",
+   "lab": "tencent",
+   "open_weights": true,
+   "release_date": "2026-07-06",
+   "context_window": 256000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Low-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.6198,
+    "reasoning": 0.1667
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.1562,
+     "output_price_per_1m": 0.6248
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.14,
+     "output_price_per_1m": 0.58
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.14,
+     "output_price_per_1m": 0.58
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.132,
+     "output_price_per_1m": 0.528
+    }
+   ]
+  },
+  {
+   "model_id": "tencent/hy3-preview",
+   "model_name": "Hy3 preview",
+   "lab": "tencent",
+   "open_weights": true,
+   "release_date": "2026-04-20",
+   "context_window": 256000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": false,
+   "tier": "Low-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.4219
+   },
+   "offers": [
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.18,
+     "output_price_per_1m": 0.6
+    }
+   ]
+  },
+  {
+   "model_id": "xai/grok-4.5",
+   "model_name": "Grok 4.5",
+   "lab": "xai",
+   "open_weights": false,
+   "release_date": "2026-07-08",
+   "context_window": 500000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.8755
+   },
+   "offers": [
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "xai",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    }
+   ]
+  },
+  {
+   "model_id": "xai/grok-4.6",
+   "model_name": "Grok 4.6",
+   "lab": "xai",
+   "open_weights": false,
+   "release_date": "2026-08-12",
+   "context_window": 500000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.0
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "azure_ai",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "bedrock_mantle",
+     "input_price_per_1m": 2.2,
+     "output_price_per_1m": 6.6
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "vertex_ai",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "xai",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    }
+   ]
+  },
+  {
+   "model_id": "xai/grok-4.7",
+   "model_name": "Grok 4.7",
+   "lab": "xai",
+   "open_weights": false,
+   "release_date": "2026-09-21",
+   "context_window": 500000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "High-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.0833
+   },
+   "offers": [
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    },
+    {
+     "provider": "xai",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 6.0
+    }
+   ]
+  },
+  {
+   "model_id": "xiaomi/mimo-v2.5",
+   "model_name": "MiMo-V2.5",
+   "lab": "xiaomi",
+   "open_weights": true,
+   "release_date": "2026-04-22",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Low-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.3333
+   },
+   "offers": [
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 2.0
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.168,
+     "output_price_per_1m": 0.336
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.14,
+     "output_price_per_1m": 0.28
+    }
+   ]
+  },
+  {
+   "model_id": "xiaomi/mimo-v2.5-pro",
+   "model_name": "MiMo-V2.5-Pro",
+   "lab": "xiaomi",
+   "open_weights": true,
+   "release_date": "2026-04-22",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.5042,
+    "reasoning": 0.2353
+   },
+   "offers": [
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 3.0
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.522,
+     "output_price_per_1m": 1.044
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.435,
+     "output_price_per_1m": 0.87
+    }
+   ]
+  },
+  {
+   "model_id": "xiaomi/mimo-v2.6-flash",
+   "model_name": "MiMo-V2.6-Flash",
+   "lab": "xiaomi",
+   "open_weights": true,
+   "release_date": "2026-09-22",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Low-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.8333
+   },
+   "offers": [
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.14,
+     "output_price_per_1m": 0.28
+    },
+    {
+     "provider": "xiaomi_mimo",
+     "input_price_per_1m": 0.14,
+     "output_price_per_1m": 0.28
+    }
+   ]
+  },
+  {
+   "model_id": "xiaomi/mimo-v2.6-pro",
+   "model_name": "MiMo-V2.6-Pro",
+   "lab": "xiaomi",
+   "open_weights": true,
+   "release_date": "2026-09-22",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Low-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 1.0
+   },
+   "offers": [
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.435,
+     "output_price_per_1m": 0.87
+    },
+    {
+     "provider": "xiaomi_mimo",
+     "input_price_per_1m": 0.435,
+     "output_price_per_1m": 0.87
+    }
+   ]
+  },
+  {
+   "model_id": "zhipuai/glm-4.5",
+   "model_name": "GLM-4.5",
+   "lab": "zhipuai",
+   "open_weights": true,
+   "release_date": "2025-07-28",
+   "context_window": 131072,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "rising",
+   "scores": {
+    "coding": 0.675
+   },
+   "offers": [
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 1.6
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.2
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.2
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.2
+    },
+    {
+     "provider": "zai",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.2
+    }
+   ]
+  },
+  {
+   "model_id": "zhipuai/glm-4.5-air",
+   "model_name": "GLM-4.5-Air",
+   "lab": "zhipuai",
+   "open_weights": true,
+   "release_date": "2025-07-28",
+   "context_window": 131072,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": false,
+   "tier": "Low-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.4975
+   },
+   "offers": [
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.13,
+     "output_price_per_1m": 0.85
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.13,
+     "output_price_per_1m": 0.85
+    },
+    {
+     "provider": "pinstripes",
+     "input_price_per_1m": 0.125,
+     "output_price_per_1m": 0.45
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 1.1
+    },
+    {
+     "provider": "zai",
+     "input_price_per_1m": 0.2,
+     "output_price_per_1m": 1.1
+    }
+   ]
+  },
+  {
+   "model_id": "zhipuai/glm-4.5v",
+   "model_name": "GLM-4.5V",
+   "lab": "zhipuai",
+   "open_weights": true,
+   "release_date": "2025-08-11",
+   "context_window": 64000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.095
+   },
+   "offers": [
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 1.8
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 1.8
+    },
+    {
+     "provider": "zai",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 1.8
+    }
+   ]
+  },
+  {
+   "model_id": "zhipuai/glm-4.6",
+   "model_name": "GLM-4.6",
+   "lab": "zhipuai",
+   "open_weights": true,
+   "release_date": "2025-09-30",
+   "context_window": 204800,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.5417
+   },
+   "offers": [
+    {
+     "provider": "baseten",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.2
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.5,
+     "output_price_per_1m": 2.0
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.55,
+     "output_price_per_1m": 2.2
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.43,
+     "output_price_per_1m": 1.75
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.2
+    },
+    {
+     "provider": "vercel_ai_gateway",
+     "input_price_per_1m": 0.45,
+     "output_price_per_1m": 1.8
+    },
+    {
+     "provider": "zai",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.2
+    }
+   ]
+  },
+  {
+   "model_id": "zhipuai/glm-4.7",
+   "model_name": "GLM-4.7",
+   "lab": "zhipuai",
+   "open_weights": true,
+   "release_date": "2025-12-22",
+   "context_window": 204800,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "rising",
+   "scores": {
+    "coding": 0.3438
+   },
+   "offers": [
+    {
+     "provider": "baseten",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.2
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.2
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 1.75
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.2
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.2
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 0.45,
+     "output_price_per_1m": 2.0
+    },
+    {
+     "provider": "zai",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.2
+    }
+   ]
+  },
+  {
+   "model_id": "zhipuai/glm-4.7-flash",
+   "model_name": "GLM-4.7-Flash",
+   "lab": "zhipuai",
+   "open_weights": true,
+   "release_date": "2026-01-19",
+   "context_window": 200000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Low-price / Low-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.0312
+   },
+   "offers": [
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 0.07,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "cloudflare",
+     "input_price_per_1m": 0.0605,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.06,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 0.07,
+     "output_price_per_1m": 0.4
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.0605,
+     "output_price_per_1m": 0.4
+    }
+   ]
+  },
+  {
+   "model_id": "zhipuai/glm-5",
+   "model_name": "GLM-5",
+   "lab": "zhipuai",
+   "open_weights": true,
+   "release_date": "2026-02-12",
+   "context_window": 204800,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Low-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.2812
+   },
+   "offers": [
+    {
+     "provider": "baseten",
+     "input_price_per_1m": 0.95,
+     "output_price_per_1m": 3.15
+    },
+    {
+     "provider": "bedrock",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 3.2
+    },
+    {
+     "provider": "bedrock_converse",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 3.2
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 2.08
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 3.2
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.6,
+     "output_price_per_1m": 1.92
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 3.2
+    },
+    {
+     "provider": "zai",
+     "input_price_per_1m": 1.0,
+     "output_price_per_1m": 3.2
+    }
+   ]
+  },
+  {
+   "model_id": "zhipuai/glm-5.1",
+   "model_name": "GLM-5.1",
+   "lab": "zhipuai",
+   "open_weights": true,
+   "release_date": "2026-04-07",
+   "context_window": 200000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.4125
+   },
+   "offers": [
+    {
+     "provider": "dashscope",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 1.05,
+     "output_price_per_1m": 3.5
+    },
+    {
+     "provider": "friendliai",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 1.38,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "qwen_ai_platform",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "qwencloud",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "zai",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    }
+   ]
+  },
+  {
+   "model_id": "zhipuai/glm-5.2",
+   "model_name": "GLM-5.2",
+   "lab": "zhipuai",
+   "open_weights": true,
+   "release_date": "2026-06-13",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "falling",
+   "scores": {
+    "coding": 0.7679,
+    "reasoning": 0.4797
+   },
+   "offers": [
+    {
+     "provider": "baseten",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "cloudflare",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "dashscope",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "deepinfra",
+     "input_price_per_1m": 0.75,
+     "output_price_per_1m": 2.4
+    },
+    {
+     "provider": "friendliai",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "mistral",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.6496,
+     "output_price_per_1m": 2.0416
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "qwen_ai_platform",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "qwencloud",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "scaleway",
+     "input_price_per_1m": 1.8,
+     "output_price_per_1m": 5.5
+    },
+    {
+     "provider": "scx-ai",
+     "input_price_per_1m": 0.61,
+     "output_price_per_1m": 1.98
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "wandb",
+     "input_price_per_1m": 0.76,
+     "output_price_per_1m": 2.42
+    },
+    {
+     "provider": "zai",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    }
+   ]
+  },
+  {
+   "model_id": "zhipuai/glm-5.3",
+   "model_name": "GLM-5.3",
+   "lab": "zhipuai",
+   "open_weights": true,
+   "release_date": "2026-08-14",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": true,
+   "tier": "Mid-price / Mid-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.8,
+    "reasoning": 0.9048
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 1.1268,
+     "output_price_per_1m": 3.9438
+    },
+    {
+     "provider": "baseten",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "friendliai",
+     "input_price_per_1m": 1.26,
+     "output_price_per_1m": 3.96
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "novita",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.45,
+     "output_price_per_1m": 2.0
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "sail",
+     "input_price_per_1m": 0.98,
+     "output_price_per_1m": 3.08
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    },
+    {
+     "provider": "zai",
+     "input_price_per_1m": 1.4,
+     "output_price_per_1m": 4.4
+    }
+   ]
+  },
+  {
+   "model_id": "zhipuai/glm-5.3-flash",
+   "model_name": "GLM-5.3-Flash",
+   "lab": "zhipuai",
+   "open_weights": true,
+   "release_date": "2026-08-26",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": true,
+   "tier": "Low-price / High-performance",
+   "trend": "stable",
+   "scores": {
+    "coding": 0.7333,
+    "reasoning": 0.619
+   },
+   "offers": [
+    {
+     "provider": "aihubmix",
+     "input_price_per_1m": 0.11268,
+     "output_price_per_1m": 0.39438
+    },
+    {
+     "provider": "baseten",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.5
+    },
+    {
+     "provider": "friendliai",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.5
+    },
+    {
+     "provider": "nebius",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.5
+    },
+    {
+     "provider": "openrouter",
+     "input_price_per_1m": 0.06,
+     "output_price_per_1m": 0.2
+    },
+    {
+     "provider": "perplexity",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.5
+    },
+    {
+     "provider": "sail",
+     "input_price_per_1m": 0.11,
+     "output_price_per_1m": 0.35
+    },
+    {
+     "provider": "together_ai",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.5
+    },
+    {
+     "provider": "wandb",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.5
+    },
+    {
+     "provider": "zai",
+     "input_price_per_1m": 0.15,
+     "output_price_per_1m": 0.5
+    }
+   ]
+  }
+ ]
+}

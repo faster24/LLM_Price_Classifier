@@ -1,0 +1,978 @@
+id,model_id,benchmark,score,metric,variant,version,dataset,harness,reported_date,source_url,benchmark_clean,metric_clean,higher_is_better,n_variants,reported_before_release
+221,deepseek/deepseek-v4.1-flash,Codeforces,3471.0,rating,reasoning_effort=100,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,Codeforces,rating,True,1,False
+222,deepseek/deepseek-v4-pro,Codeforces,3206.0,rating,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,Codeforces,rating,True,1,False
+223,deepseek/deepseek-v4-flash,Codeforces,3052.0,rating,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,Codeforces,rating,True,1,False
+360,anthropic/claude-fable-5,GDPval-AA,1932.0,Elo,,,,,2026-06-09,https://www.anthropic.com/news/claude-fable-5-mythos-5,GDPval-AA,elo,True,1,False
+361,anthropic/claude-opus-5,GDPval-AA,1861.0,Elo,max effort,v2,,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,GDPval-AA,elo,True,1,False
+362,anthropic/claude-fable-5-1,GDPval-AA,1853.0,Elo,production safeguards with fallback,2,,,2026-09-01,https://www.anthropic.com/claude-fable-and-mythos-5-1,GDPval-AA,elo,True,1,False
+363,anthropic/claude-opus-5-5,GDPval-AA,1846.0,Elo,max effort; production safeguards with fallback,2.1,,,2026-09-22,https://www.anthropic.com/claude-opus-5-5,GDPval-AA,elo,True,1,False
+364,anthropic/claude-sonnet-5-5,GDPval-AA,1844.0,Elo,,2.1,,,2026-09-28,https://www.anthropic.com/claude-sonnet-5-5,GDPval-AA,elo,True,1,False
+365,zhipuai/glm-5.3-flash,GDPval-AA,1773.0,Elo,max effort,2,,,,https://huggingface.co/zai-org/GLM-5.3-Flash,GDPval-AA,elo,True,1,False
+366,zhipuai/glm-5.3,GDPval-AA,1769.0,Elo,max effort,2,,,,https://huggingface.co/zai-org/GLM-5.3,GDPval-AA,elo,True,1,False
+367,meta/muse-spark-1.3,GDPval-AA,1754.0,Elo,max effort,2,,Stirrup,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,GDPval-AA,elo,True,1,False
+677,alibaba/qwen3.8-max,QwenReactBench,1724.0,Elo,,,internal,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,QwenReactBench,elo,True,1,False
+2,anthropic/claude-opus-5,AA-Briefcase,1720.0,Elo,max effort,,,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,AA-Briefcase,elo,True,1,False
+678,alibaba/qwen3.8-max,QwenSVGBench,1713.0,Elo,,,internal,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,QwenSVGBench,elo,True,1,False
+352,xai/grok-4.7,GDPval,1695.0,Elo,xhigh effort,,,,2026-09-21,https://x.ai/news/grok-4-7,GDPval,elo,True,1,False
+368,xiaomi/mimo-v2.6-pro,GDPval-AA,1673.0,Elo,MiMo-V2.6 Pro comparison column,2.1,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,GDPval-AA,elo,True,1,False
+369,moonshotai/kimi-k3,GDPval-AA,1668.0,Elo,max effort,v2,,,2026-07-16,https://www.kimi.com/blog/kimi-k3,GDPval-AA,elo,True,1,False
+3,xai/grok-4.7,AA-Briefcase,1657.0,Elo,xhigh effort,1.1,,,2026-09-21,https://x.ai/news/grok-4-7,AA-Briefcase,elo,True,1,False
+370,google/gemini-3.5-flash,GDPval-AA,1656.0,Elo,,,,,2026-05-19,https://deepmind.google/models/gemini/flash/,GDPval-AA,elo,True,1,False
+371,meta/muse-spark-1.2,GDPval-AA,1615.0,Elo,xhigh effort,2,,Stirrup,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,GDPval-AA,elo,True,1,False
+353,xai/grok-4.6,GDPval,1605.0,Elo,high effort,,,,2026-09-21,https://x.ai/news/grok-4-7,GDPval,elo,True,1,False
+372,deepseek/deepseek-v4-pro,GDPval-AA,1554.0,Elo,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,GDPval-AA,elo,True,1,False
+4,moonshotai/kimi-k3,AA-Briefcase,1548.0,Elo,max effort,,,,2026-07-16,https://www.kimi.com/blog/kimi-k3,AA-Briefcase,elo,True,1,False
+5,xai/grok-4.6,AA-Briefcase,1546.0,Elo,high effort,1.1,,,2026-09-21,https://x.ai/news/grok-4-7,AA-Briefcase,elo,True,1,False
+373,google/gemini-3.8-flash,GDPval-AA,1545.0,Elo,,2,,,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/,GDPval-AA,elo,True,1,False
+374,xai/grok-4.3,GDPval-AA,1500.0,Elo,,,,,2026-04-30,https://artificialanalysis.ai/articles/xai-launches-grok-4-3-with-improved-agentic-performance-and-lower-pricing,GDPval-AA,elo,True,1,False
+375,google/gemini-3.6-flash,GDPval-AA,1421.0,Elo,,v2,,,2026-07-21,https://deepmind.google/models/evals-methodology/gemini-3-6-flash/,GDPval-AA,elo,True,1,False
+376,deepseek/deepseek-v4-flash,GDPval-AA,1395.0,Elo,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,GDPval-AA,elo,True,1,False
+377,google/gemini-3.1-pro-preview,GDPval-AA,1314.0,Elo,,,,,2026-05-19,https://deepmind.google/models/gemini/flash/,GDPval-AA,elo,True,1,False
+378,google/gemini-3.5-flash-lite,GDPval-AA,1140.0,Elo,,v2,,,2026-07-21,https://deepmind.google/models/model-cards/gemini-3-5-flash-lite/,GDPval-AA,elo,True,1,False
+379,xiaomi/mimo-v2.5-pro,GDPval-AA,1107.0,Elo,MiMo-V2.5 Pro comparison column,2.1,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,GDPval-AA,elo,True,1,False
+380,nvidia/nemotron-3.5-lightning,GDPval-AA,832.0,Elo,BF16; reasoning,2,,,,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,GDPval-AA,elo,True,1,False
+301,zhipuai/glm-5.3,ExploitGym,130.0,tasks solved,max effort; 6h rescaled timeout,,869 tasks,Claude Code 2.1.207,,https://huggingface.co/zai-org/GLM-5.3,ExploitGym,tasks solved,True,2,False
+296,openai/gpt-6-astra,ExploitBench,100.0,success rate,without production safeguards,,,,2026-09-03,https://openai.com/index/gpt-6-astra/,ExploitBench,success rate,True,1,True
+22,openai/gpt-6-astra,ARC-AGI-3,99.9,RHAE,,,,Responses API,2026-09-03,https://openai.com/index/gpt-6-astra/,ARC-AGI-3,rhae,True,1,True
+9,zhipuai/glm-5.2,AIME,99.2,accuracy,,2026,,,2026-06-16,https://z.ai/blog/glm-5.2,AIME,accuracy,True,1,False
+572,meta/muse-spark-1.3,MRCR,98.5,mean sequence-match ratio,max effort,2,"8-needle, 256K-512K",,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,MRCR,mean sequence-match ratio,True,2,False
+1077,openai/gpt-5.5,τ²-Bench Telecom,98.0,success rate,original prompts,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,τ²-Bench Telecom,success rate,True,1,False
+1078,xai/grok-4.3,τ²-Bench Telecom,98.0,success rate,,,,,2026-04-30,https://artificialanalysis.ai/articles/xai-launches-grok-4-3-with-improved-agentic-performance-and-lower-pricing,τ²-Bench Telecom,success rate,True,1,False
+326,openai/gpt-6-astra,FrontierMath,97.6,accuracy,,v2,Tier 4,,2026-09-03,https://openai.com/index/gpt-6-astra/,FrontierMath,accuracy,True,1,True
+14,anthropic/claude-opus-5,ARC-AGI-1,97.5,accuracy,max effort,,,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,ARC-AGI-1,accuracy,True,1,False
+345,google/gemini-3.7-flash,GDM-MRCR,97.0,accuracy,"128k average, 8-needle",v2,,,2026-08-13,https://deepmind.google/models/model-cards/gemini-3-7-flash/,GDM-MRCR,accuracy,True,1,False
+11,sakana/sakana-namazu,AIME26,96.67,,,,,,,https://console.sakana.ai/models?model=sakana-namazu,AIME26,unspecified,True,1,False
+383,openai/gpt-6-astra,GPQA Diamond,96.0,accuracy,,,,,2026-09-03,https://openai.com/index/gpt-6-astra/,GPQA Diamond,accuracy,True,1,True
+831,anthropic/claude-opus-5,SWE-Bench Verified,96.0,resolved,,,,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,SWE-Bench Verified,resolved,True,1,False
+158,openai/gpt-6-astra,BenchCAD,95.9,geometric overlap,with tools,,,,2026-09-03,https://openai.com/index/gpt-6-astra/,BenchCAD,geometric overlap,True,1,True
+587,alibaba/qwen3.8-flash-next,MathVision,95.7,score,with code interpreter,,corrected annotations,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,MathVision,score,True,2,False
+385,sakana/fugu,GPQA Diamond,95.5,,,,,,,https://console.sakana.ai/models,GPQA Diamond,unspecified,True,1,False
+384,sakana/fugu-ultra,GPQA Diamond,95.5,,,,,,,https://console.sakana.ai/models,GPQA Diamond,unspecified,True,1,False
+418,deepseek/deepseek-v4-pro,HMMT,95.2,pass@1,preview checkpoint; max effort,,February 2026,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,HMMT,pass@1,True,1,False
+232,xiaomi/mimo-v2.6-flash,CyberGym,95.1,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,CyberGym,score,True,1,False
+288,anthropic/claude-opus-5,DeepSearchQA,95.0,F1,max effort,,,,2026-07-24,https://www.anthropic.com/news/claude-opus-5,DeepSearchQA,f1,True,1,False
+832,anthropic/claude-fable-5,SWE-Bench Verified,95.0,resolved,,,,,,https://benchlm.ai/benchmarks/sweVerified,SWE-Bench Verified,resolved,True,1,False
+419,deepseek/deepseek-v4-flash,HMMT,94.8,pass@1,preview checkpoint; max effort,,February 2026,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,HMMT,pass@1,True,1,False
+10,meta/muse-glimmer-30b,AIME 2026,94.7,accuracy,,,,,2026-08-10,https://huggingface.co/meta-models/Muse-Glimmer-30B,AIME 2026,accuracy,True,1,False
+588,alibaba/qwen3.8-27b,MathVision,94.6,score,with code interpreter,,corrected annotations,,,https://huggingface.co/Qwen/Qwen3.8-27B,MathVision,score,True,2,False
+386,openai/gpt-5.6-sol,GPQA Diamond,94.6,accuracy,,,,,2026-07-09,https://openai.com/index/gpt-5-6/,GPQA Diamond,accuracy,True,1,False
+15,openai/gpt-5.4-pro,ARC-AGI-1,94.5,accuracy,Verified,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,ARC-AGI-1,accuracy,True,1,False
+420,zhipuai/glm-5.2,HMMT,94.4,accuracy,,November 2025,,,2026-06-16,https://z.ai/blog/glm-5.2,HMMT,accuracy,True,2,False
+387,openai/gpt-5.4-pro,GPQA Diamond,94.4,accuracy,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,GPQA Diamond,accuracy,True,1,False
+388,google/gemini-3.1-pro-preview,GPQA Diamond,94.3,accuracy,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,GPQA Diamond,accuracy,True,1,False
+389,anthropic/claude-opus-4-7,GPQA Diamond,94.2,accuracy,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,GPQA Diamond,accuracy,True,1,False
+233,xiaomi/mimo-v2.6-pro,CyberGym,94.0,score,MiMo-V2.6 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,CyberGym,score,True,1,False
+579,sakana/fugu-ultra,MRCRv2,93.6,,,,,,,https://console.sakana.ai/models,MRCRv2,unspecified,True,1,False
+390,openai/gpt-5.5,GPQA Diamond,93.6,accuracy,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,GPQA Diamond,accuracy,True,1,False
+519,deepseek/deepseek-v4-pro,LiveCodeBench,93.5,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,LiveCodeBench,pass@1,True,1,False
+1079,openai/gpt-5.4-mini,τ²-Bench Telecom,93.4,accuracy,reasoning effort xhigh,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,τ²-Bench Telecom,accuracy,True,1,False
+520,sakana/fugu-ultra,LiveCodeBench,93.2,,,,,,,https://console.sakana.ai/models,LiveCodeBench,unspecified,True,1,False
+664,alibaba/qwen3.8-max,PaperBench,93.0,score,Code-Dev; 3 runs; 12h timeout; Opus 4.6 judge,,,BasicAgent,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,PaperBench,score,True,1,False
+391,openai/gpt-5.6-terra,GPQA Diamond,92.9,accuracy,,,,,2026-07-09,https://openai.com/index/gpt-5-6/,GPQA Diamond,accuracy,True,1,False
+574,alibaba/qwen3.8-max,MRCR,92.9,score,,2,256K; 8-needle,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,MRCR,score,True,1,False
+521,sakana/fugu,LiveCodeBench,92.9,,,,,,,https://console.sakana.ai/models,LiveCodeBench,unspecified,True,1,False
+392,openai/gpt-5.4,GPQA Diamond,92.8,accuracy,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,GPQA Diamond,accuracy,True,1,False
+906,openai/gpt-6-astra,ScreenSpot-Pro,92.7,accuracy,no tools,,,,2026-09-03,https://openai.com/index/gpt-6-astra/,ScreenSpot-Pro,accuracy,True,1,True
+393,alibaba/qwen3.8-max-preview,GPQA Diamond,92.6,accuracy,xhigh,,,,2026-08-03,https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421,GPQA Diamond,accuracy,True,1,False
+394,alibaba/qwen3.8-max,GPQA Diamond,92.6,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,GPQA Diamond,score,True,1,False
+1080,openai/gpt-5.4-nano,τ²-Bench Telecom,92.5,accuracy,reasoning effort xhigh,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,τ²-Bench Telecom,accuracy,True,1,False
+395,alibaba/qwen3.7-max,GPQA Diamond,92.4,accuracy,,,,,2026-05-19,https://qwen.ai/blog?id=qwen3.7,GPQA Diamond,accuracy,True,1,True
+396,openai/gpt-5.6-luna,GPQA Diamond,92.3,accuracy,,,,,2026-07-09,https://openai.com/index/gpt-5-6/,GPQA Diamond,accuracy,True,1,False
+522,alibaba/qwen3.8-flash-next,LiveCodeBench,91.9,score,,6,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,LiveCodeBench,score,True,1,False
+346,google/gemini-3.6-flash,GDM-MRCR,91.8,accuracy,"128k average, 8-needle",v2,,,2026-07-21,https://deepmind.google/models/evals-methodology/gemini-3-6-flash/,GDM-MRCR,accuracy,True,2,False
+397,alibaba/qwen3.8-flash-next,GPQA Diamond,91.7,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,GPQA Diamond,score,True,1,False
+523,deepseek/deepseek-v4-flash,LiveCodeBench,91.6,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,LiveCodeBench,pass@1,True,1,False
+161,openai/gpt-6-astra,BrowseComp,91.5,accuracy,,,,,2026-09-03,https://openai.com/index/gpt-6-astra/,BrowseComp,accuracy,True,1,True
+1082,mistral/mistral-medium-2604,τ³-Telecom,91.4,accuracy,public preview,,,,2026-05-22,https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/,τ³-Telecom,accuracy,True,1,False
+185,moonshotai/kimi-k3,CharXiv Reasoning,91.3,accuracy,"max effort, with tools",,,,2026-07-16,https://www.kimi.com/blog/kimi-k3,CharXiv Reasoning,accuracy,True,1,False
+398,zhipuai/glm-5.2,GPQA Diamond,91.2,accuracy,,,,,2026-06-16,https://z.ai/blog/glm-5.2,GPQA Diamond,accuracy,True,1,False
+162,moonshotai/kimi-k3,BrowseComp,91.2,accuracy,"max effort, context compaction",,,,2026-07-16,https://www.kimi.com/blog/kimi-k3,BrowseComp,accuracy,True,1,False
+652,alibaba/qwen3.8-27b,OmniDocBench,91.1,score,,1.5,,,,https://huggingface.co/Qwen/Qwen3.8-27B,OmniDocBench,score,True,1,False
+497,zhipuai/glm-5.2,IMOAnswerBench,91.0,accuracy,,,,,2026-06-16,https://z.ai/blog/glm-5.2,IMOAnswerBench,accuracy,True,1,False
+289,tencent/hy3,DeepSearchQA,91.0,score,highest reasoning effort,,,Tencent internal search harness,,https://huggingface.co/tencent/Hy3,DeepSearchQA,score,True,1,False
+399,deepseek/deepseek-v4.1-flash,GPQA Diamond,90.9,pass@1,reasoning_effort=100,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,GPQA Diamond,pass@1,True,1,False
+526,sakana/fugu-ultra,LiveCodeBench Pro,90.8,,,,,,,https://console.sakana.ai/models,LiveCodeBench Pro,unspecified,True,1,False
+163,anthropic/claude-opus-5,BrowseComp,90.8,accuracy,single agent,,,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,BrowseComp,accuracy,True,1,False
+918,deepseek/deepseek-v4.1-flash,Terminal-Bench,90.6,pass@1,reasoning_effort=100,2.1,,DeepSeek Harness minimal mode,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,Terminal-Bench,pass@1,True,10,False
+186,alibaba/qwen3.8-flash-next,CharXiv Reasoning,90.6,score,with code interpreter,,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,CharXiv Reasoning,score,True,2,False
+16,anthropic/claude-opus-5,ARC-AGI-2,90.4,accuracy,max effort,,,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,ARC-AGI-2,accuracy,True,1,False
+164,openai/gpt-5.6-sol,BrowseComp,90.4,accuracy,,,,,2026-07-09,https://openai.com/index/gpt-5-6/,BrowseComp,accuracy,True,1,False
+400,tencent/hy3,GPQA Diamond,90.4,score,highest reasoning effort,,,,,https://huggingface.co/tencent/Hy3,GPQA Diamond,score,True,1,False
+528,sakana/sakana-namazu,LiveCodeBench v6,90.33,,,,,,,https://console.sakana.ai/models?model=sakana-namazu,LiveCodeBench v6,unspecified,True,1,False
+554,sakana/sakana-namazu,MMLU-Pro,90.33,,,,,,,https://console.sakana.ai/models?model=sakana-namazu,MMLU-Pro,unspecified,True,1,False
+290,meta/muse-spark-1.3,DeepSearchQA,90.3,F1,max effort,,,Meta browser harness,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,DeepSearchQA,f1,True,1,False
+524,alibaba/qwen3.8-27b,LiveCodeBench,90.3,score,,6,,,,https://huggingface.co/Qwen/Qwen3.8-27B,LiveCodeBench,score,True,1,False
+532,meta/muse-spark-1.2,MCP Atlas,90.3,pass rate,xhigh effort,,,Scale AI,2026-08-05,https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2,MCP Atlas,pass rate,True,1,False
+187,alibaba/qwen3.8-27b,CharXiv Reasoning,90.2,score,with code interpreter,,corrected annotations,,,https://huggingface.co/Qwen/Qwen3.8-27B,CharXiv Reasoning,score,True,2,False
+585,deepseek/deepseek-v4-pro,MathArena Apex Shortlist,90.2,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,MathArena Apex Shortlist,pass@1,True,1,False
+401,deepseek/deepseek-v4-pro,GPQA Diamond,90.1,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,GPQA Diamond,pass@1,True,1,False
+165,openai/gpt-5.5-pro,BrowseComp,90.1,accuracy,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,BrowseComp,accuracy,True,1,False
+498,tencent/hy3,IMOAnswerBench,90.0,score,highest reasoning effort,,,,,https://huggingface.co/tencent/Hy3,IMOAnswerBench,score,True,1,False
+496,meituan/longcat-2.0,IFEval,90.0,accuracy,,,,,2026-06-30,https://github.com/meituan-longcat/longcat-2.0,IFEval,accuracy,True,1,False
+920,xiaomi/mimo-v2.6-pro,Terminal-Bench,89.9,score,MiMo-V2.6 Pro comparison column,2.1,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,Terminal-Bench,score,True,2,False
+499,deepseek/deepseek-v4-pro,IMOAnswerBench,89.8,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,IMOAnswerBench,pass@1,True,1,False
+154,deepseek/deepseek-v4.1-flash,BabyVision,89.6,pass@1,reasoning_effort=100; with tools,,,Claude Code,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,BabyVision,pass@1,True,1,False
+746,anthropic/claude-opus-5,SWE-Bench Multilingual,89.5,resolve rate,,,,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,SWE-Bench Multilingual,resolve rate,True,1,False
+188,google/gemini-3.6-flash,CharXiv Reasoning,89.4,accuracy,with tools,,,,2026-07-21,https://deepmind.google/models/evals-methodology/gemini-3-6-flash/,CharXiv Reasoning,accuracy,True,2,False
+921,google/gemini-3.8-flash,Terminal-Bench,89.4,pass@1,,2.1,,Terminus 2,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/,Terminal-Bench,pass@1,True,2,False
+166,openai/gpt-5.4-pro,BrowseComp,89.3,accuracy,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,BrowseComp,accuracy,True,1,False
+402,alibaba/qwen3.8-27b,GPQA Diamond,89.2,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-27B,GPQA Diamond,score,True,1,False
+202,anthropic/claude-opus-5-5,Chartography,89.0,score,max effort; with tools; production safeguards with fallback,,,,2026-09-22,https://www.anthropic.com/claude-opus-5-5,Chartography,score,True,1,False
+327,openai/gpt-5.6-sol,FrontierMath,89.0,accuracy,,v2,Tier 1-3,,2026-07-09,https://openai.com/index/gpt-5-6/,FrontierMath,accuracy,True,1,False
+525,nvidia/nemotron-3-ultra-550b-a55b,LiveCodeBench,89.0,pass@1,,v6,,,2026-06-04,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16,LiveCodeBench,pass@1,True,1,False
+403,meituan/longcat-2.0,GPQA Diamond,88.9,accuracy,,,,,2026-06-30,https://github.com/meituan-longcat/longcat-2.0,GPQA Diamond,accuracy,True,1,False
+159,google/gemini-3.8-flash,BioMysteryBench,88.8,pass@1,with tools,,human-solvable,,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/,BioMysteryBench,pass@1,True,2,False
+923,openai/gpt-5.6-sol,Terminal-Bench,88.8,success rate,,2.1,,,2026-07-09,https://openai.com/index/gpt-5-6/,Terminal-Bench,success rate,True,1,False
+922,meta/muse-spark-1.3,Terminal-Bench,88.8,pass@1,max effort,2.1,,Muse Code,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,Terminal-Bench,pass@1,True,1,False
+833,anthropic/claude-opus-4-8,SWE-Bench Verified,88.6,resolved,,,,,,https://benchlm.ai/benchmarks/sweVerified,SWE-Bench Verified,resolved,True,1,False
+681,alibaba/qwen3.8-flash-next,RealWorldQA,88.5,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,RealWorldQA,score,True,1,False
+422,xiaomi/mimo-v2.5,HR-Bench,88.5,score,4K,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.5,HR-Bench,score,True,1,False
+189,meta/muse-spark-1.1,CharXiv Reasoning,88.4,accuracy,,,,,2026-07-09,https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/,CharXiv Reasoning,accuracy,True,1,False
+500,deepseek/deepseek-v4-flash,IMOAnswerBench,88.4,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,IMOAnswerBench,pass@1,True,1,False
+924,moonshotai/kimi-k3,Terminal-Bench,88.3,accuracy,max effort,2.1,,Kimi Code,2026-07-16,https://www.kimi.com/blog/kimi-k3,Terminal-Bench,accuracy,True,1,False
+925,zhipuai/glm-5.3,Terminal-Bench,88.2,pass@1,max effort,2.1,,Claude Code 2.1.207,,https://huggingface.co/zai-org/GLM-5.3,Terminal-Bench,pass@1,True,1,False
+234,deepseek/deepseek-v4.1-flash,CyberGym,88.1,pass@1,reasoning_effort=100,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,CyberGym,pass@1,True,1,False
+404,deepseek/deepseek-v4-flash,GPQA Diamond,88.1,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,GPQA Diamond,pass@1,True,1,False
+533,meta/muse-spark-1.1,MCP Atlas,88.1,success rate,,,,,2026-07-09,https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/,MCP Atlas,success rate,True,1,False
+405,openai/gpt-5.4-mini,GPQA Diamond,88.0,accuracy,reasoning effort xhigh,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,GPQA Diamond,accuracy,True,1,False
+689,openai/gpt-6-astra,SRE-Bench,88.0,success rate,single attempt,,,,2026-09-03,https://openai.com/index/gpt-6-astra/,SRE-Bench,success rate,True,1,True
+926,anthropic/claude-fable-5,Terminal-Bench,88.0,success rate,,2.1,,,2026-06-09,https://www.anthropic.com/news/claude-fable-5-mythos-5,Terminal-Bench,success rate,True,1,False
+46,openai/gpt-5,Aider Polyglot,88.0,percent correct,,,,,2025-08-23,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+928,deepseek/deepseek-v4-pro-0813,Terminal-Bench,87.9,score,max effort,2.1,,DeepSeek Harness minimal mode,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,Terminal-Bench,score,True,1,False
+516,google/gemini-3.8-flash,LVBench,87.8,pass@1,agentic,,,,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/,LVBench,pass@1,True,2,False
+527,sakana/fugu,LiveCodeBench Pro,87.8,,,,,,,https://console.sakana.ai/models,LiveCodeBench Pro,unspecified,True,1,False
+1060,xiaomi/mimo-v2.5,Video-MME,87.7,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.5,Video-MME,score,True,1,False
+929,xiaomi/mimo-v2.6-flash,Terminal-Bench,87.6,score,,2.1,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,Terminal-Bench,score,True,2,False
+555,deepseek/deepseek-v4-pro,MMLU-Pro,87.5,EM,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,MMLU-Pro,em,True,1,False
+167,openai/gpt-5.6-terra,BrowseComp,87.5,accuracy,,,,,2026-07-09,https://openai.com/index/gpt-5-6/,BrowseComp,accuracy,True,1,False
+930,openai/gpt-5.6-terra,Terminal-Bench,87.4,success rate,,2.1,,,2026-07-09,https://openai.com/index/gpt-5-6/,Terminal-Bench,success rate,True,1,False
+653,xiaomi/mimo-v2.5,OmniDocBench,87.2,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.5,OmniDocBench,score,True,1,False
+382,nvidia/nemotron-3-ultra-550b-a55b,GPQA,87.0,accuracy,no tools,,,,2026-06-04,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16,GPQA,accuracy,True,1,False
+556,nvidia/nemotron-3-ultra-550b-a55b,MMLU-Pro,86.8,accuracy,,,,,2026-06-04,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16,MMLU-Pro,accuracy,True,1,False
+931,alibaba/qwen3.8-max-preview,Terminal-Bench,86.6,accuracy,xhigh,2.1,,,2026-08-03,https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421,Terminal-Bench,accuracy,True,1,False
+190,sakana/fugu-ultra,CharXiv Reasoning,86.6,,,,,,,https://console.sakana.ai/models,CharXiv Reasoning,unspecified,True,1,False
+932,alibaba/qwen3.8-max,Terminal-Bench,86.6,avg@10,5h timeout,2.1,,Claude Code,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,Terminal-Bench,avg@10,True,1,False
+406,xiaomi/mimo-v2.5-pro,GPQA Diamond,86.6,accuracy,,,,,2026-04-22,https://mimo.xiaomi.com/mimo-v2-5-pro/,GPQA Diamond,accuracy,True,1,False
+580,sakana/fugu,MRCRv2,86.6,,,,,,,https://console.sakana.ai/models,MRCRv2,unspecified,True,1,False
+911,inclusionai/ling-3.0-flash-fin,SpreadsheetBench,86.5,score,highest reasoning effort; temperature=0.6; 120 turns; 3h timeout,1,,Claude Code 2.1.173,,https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin,SpreadsheetBench,score,True,2,False
+191,google/gemini-3.8-flash,CharXiv Reasoning,86.2,pass@1,without tools,,,,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/,CharXiv Reasoning,pass@1,True,1,False
+557,deepseek/deepseek-v4-flash,MMLU-Pro,86.2,EM,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,MMLU-Pro,em,True,1,False
+514,google/gemini-3.8-flash,LAB-Bench,86.2,macro-average,with tools,2,11 subtasks,,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/,LAB-Bench,macro-average,True,1,False
+632,alibaba/qwen3.8-max-preview,OSWorld-Verified,86.1,success rate,xhigh,,,,2026-08-03,https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421,OSWorld-Verified,success rate,True,1,False
+291,meta/muse-spark-1.2,DeepSearchQA,85.9,F1,xhigh effort,,,Meta browser harness,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,DeepSearchQA,f1,True,1,False
+682,alibaba/qwen3.8-27b,RealWorldQA,85.9,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-27B,RealWorldQA,score,True,1,False
+936,google/gemini-3.7-flash,Terminal-Bench,85.8,accuracy,,2.1,,,2026-08-13,https://deepmind.google/models/model-cards/gemini-3-7-flash/,Terminal-Bench,accuracy,True,1,False
+586,deepseek/deepseek-v4-flash,MathArena Apex Shortlist,85.7,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,MathArena Apex Shortlist,pass@1,True,1,False
+155,alibaba/qwen3.8-27b,BabyVision,85.6,score,with code interpreter,,,,,https://huggingface.co/Qwen/Qwen3.8-27B,BabyVision,score,True,2,False
+665,nvidia/nemotron-3.5-lightning,PinchBench,85.37,score,BF16; reasoning,,,NeMo Gym / NeMo Evaluator SDK,,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,PinchBench,score,True,1,False
+834,anthropic/claude-sonnet-5,SWE-Bench Verified,85.2,resolved,,,,,2026-06-30,https://www.anthropic.com/news/claude-sonnet-5,SWE-Bench Verified,resolved,True,1,False
+193,sakana/fugu,CharXiv Reasoning,85.1,,,,,,,https://console.sakana.ai/models,CharXiv Reasoning,unspecified,True,1,False
+633,anthropic/claude-fable-5,OSWorld-Verified,85.0,success rate,,,,,2026-06-09,https://www.anthropic.com/news/claude-fable-5-mythos-5,OSWorld-Verified,success rate,True,1,False
+17,openai/gpt-5.5,ARC-AGI-2,85.0,accuracy,Verified,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,ARC-AGI-2,accuracy,True,1,False
+47,openai/o3-pro,Aider Polyglot,84.9,percent correct,,,,,2025-06-28,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+328,openai/gpt-5.6-terra,FrontierMath,84.9,accuracy,,v2,Tier 1-3,,2026-07-09,https://openai.com/index/gpt-5-6/,FrontierMath,accuracy,True,1,False
+354,openai/gpt-5.5,GDPval,84.9,wins or ties,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,GDPval,wins or ties,True,1,False
+938,openai/gpt-5.6-luna,Terminal-Bench,84.7,success rate,,2.1,,,2026-07-09,https://openai.com/index/gpt-5-6/,Terminal-Bench,success rate,True,1,False
+168,anthropic/claude-sonnet-5,BrowseComp,84.7,accuracy,single agent,,,,2026-06-30,https://www.anthropic.com/news/claude-sonnet-5,BrowseComp,accuracy,True,1,False
+407,microsoft/mai-code-1-flash,GPQA Diamond,84.6,accuracy,,,,,,https://llm-stats.com/benchmarks/gpqa,GPQA Diamond,accuracy,True,1,False
+78,alibaba/qwen3.8-flash-next,AndroidWorld,84.5,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,AndroidWorld,score,True,1,False
+235,zhipuai/glm-5.3,CyberGym,84.5,pass@1,max effort,,,Claude Code 2.1.207,,https://huggingface.co/zai-org/GLM-5.3,CyberGym,pass@1,True,1,False
+205,deepseek/deepseek-v4-pro,Chinese SimpleQA,84.4,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,Chinese SimpleQA,pass@1,True,1,False
+169,openai/gpt-5.5,BrowseComp,84.4,accuracy,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,BrowseComp,accuracy,True,1,False
+939,zhipuai/glm-5.3-flash,Terminal-Bench,84.3,pass@1,max effort,2.1,,Claude Code 2.1.207,,https://huggingface.co/zai-org/GLM-5.3-Flash,Terminal-Bench,pass@1,True,1,False
+634,alibaba/qwen3.8-27b,OSWorld-Verified,84.3,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-27B,OSWorld-Verified,score,True,1,False
+195,google/gemini-3.5-flash,CharXiv Reasoning,84.2,accuracy,no tools,,,,2026-05-19,https://deepmind.google/models/gemini/flash/,CharXiv Reasoning,accuracy,True,1,False
+170,tencent/hy3,BrowseComp,84.2,score,highest reasoning effort,,,Tencent internal search harness,,https://huggingface.co/tencent/Hy3,BrowseComp,score,True,1,False
+941,openai/gpt-5.5,Terminal-Bench,84.1,pass@1,xhigh,2.1,,Codex,,https://artificialanalysis.ai/agents/coding-agents,Terminal-Bench,pass@1,True,3,False
+942,deepseek/deepseek-v4-flash-vision-exp,Terminal-Bench,83.9,score,max effort,2.1,,DeepSeek Harness minimal mode,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp,Terminal-Bench,score,True,1,False
+559,google/gemini-3.5-flash,MMMU Pro,83.6,accuracy,no tools,,,,2026-05-19,https://deepmind.google/models/gemini/flash/,MMMU Pro,accuracy,True,1,False
+534,google/gemini-3.5-flash,MCP Atlas,83.6,success rate,,,,,2026-05-19,https://deepmind.google/models/gemini/flash/,MCP Atlas,success rate,True,1,False
+171,minimax/MiniMax-M3,BrowseComp,83.52,accuracy,,,,,2026-06-01,https://www.minimax.io/blog/minimax-m3,BrowseComp,accuracy,True,1,False
+245,xiaomi/mimo-v2.5,DailyOmni,83.5,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.5,DailyOmni,score,True,1,False
+408,meta/muse-glimmer-30b,GPQA Diamond,83.5,accuracy,AA,,,,2026-08-10,https://huggingface.co/meta-models/Muse-Glimmer-30B,GPQA Diamond,accuracy,True,1,False
+575,deepseek/deepseek-v4-pro,MRCR,83.5,MMR,preview checkpoint; max effort,,1M context,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,MRCR,mmr,True,1,False
+172,deepseek/deepseek-v4-pro,BrowseComp,83.4,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,BrowseComp,pass@1,True,1,False
+635,anthropic/claude-opus-4-8,OSWorld-Verified,83.4,success rate,,,,,2026-06-09,https://www.anthropic.com/news/claude-fable-5-mythos-5,OSWorld-Verified,success rate,True,1,False
+236,deepseek/deepseek-v4-pro-0813,CyberGym,83.3,score,max effort,,,DeepSeek Harness minimal mode,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,CyberGym,score,True,1,False
+173,openai/gpt-5.6-luna,BrowseComp,83.3,accuracy,,,,,2026-07-09,https://openai.com/index/gpt-5-6/,BrowseComp,accuracy,True,1,False
+197,google/gemini-3.1-pro-preview,CharXiv Reasoning,83.3,accuracy,no tools,,,,2026-05-19,https://deepmind.google/models/gemini/flash/,CharXiv Reasoning,accuracy,True,1,False
+18,openai/gpt-5.4-pro,ARC-AGI-2,83.3,accuracy,Verified,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,ARC-AGI-2,accuracy,True,1,False
+943,xai/grok-4.5,Terminal-Bench,83.3,success rate,,2.1,,,2026-07-08,https://x.ai/news/grok-4-5,Terminal-Bench,success rate,True,1,False
+48,google/gemini-2.5-pro,Aider Polyglot,83.1,percent correct,,,,,2025-06-06,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,True
+355,openai/gpt-5.4,GDPval,83.0,wins or ties,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,GDPval,wins or ties,True,1,False
+560,openai/gpt-5.6-sol,MMMU Pro,83.0,accuracy,no tools,,,,2026-07-09,https://openai.com/index/gpt-5-6/,MMMU Pro,accuracy,True,1,False
+636,google/gemini-3.6-flash,OSWorld-Verified,83.0,success rate,,,,,2026-07-21,https://deepmind.google/models/evals-methodology/gemini-3-6-flash/,OSWorld-Verified,success rate,True,1,False
+944,meta/muse-spark-1.2,Terminal-Bench,82.9,pass@1,xhigh effort,2.1,,Muse Code,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,Terminal-Bench,pass@1,True,1,False
+409,openai/gpt-5.4-nano,GPQA Diamond,82.8,accuracy,reasoning effort xhigh,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,GPQA Diamond,accuracy,True,1,False
+490,alibaba/qwen3.8-max,IFBench,82.8,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,IFBench,score,True,1,False
+489,alibaba/qwen3.8-max-preview,IFBench,82.8,score,xhigh,,,,2026-08-03,https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421,IFBench,score,True,1,False
+947,zhipuai/glm-5.2,Terminal-Bench,82.7,success rate,,2.1,,Claude Code,2026-06-16,https://z.ai/blog/glm-5.2,Terminal-Bench,success rate,True,2,False
+174,openai/gpt-5.4,BrowseComp,82.7,accuracy,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,BrowseComp,accuracy,True,1,False
+945,deepseek/deepseek-v4-flash-0731,Terminal-Bench,82.7,pass@1,max,2.1,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731,Terminal-Bench,pass@1,True,1,False
+946,openai/gpt-5.5,Terminal-Bench,82.7,success rate,,2.0,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,Terminal-Bench,success rate,True,2,False
+835,deepreinforce/ornith-1.0-397b,SWE-Bench Verified,82.4,percent resolved,,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-397B,SWE-Bench Verified,percent resolved,True,1,False
+356,openai/gpt-5.5-pro,GDPval,82.3,wins or ties,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,GDPval,wins or ties,True,1,False
+561,alibaba/qwen3.8-max-preview,MMMU Pro,82.3,accuracy,xhigh,,,,2026-08-03,https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421,MMMU Pro,accuracy,True,1,False
+916,sakana/fugu-ultra,Terminal Bench 2.1,82.1,,,,,,,https://console.sakana.ai/models,Terminal-Bench 2.1,unspecified,True,1,False
+637,xiaomi/mimo-v2.6-pro,OSWorld-Verified,82.0,score,MiMo-V2.6 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,OSWorld-Verified,score,True,1,False
+357,openai/gpt-5.4-pro,GDPval,82.0,wins or ties,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,GDPval,wins or ties,True,1,False
+558,nvidia/nemotron-3.5-lightning,MMLU-Pro,81.94,score,BF16; reasoning,,,NeMo Gym / NeMo Evaluator SDK,,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,MMLU-Pro,score,True,1,False
+1065,alibaba/qwen3.8-max-preview,WideSearch,81.9,F1,xhigh,,,,2026-08-03,https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421,WideSearch,f1,True,1,False
+79,alibaba/qwen3.8-27b,AndroidWorld,81.9,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-27B,AndroidWorld,score,True,1,False
+1066,alibaba/qwen3.8-max,WideSearch,81.9,average item F1,,,,Qwen-Agent,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,WideSearch,average item f1,True,1,False
+615,anthropic/claude-opus-5-5,OSWorld,81.8,partial score,max effort; production safeguards with fallback,2.0,,,2026-09-22,https://www.anthropic.com/claude-opus-5-5,OSWorld,partial score,True,1,False
+491,nvidia/nemotron-3-ultra-550b-a55b,IFBench,81.7,accuracy,prompt loose,,,,2026-06-04,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16,IFBench,accuracy,True,1,False
+492,alibaba/qwen3.8-flash-next,IFBench,81.3,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,IFBench,score,True,1,False
+49,openai/o3,Aider Polyglot,81.3,percent correct,,,,,2025-06-25,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+563,openai/gpt-5.5,MMMU Pro,81.2,accuracy,no tools,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,MMMU Pro,accuracy,True,1,False
+338,moonshotai/kimi-k3,FrontierSWE,81.2,dominance score,max effort,,,Kimi Code,2026-07-16,https://www.kimi.com/blog/kimi-k3,FrontierSWE,dominance score,True,1,False
+562,openai/gpt-5.4,MMMU Pro,81.2,accuracy,no tools,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,MMMU Pro,accuracy,True,1,False
+638,anthropic/claude-sonnet-5,OSWorld-Verified,81.2,success rate,,,,,2026-06-30,https://www.anthropic.com/news/claude-sonnet-5,OSWorld-Verified,success rate,True,1,False
+547,moonshotai/kimi-k2.7-code,MCP Mark Verified,81.1,success rate,,,,Kimi Code CLI,2026-06-12,https://huggingface.co/moonshotai/Kimi-K2.7-Code,MCP Mark Verified,success rate,True,1,False
+747,alibaba/qwen3.8-flash-next,SWE-Bench Multilingual,81.0,score,,,,mini-swe-agent,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,SWE-Bench Multilingual,score,True,1,False
+695,anthropic/claude-opus-4-7,SWE-Atlas Codebase QnA,81.0,pass@1,max,,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,SWE-Atlas Codebase QnA,pass@1,True,3,False
+493,xai/grok-4.3,IFBench,81.0,accuracy,,,,,2026-04-30,https://artificialanalysis.ai/articles/xai-launches-grok-4-3-with-improved-agentic-performance-and-lower-pricing,IFBench,accuracy,True,1,False
+198,xiaomi/mimo-v2.5,CharXiv Reasoning,81.0,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.5,CharXiv Reasoning,score,True,1,False
+639,meta/muse-spark-1.1,OSWorld-Verified,80.8,success rate,,,,,2026-07-09,https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/,OSWorld-Verified,success rate,True,1,False
+640,xiaomi/mimo-v2.6-flash,OSWorld-Verified,80.8,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,OSWorld-Verified,score,True,1,False
+696,openai/gpt-5.5,SWE-Atlas Codebase QnA,80.8,pass@1,xhigh,,,Codex,,https://artificialanalysis.ai/agents/coding-agents,SWE-Atlas Codebase QnA,pass@1,True,3,False
+679,alibaba/qwen3.8-max,QwenSWEBench,80.7,avg@3,,,internal,Claude Code,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,QwenSWEBench,avg@3,True,1,False
+564,openai/gpt-5.6-terra,MMMU Pro,80.7,accuracy,no tools,,,,2026-07-09,https://openai.com/index/gpt-5-6/,MMMU Pro,accuracy,True,1,False
+836,deepseek/deepseek-v4-pro,SWE-Bench Verified,80.6,resolved,,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,SWE-Bench Verified,resolved,True,1,False
+837,minimax/MiniMax-M3,SWE-Bench Verified,80.5,resolved,,,,Claude Code,2026-06-01,https://www.minimax.io/blog/minimax-m3,SWE-Bench Verified,resolved,True,1,False
+565,google/gemini-3.1-pro-preview,MMMU Pro,80.5,accuracy,no tools,,,,2026-05-19,https://deepmind.google/models/gemini/flash/,MMMU Pro,accuracy,True,1,False
+949,anthropic/claude-sonnet-5,Terminal-Bench,80.4,success rate,,2.1,,Terminus-2,2026-06-30,https://www.anthropic.com/news/claude-sonnet-5,Terminal-Bench,success rate,True,1,False
+838,alibaba/qwen3.7-max,SWE-Bench Verified,80.4,resolved,,,,,2026-05-19,https://qwen.ai/blog?id=qwen3.7,SWE-Bench Verified,resolved,True,1,True
+762,anthropic/claude-fable-5,SWE-Bench Pro,80.3,resolve rate,,,,,2026-06-09,https://www.anthropic.com/news/claude-fable-5-mythos-5,SWE-Bench Pro,resolve rate,True,1,False
+839,moonshotai/kimi-k2.6,SWE-Bench Verified,80.2,resolved,,,,,,https://huggingface.co/moonshotai/Kimi-K2.6,SWE-Bench Verified,resolved,True,1,False
+917,sakana/fugu,Terminal Bench 2.1,80.2,,,,,,,https://console.sakana.ai/models,Terminal-Bench 2.1,unspecified,True,1,False
+595,xiaomi/mimo-v2.6-pro,MiMo Cyber Bench,80.2,score,MiMo-V2.6 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,MiMo Cyber Bench,score,True,1,False
+616,anthropic/claude-sonnet-5-5,OSWorld,80.1,partial score,,2.1,,,2026-09-28,https://www.anthropic.com/claude-sonnet-5-5,OSWorld,partial score,True,1,False
+950,meta/muse-spark-1.1,Terminal-Bench,80.0,success rate,,2.1,,,2026-07-09,https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/,Terminal-Bench,success rate,True,1,False
+81,openai/gpt-5.6-sol,Artificial Analysis Coding Agent Index,80.0,index score,max,1.1,,Codex,2026-07-09,https://artificialanalysis.ai/articles/gpt-5-6-has-landed,Artificial Analysis Coding Agent Index,index score,True,1,False
+840,minimax/MiniMax-M2.7,SWE-Bench Verified,79.9,resolved,,,,Claude Code,2026-06-01,https://www.minimax.io/blog/minimax-m3,SWE-Bench Verified,resolved,True,1,False
+175,meituan/longcat-2.0,BrowseComp,79.9,accuracy,,,,,2026-06-30,https://github.com/meituan-longcat/longcat-2.0,BrowseComp,accuracy,True,1,False
+494,alibaba/qwen3.8-27b,IFBench,79.5,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-27B,IFBench,score,True,1,False
+763,anthropic/claude-opus-5,SWE-Bench Pro,79.2,resolve rate,,,,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,SWE-Bench Pro,resolve rate,True,1,False
+535,tencent/hy3,MCP Atlas,79.1,score,highest reasoning effort; April 2026; 100 tool calls,,500 public tasks,Scale AI,,https://huggingface.co/tencent/Hy3,MCP Atlas,score,True,1,False
+841,deepseek/deepseek-v4-flash,SWE-Bench Verified,79.0,resolved,,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,SWE-Bench Verified,resolved,True,1,False
+680,alibaba/qwen3.8-27b,QwenSWEBench,79.0,avg@3,,,internal,Claude Code,,https://huggingface.co/Qwen/Qwen3.8-27B,QwenSWEBench,avg@3,True,1,False
+206,deepseek/deepseek-v4-flash,Chinese SimpleQA,78.9,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,Chinese SimpleQA,pass@1,True,1,False
+203,deepseek/deepseek-v4.1-flash,Chartography,78.9,pass@1,reasoning_effort=100; with tools,,,Claude Code,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,Chartography,pass@1,True,1,False
+748,deepreinforce/ornith-1.0-397b,SWE-Bench Multilingual,78.9,percent resolved,,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-397B,SWE-Bench Multilingual,percent resolved,True,1,False
+842,xiaomi/mimo-v2.5-pro,SWE-Bench Verified,78.9,resolved,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro,SWE-Bench Verified,resolved,True,1,False
+199,meta/muse-glimmer-30b,CharXiv Reasoning,78.8,accuracy,,,,,2026-08-10,https://huggingface.co/meta-models/Muse-Glimmer-30B,CharXiv Reasoning,accuracy,True,1,False
+576,deepseek/deepseek-v4-flash,MRCR,78.7,MMR,preview checkpoint; max effort,,1M context,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,MRCR,mmr,True,1,False
+641,openai/gpt-5.5,OSWorld-Verified,78.7,success rate,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,OSWorld-Verified,success rate,True,1,False
+329,openai/gpt-5.6-luna,FrontierMath,78.6,accuracy,,v2,Tier 1-3,,2026-07-09,https://openai.com/index/gpt-5-6/,FrontierMath,accuracy,True,1,False
+642,anthropic/claude-sonnet-4-6,OSWorld-Verified,78.5,success rate,,,,,2026-06-30,https://www.anthropic.com/news/claude-sonnet-5,OSWorld-Verified,success rate,True,1,False
+643,google/gemini-3.5-flash,OSWorld-Verified,78.4,success rate,,,,,2026-05-19,https://deepmind.google/models/gemini/flash/,OSWorld-Verified,success rate,True,1,False
+566,openai/gpt-5.6-luna,MMMU Pro,78.4,accuracy,no tools,,,,2026-07-09,https://openai.com/index/gpt-5-6/,MMMU Pro,accuracy,True,1,False
+750,anthropic/claude-sonnet-5,SWE-Bench Multilingual,78.3,resolve rate,,,,,2026-06-30,https://www.anthropic.com/news/claude-sonnet-5,SWE-Bench Multilingual,resolve rate,True,1,False
+749,alibaba/qwen3.7-max,SWE-Bench Multilingual,78.3,resolve rate,,,,,2026-05-19,https://qwen.ai/blog?id=qwen3.7,SWE-Bench Multilingual,resolve rate,True,1,True
+1004,deepreinforce/ornith-1.0-397b,Terminal-Bench 2.1,78.2,percent,Claude Code,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-397B,Terminal-Bench 2.1,percent,True,2,False
+536,google/gemini-3.1-pro-preview,MCP Atlas,78.2,success rate,,,,,2026-05-19,https://deepmind.google/models/gemini/flash/,MCP Atlas,success rate,True,1,False
+339,zhipuai/glm-5.3,FrontierSWE,78.1,dominance score,max effort,,,,2026-08-14,https://huggingface.co/zai-org/GLM-5.3,FrontierSWE,dominance score,True,1,False
+644,anthropic/claude-opus-4-7,OSWorld-Verified,78.0,success rate,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,OSWorld-Verified,success rate,True,1,False
+751,xai/grok-4.5,SWE-Bench Multilingual,78.0,resolve rate,,,,,2026-07-08,https://x.ai/news/grok-4-5,SWE-Bench Multilingual,resolve rate,True,1,False
+952,google/gemini-3.6-flash,Terminal-Bench,78.0,accuracy,,2.1,,Terminus 2,2026-07-21,https://deepmind.google/models/evals-methodology/gemini-3-6-flash/,Terminal-Bench,accuracy,True,1,False
+567,openai/gpt-5.4-mini,MMMU Pro,78.0,accuracy,with Python,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,MMMU Pro,accuracy,True,2,False
+843,tencent/hy3,SWE-Bench Verified,78.0,resolved,,,,,,https://huggingface.co/tencent/Hy3,SWE-Bench Verified,resolved,True,1,False
+617,anthropic/claude-fable-5-1,OSWorld,77.9,partial score,production safeguards; interventions score zero; no fallback,2.0,August 2026 task release,,2026-09-01,https://www.anthropic.com/claude-fable-and-mythos-5-1,OSWorld,partial score,True,1,False
+571,xiaomi/mimo-v2.5,MMMU-Pro,77.9,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.5,MMMU Pro,score,True,1,False
+668,moonshotai/kimi-k3,Program Bench,77.8,score,max effort,,,Kimi Code,2026-07-16,https://www.kimi.com/blog/kimi-k3,Program Bench,score,True,1,False
+844,mistral/mistral-medium-2604,SWE-Bench Verified,77.6,resolved,,,,,,https://huggingface.co/mistralai/Mistral-Medium-3.5-128B,SWE-Bench Verified,resolved,True,1,False
+845,mistral/mistral-medium-latest,SWE-Bench Verified,77.6,resolved,,,,,,https://huggingface.co/mistralai/Mistral-Medium-3.5-128B,SWE-Bench Verified,resolved,True,1,False
+660,tencent/hy3,PHYBench,77.4,score,highest reasoning effort,,,,,https://huggingface.co/tencent/Hy3,PHYBench,score,True,1,False
+82,openai/gpt-5.6-terra,Artificial Analysis Coding Agent Index,77.4,index score,max,1.1,,Codex,2026-07-09,https://artificialanalysis.ai/articles/gpt-5-6-has-landed,Artificial Analysis Coding Agent Index,index score,True,1,False
+752,meituan/longcat-2.0,SWE-Bench Multilingual,77.3,resolve rate,,,,,2026-06-30,https://github.com/meituan-longcat/longcat-2.0,SWE-Bench Multilingual,resolve rate,True,1,False
+596,xiaomi/mimo-v2.6-flash,MiMo Cyber Bench,77.2,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,MiMo Cyber Bench,score,True,1,False
+846,alibaba/qwen3.6-27b,SWE-Bench Verified,77.2,resolved,,,,,,https://huggingface.co/Qwen/Qwen3.6-27B,SWE-Bench Verified,resolved,True,1,False
+19,google/gemini-3.1-pro-preview,ARC-AGI-2,77.1,accuracy,,,,,2026-05-19,https://deepmind.google/models/gemini/flash/,ARC-AGI-2,accuracy,True,1,False
+209,deepreinforce/ornith-1.0-397b,Claw-eval,77.1,percent,,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-397B,Claw-eval,percent,True,1,False
+311,inclusionai/ling-3.0-flash-fin,FinSearchComp Verified,77.04,score,highest reasoning effort,,expert-validated internal set,"ReAct with web search, visit, and Python",,https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin,FinSearchComp Verified,score,True,1,False
+1048,xiaomi/mimo-v2.6-pro,Toolathlon-Verified,76.9,score,MiMo-V2.6 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,Toolathlon-Verified,score,True,1,False
+537,zhipuai/glm-5.2,MCP Atlas,76.8,score,,,public subset,,2026-06-16,https://z.ai/blog/glm-5.2,MCP Atlas,score,True,1,False
+237,deepseek/deepseek-v4-flash-0731,CyberGym,76.7,score,max effort,,,DeepSeek Harness minimal mode,2026-07-31,https://api-docs.deepseek.com/updates/,CyberGym,score,True,1,False
+518,alibaba/qwen3.8-flash-next,LVBench,76.6,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,LVBench,score,True,1,False
+847,stepfun/step-3.7-flash,SWE-Bench Verified,76.5,resolved,,,,,2026-05-29,https://static.stepfun.com/blog/step-3.7-flash/,SWE-Bench Verified,resolved,True,1,False
+200,google/gemini-3.5-flash-lite,CharXiv Reasoning,76.5,accuracy,with tools,,,,2026-07-21,https://deepmind.google/models/model-cards/gemini-3-5-flash-lite/,CharXiv Reasoning,accuracy,True,2,False
+848,alibaba/qwen3.5-397b-a17b,SWE-Bench Verified,76.4,resolved,,,,,,https://huggingface.co/Qwen/Qwen3.5-397B-A17B,SWE-Bench Verified,resolved,True,1,False
+538,alibaba/qwen3.7-max,MCP Atlas,76.4,success rate,,,,,2026-05-19,https://qwen.ai/blog?id=qwen3.7,MCP Atlas,success rate,True,1,True
+1067,tencent/hy3,WideSearch,76.4,score,highest reasoning effort,,,Tencent internal search harness,,https://huggingface.co/tencent/Hy3,WideSearch,score,True,1,False
+156,meta/muse-spark-1.1,BabyVision,76.3,accuracy,,,,,2026-07-09,https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/,BabyVision,accuracy,True,1,False
+413,openai/gpt-5.4-mini,Graphwalks,76.3,accuracy,"BFS, 0-128K",,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,Graphwalks,accuracy,True,2,False
+645,google/gemini-3.1-pro-preview,OSWorld-Verified,76.2,success rate,,,,,2026-05-19,https://deepmind.google/models/gemini/flash/,OSWorld-Verified,success rate,True,1,False
+953,google/gemini-3.5-flash,Terminal-Bench,76.2,success rate,,2.1,,Terminus-2,2026-05-19,https://deepmind.google/models/gemini/flash/,Terminal-Bench,success rate,True,1,False
+753,deepseek/deepseek-v4-pro,SWE-Bench Multilingual,76.2,resolved,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,SWE-Bench Multilingual,resolved,True,1,False
+849,meta/muse-glimmer-30b,SWE-Bench Verified,76.0,resolve rate,,,,,2026-08-10,https://huggingface.co/meta-models/Muse-Glimmer-30B,SWE-Bench Verified,resolve rate,True,1,False
+539,moonshotai/kimi-k2.7-code,MCP Atlas,76.0,success rate,,,,Kimi Code CLI,2026-06-12,https://huggingface.co/moonshotai/Kimi-K2.7-Code,MCP Atlas,success rate,True,1,False
+1049,deepseek/deepseek-v4-flash-vision-exp,Toolathlon-Verified,75.9,score,max effort,,,DeepSeek Harness minimal mode,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp,Toolathlon-Verified,score,True,1,False
+850,minimax/MiniMax-M2.5,SWE-Bench Verified,75.8,resolved,,,,,,https://www.swebench.com/,SWE-Bench Verified,resolved,True,1,False
+754,tencent/hy3,SWE-Bench Multilingual,75.8,score,highest reasoning effort,,,SWE-agent,,https://huggingface.co/tencent/Hy3,SWE-Bench Multilingual,score,True,1,False
+176,stepfun/step-3.7-flash,BrowseComp,75.8,accuracy,,,,,2026-05-29,https://static.stepfun.com/blog/step-3.7-flash/,BrowseComp,accuracy,True,1,False
+1050,meta/muse-spark-1.1,Toolathlon-Verified,75.6,success rate,,,,,2026-07-09,https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/,Toolathlon-Verified,success rate,True,1,False
+851,deepreinforce/ornith-1.0-35b,SWE-Bench Verified,75.6,percent resolved,,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B,SWE-Bench Verified,percent resolved,True,1,False
+540,meta/muse-glimmer-30b,MCP Atlas,75.5,success rate,public,,,,2026-08-10,https://huggingface.co/meta-models/Muse-Glimmer-30B,MCP Atlas,success rate,True,1,False
+410,nvidia/nemotron-3.5-lightning,GPQA Diamond,75.44,accuracy,BF16; reasoning; no tools,,,,,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,GPQA Diamond,accuracy,True,1,False
+246,meta/muse-spark-1.3,DeepSWE,75.4,pass@1,max effort,1.1,,mini-swe-agent,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,DeepSWE,pass@1,True,1,False
+238,deepseek/deepseek-v4-flash-vision-exp,CyberGym,75.3,score,max effort,,,DeepSeek Harness minimal mode,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp,CyberGym,score,True,1,False
+541,openai/gpt-5.5,MCP Atlas,75.3,success rate,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,MCP Atlas,success rate,True,1,False
+955,openai/gpt-5.4,Terminal-Bench,75.1,success rate,,2.0,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,Terminal-Bench,success rate,True,1,False
+77,alibaba/qwen3.8-max,AndroidBench,75.1,avg@3,,,95 public tasks,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,AndroidBench,avg@3,True,1,False
+646,openai/gpt-5.4,OSWorld-Verified,75.0,success rate,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,OSWorld-Verified,success rate,True,1,False
+218,alibaba/qwen3.8-max,CoWorkBench,74.8,score,,,internal,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,CoWorkBench,score,True,1,False
+343,tencent/hy3,FrontierScience,74.8,score,highest reasoning effort; olympiad,,,,,https://huggingface.co/tencent/Hy3,FrontierScience,score,True,2,False
+529,sakana/fugu,Long Context Reasoning,74.7,,,,,,,https://console.sakana.ai/models,Long Context Reasoning,unspecified,True,1,False
+956,anthropic/claude-opus-4-8,Terminal-Bench,74.6,success rate,,2.1,,Terminus-2,2026-05-28,https://www.anthropic.com/news/claude-opus-4-8,Terminal-Bench,success rate,True,1,False
+83,openai/gpt-5.6-luna,Artificial Analysis Coding Agent Index,74.6,index score,max,1.1,,Codex,2026-07-09,https://artificialanalysis.ai/articles/gpt-5-6-has-landed,Artificial Analysis Coding Agent Index,index score,True,1,False
+287,meta/muse-glimmer-30b,DeepSearch QA,74.6,,,,,,2026-08-10,https://huggingface.co/meta-models/Muse-Glimmer-30B,DeepSearch QA,unspecified,True,1,False
+853,tencent/hy3-preview,SWE-Bench Verified,74.4,resolved,,,,,,https://huggingface.co/tencent/Hy3-preview,SWE-Bench Verified,resolved,True,1,False
+852,stepfun/step-3.5-flash,SWE-Bench Verified,74.4,resolved,,,,,,https://arxiv.org/abs/2602.10604,SWE-Bench Verified,resolved,True,1,False
+340,zhipuai/glm-5.2,FrontierSWE,74.4,dominance,,,,,2026-06-16,https://z.ai/blog/glm-5.2,FrontierSWE,dominance,True,1,False
+50,deepseek/deepseek-reasoner,Aider Polyglot,74.2,percent correct,,,,,2025-10-03,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,True
+542,minimax/MiniMax-M3,MCP Atlas,74.2,success rate,,,,,2026-06-01,https://www.minimax.io/blog/minimax-m3,MCP Atlas,success rate,True,1,False
+247,deepseek/deepseek-v4.1-flash,DeepSWE,74.2,resolved,reasoning_effort=100,1.1,,mini-swe-agent,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,DeepSWE,resolved,True,8,False
+248,openai/gpt-6-astra,DeepSWE,74.1,resolve rate,,1.1,,,2026-09-03,https://openai.com/index/gpt-6-astra/,DeepSWE,resolve rate,True,1,True
+1051,deepseek/deepseek-v4-pro-0813,Toolathlon-Verified,74.1,score,,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,Toolathlon-Verified,score,True,1,False
+854,minimax/MiniMax-M2.1,SWE-Bench Verified,74.0,resolved,,,,,,https://huggingface.co/MiniMaxAI/MiniMax-M2.1,SWE-Bench Verified,resolved,True,1,False
+647,google/gemini-3.5-flash-lite,OSWorld-Verified,74.0,success rate,,,,,2026-07-21,https://deepmind.google/models/model-cards/gemini-3-5-flash-lite/,OSWorld-Verified,success rate,True,1,False
+219,alibaba/qwen3.8-flash-next,CoWorkBench,73.9,score,,,internal,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,CoWorkBench,score,True,1,False
+957,anthropic/claude-opus-4-7,Terminal-Bench,73.8,pass@1,max,2.1,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,Terminal-Bench,pass@1,True,3,False
+855,zhipuai/glm-4.7,SWE-Bench Verified,73.8,resolved,,,,,,https://huggingface.co/zai-org/GLM-4.7,SWE-Bench Verified,resolved,True,1,False
+249,google/gemini-3.8-flash,DeepSWE,73.7,pass@1,high thinking,1.1,,mini-swe-agent,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/,DeepSWE,pass@1,True,1,False
+690,sakana/fugu-ultra,SWE Bench Pro,73.7,,,,,,,https://console.sakana.ai/models,SWE-Bench Pro,unspecified,True,1,False
+543,deepseek/deepseek-v4-pro,MCP Atlas,73.6,pass@1,preview checkpoint; max effort,,public,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,MCP Atlas,pass@1,True,1,False
+1052,xiaomi/mimo-v2.6-flash,Toolathlon-Verified,73.6,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,Toolathlon-Verified,score,True,1,False
+342,alibaba/qwen3.8-max,FrontierSWE,73.5,dominance score,,,,,2026-08-03,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,FrontierSWE,dominance score,True,1,False
+341,alibaba/qwen3.8-max-preview,FrontierSWE,73.5,dominance score,xhigh,,,Claude Code,2026-08-03,https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421,FrontierSWE,dominance score,True,1,False
+1053,alibaba/qwen3.8-flash-next,Toolathlon-Verified,73.5,pass@1,,,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,Toolathlon-Verified,pass@1,True,1,False
+856,alibaba/qwen3.6-35b-a3b,SWE-Bench Verified,73.4,resolved,,,,,,https://huggingface.co/Qwen/Qwen3.6-35B-A3B,SWE-Bench Verified,resolved,True,1,False
+227,anthropic/claude-fable-5-1,CursorBench,73.4,score,max effort; production safeguards with fallback,3.2.0,,,2026-09-01,https://www.anthropic.com/claude-fable-and-mythos-5-1,CursorBench,score,True,1,False
+6,tencent/hy3,AA-LCR,73.4,score,highest reasoning effort,,,,,https://huggingface.co/tencent/Hy3,AA-LCR,score,True,1,False
+414,openai/gpt-5.4-nano,Graphwalks,73.4,accuracy,"BFS, 0-128K",,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,Graphwalks,accuracy,True,2,False
+530,sakana/fugu-ultra,Long Context Reasoning,73.3,,,,,,,https://console.sakana.ai/models,Long Context Reasoning,unspecified,True,1,False
+755,deepseek/deepseek-v4-flash,SWE-Bench Multilingual,73.3,resolved,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,SWE-Bench Multilingual,resolved,True,1,False
+20,openai/gpt-5.4,ARC-AGI-2,73.3,accuracy,Verified,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,ARC-AGI-2,accuracy,True,1,False
+661,alibaba/qwen3.8-max,PLawBench,73.2,score,gemini-3.1-pro-preview judge,,,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,PLawBench,score,True,1,False
+700,zhipuai/glm-5.1,SWE-Atlas Codebase QnA,73.2,pass@1,,,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,SWE-Atlas Codebase QnA,pass@1,True,1,False
+307,meituan/longcat-2.0,FORTE,73.2,success rate,,,,,2026-06-30,https://github.com/meituan-longcat/longcat-2.0,FORTE,success rate,True,1,False
+177,deepseek/deepseek-v4-flash,BrowseComp,73.2,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,BrowseComp,pass@1,True,1,False
+1054,zhipuai/glm-5.3,Toolathlon-Verified,73.0,pass@1,max effort,,,,,https://huggingface.co/zai-org/GLM-5.3,Toolathlon-Verified,pass@1,True,1,False
+959,alibaba/qwen3.8-27b,Terminal-Bench,73.0,score,,2.1,,Terminus,,https://huggingface.co/Qwen/Qwen3.8-27B,Terminal-Bench,score,True,1,False
+701,openai/gpt-5.4,SWE-Atlas Codebase QnA,72.9,pass@1,medium,,,Cursor CLI,,https://artificialanalysis.ai/agents/coding-agents,SWE-Atlas Codebase QnA,pass@1,True,2,False
+857,zhipuai/glm-5,SWE-Bench Verified,72.8,resolved,,,,,,https://www.swebench.com/,SWE-Bench Verified,resolved,True,1,False
+250,openai/gpt-5.6-sol,DeepSWE,72.7,resolve rate,,1.1,,,2026-07-09,https://openai.com/index/gpt-5-6/,DeepSWE,resolve rate,True,1,False
+618,openai/gpt-6-astra,OSWorld,72.6,partial score,,2.0,V2-Offline (v2026.08.08),,2026-09-03,https://openai.com/index/gpt-6-astra/,OSWorld,partial score,True,1,True
+1055,alibaba/qwen3.8-max,Toolathlon-Verified,72.5,pass@1,,,,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,Toolathlon-Verified,pass@1,True,1,False
+1047,alibaba/qwen3.8-max-preview,Toolathlon Verified,72.5,pass@1,xhigh,,,,2026-08-03,https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421,Toolathlon-Verified,pass@1,True,1,False
+858,alibaba/qwen3.5-27b,SWE-Bench Verified,72.4,resolved,,,,,,https://huggingface.co/Qwen/Qwen3.5-27B,SWE-Bench Verified,resolved,True,1,False
+598,xiaomi/mimo-v2.6-pro,MiMo VisualCoding,72.3,score,MiMo-V2.6 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,MiMo VisualCoding,score,True,1,False
+294,alibaba/qwen3.8-flash-next,ERQA,72.3,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,ERQA,score,True,1,False
+347,google/gemini-3.5-flash-lite,GDM-MRCR,72.2,accuracy,"128k average, 8-needle",v2,,,2026-07-21,https://deepmind.google/models/model-cards/gemini-3-5-flash-lite/,GDM-MRCR,accuracy,True,2,False
+648,openai/gpt-5.4-mini,OSWorld-Verified,72.1,success rate,reasoning effort xhigh,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,OSWorld-Verified,success rate,True,1,False
+21,google/gemini-3.5-flash,ARC-AGI-2,72.1,accuracy,,,,,2026-05-19,https://deepmind.google/models/gemini/flash/,ARC-AGI-2,accuracy,True,1,False
+53,openai/o4-mini,Aider Polyglot,72.0,percent correct,,,,,2025-04-16,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+1059,tencent/hy3,USAMO,72.0,score,highest reasoning effort,2026,,,,https://huggingface.co/tencent/Hy3,USAMO,score,True,1,False
+52,anthropic/claude-opus-4-20250514,Aider Polyglot,72.0,percent correct,,,,,2025-05-25,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+859,alibaba/qwen3.5-122b-a10b,SWE-Bench Verified,72.0,resolved,,,,,,https://huggingface.co/Qwen/Qwen3.5-122B-A10B,SWE-Bench Verified,resolved,True,1,False
+51,anthropic/claude-opus-4-0,Aider Polyglot,72.0,percent correct,,,,,2025-05-25,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+703,anthropic/claude-opus-4-6,SWE-Atlas Codebase QnA,71.9,pass@1,medium,,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,SWE-Atlas Codebase QnA,pass@1,True,1,False
+252,xiaomi/mimo-v2.6-pro,DeepSWE,71.9,score,MiMo-V2.6 Pro comparison column,1.1,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,DeepSWE,score,True,1,False
+495,nvidia/nemotron-3.5-lightning,IFBench,71.88,accuracy,BF16; reasoning; loose,,,,,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,IFBench,accuracy,True,1,False
+594,xiaomi/mimo-v2.5,MiMo Coding Bench,71.8,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.5,MiMo Coding Bench,score,True,1,False
+960,tencent/hy3,Terminal-Bench,71.7,score,highest reasoning effort; 4h timeout; 500 episodes,2.1,,Terminus 2,,https://huggingface.co/tencent/Hy3,Terminal-Bench,score,True,1,False
+860,microsoft/mai-code-1-flash,SWE-Bench Verified,71.6,resolved,,,,,,https://llm-stats.com/benchmarks/swe-bench-verified,SWE-Bench Verified,resolved,True,1,False
+599,xiaomi/mimo-v2.6-flash,MiMo VisualCoding,71.5,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,MiMo VisualCoding,score,True,1,False
+861,moonshotai/kimi-k2-thinking,SWE-Bench Verified,71.3,resolved,,,,,,https://huggingface.co/moonshotai/Kimi-K2-Thinking,SWE-Bench Verified,resolved,True,1,False
+240,deepseek/deepseek-v4-pro-0813,DSBench-FullStack,71.1,score,,,internal,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,DSBench-FullStack,score,True,1,False
+253,xai/grok-4.7,DeepSWE,71.0,score,high effort,1.1,,,2026-09-21,https://x.ai/news/grok-4-7,DeepSWE,score,True,1,False
+862,poolside/laguna-xs-2.1,SWE-Bench Verified,70.9,resolved,,,,Harbor,2026-07-02,https://poolside.ai/blog/introducing-laguna-xs-2-1,SWE-Bench Verified,resolved,True,1,False
+962,meituan/longcat-2.0,Terminal-Bench,70.8,success rate,,2.1,,,2026-06-30,https://github.com/meituan-longcat/longcat-2.0,Terminal-Bench,success rate,True,1,False
+863,moonshotai/kimi-k2.5,SWE-Bench Verified,70.8,resolved,,,,,,https://www.swebench.com/,SWE-Bench Verified,resolved,True,1,False
+220,alibaba/qwen3.8-27b,CoWorkBench,70.7,score,,,internal,,,https://huggingface.co/Qwen/Qwen3.8-27B,CoWorkBench,score,True,1,False
+864,nvidia/nemotron-3-ultra-550b-a55b,SWE-Bench Verified,70.7,resolved,,,,,2026-06-04,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16,SWE-Bench Verified,resolved,True,1,False
+619,anthropic/claude-opus-5,OSWorld,70.6,success rate,,2.0,,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,OSWorld,success rate,True,1,False
+964,anthropic/claude-sonnet-5-5,Terminal-Bench,70.6,score,,4.0,,,2026-09-28,https://www.anthropic.com/claude-sonnet-5-5,Terminal-Bench,score,True,1,False
+965,google/gemini-3.1-pro-preview,Terminal-Bench,70.3,success rate,,2.1,,Terminus-2,2026-05-28,https://www.anthropic.com/news/claude-opus-4-8,Terminal-Bench,success rate,True,1,False
+705,anthropic/claude-sonnet-4-6,SWE-Atlas Codebase QnA,70.3,pass@1,medium,,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,SWE-Atlas Codebase QnA,pass@1,True,1,False
+1056,deepseek/deepseek-v4-flash-0731,Toolathlon-Verified,70.3,score,max effort,,,DeepSeek Harness minimal mode,2026-07-31,https://api-docs.deepseek.com/updates/,Toolathlon-Verified,score,True,1,False
+966,anthropic/claude-opus-4-6,Terminal-Bench,70.2,pass@1,medium,2.1,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,Terminal-Bench,pass@1,True,1,False
+909,alibaba/qwen3.8-max,SkillsBench,70.2,avg@3,,1.1,87 tasks,OpenCode,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,SkillsBench,avg@3,True,1,False
+54,deepseek/deepseek-chat,Aider Polyglot,70.2,percent correct,,,,,2025-10-03,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,True
+649,minimax/MiniMax-M3,OSWorld-Verified,70.06,success rate,,,,,2026-06-01,https://www.minimax.io/blog/minimax-m3,OSWorld-Verified,success rate,True,1,False
+210,deepreinforce/ornith-1.0-35b,Claw-eval,69.8,percent,,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B,Claw-eval,percent,True,1,False
+967,openai/gpt-5.4,Terminal-Bench,69.8,pass@1,medium,2.1,,Codex,,https://artificialanalysis.ai/agents/coding-agents,Terminal-Bench,pass@1,True,2,False
+968,alibaba/qwen3.7-max,Terminal-Bench,69.7,success rate,,2.0,,Terminus-2,2026-05-19,https://qwen.ai/blog?id=qwen3.7,Terminal-Bench,success rate,True,1,True
+256,openai/gpt-5.6-terra,DeepSWE,69.6,resolve rate,,1.1,,,2026-07-09,https://openai.com/index/gpt-5-6/,DeepSWE,resolve rate,True,1,False
+569,openai/gpt-5.4-nano,MMMU Pro,69.5,accuracy,with Python,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,MMMU Pro,accuracy,True,2,False
+183,sakana/fugu-ultra,CTI-REALM,69.4,,,,,,,https://console.sakana.ai/models,CTI-REALM,unspecified,True,1,False
+866,minimax/MiniMax-M2,SWE-Bench Verified,69.4,resolved,,,,,,https://huggingface.co/MiniMaxAI/MiniMax-M2,SWE-Bench Verified,resolved,True,1,False
+865,deepreinforce/ornith-1.0-9b,SWE-Bench Verified,69.4,percent resolved,,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B,SWE-Bench Verified,percent resolved,True,1,False
+756,deepreinforce/ornith-1.0-35b,SWE-Bench Multilingual,69.3,percent resolved,,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B,SWE-Bench Multilingual,percent resolved,True,1,False
+764,anthropic/claude-opus-4-8,SWE-Bench Pro,69.2,resolve rate,,,,,2026-05-28,https://www.anthropic.com/news/claude-opus-4-8,SWE-Bench Pro,resolve rate,True,1,False
+312,inclusionai/ling-3.0-flash-fin,Finance Agent,69.19,strict-pass,highest reasoning effort; 10 runs,1.1,,,,https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin,Finance Agent,strict-pass,True,2,False
+544,deepseek/deepseek-v4-flash,MCP Atlas,69.0,pass@1,preview checkpoint; max effort,,public,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,MCP Atlas,pass@1,True,1,False
+258,openai/gpt-6-sol,DeepSWE,68.8,score,max effort,1.1,,,2026-09-22,https://openai.com/index/introducing-gpt-6-sol-and-luna/,DeepSWE,score,True,1,False
+257,anthropic/claude-opus-5,DeepSWE,68.8,resolve rate,,1.1,,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,DeepSWE,resolve rate,True,1,False
+241,deepseek/deepseek-v4-flash-0731,DSBench-FullStack,68.7,score,max effort,,internal,,2026-07-31,https://api-docs.deepseek.com/updates/,DSBench-FullStack,score,True,1,False
+212,tencent/hy3,ClawEval,68.5,pass@3,highest reasoning effort,20260325,105 queries,Tencent internal harness,,https://huggingface.co/tencent/Hy3,ClawEval,pass@3,True,1,False
+969,google/gemini-3.1-pro-preview,Terminal-Bench,68.3,pass@1,high,2.1,,Gemini CLI,,https://artificialanalysis.ai/agents/coding-agents,Terminal-Bench,pass@1,True,1,False
+970,deepseek/deepseek-v4-pro,Terminal-Bench,67.9,accuracy,preview checkpoint; max effort,2.0,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,Terminal-Bench,accuracy,True,1,False
+259,xiaomi/mimo-v2.6-flash,DeepSWE,67.9,score,,1.1,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,DeepSWE,score,True,1,False
+706,deepseek/deepseek-v4-pro,SWE-Atlas Codebase QnA,67.8,pass@1,high,,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,SWE-Atlas Codebase QnA,pass@1,True,1,False
+766,alibaba/qwen3.8-max,SWE-Bench Pro,67.7,resolved,,,Qwen refined and corrected task set,Claude Code,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,SWE-Bench Pro,resolved,True,1,False
+765,alibaba/qwen3.8-max-preview,SWE-Bench Pro,67.7,resolve rate,xhigh,,,Claude Code,2026-08-03,https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421,SWE-Bench Pro,resolve rate,True,1,False
+431,anthropic/claude-opus-5-5,Humanity's Last Exam,67.7,score,max effort; with tools; production safeguards with fallback,,,,2026-09-22,https://www.anthropic.com/claude-opus-5-5,Humanity's Last Exam,score,True,1,False
+1069,alibaba/qwen3.8-max,WorkSpaceBench,67.7,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,WorkSpaceBench,score,True,1,False
+757,nvidia/nemotron-3-ultra-550b-a55b,SWE-Bench Multilingual,67.7,resolve rate,,,,,2026-06-04,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16,SWE-Bench Multilingual,resolve rate,True,1,False
+867,cohere/north-mini-code-1-0,SWE-Bench Verified,67.6,resolved,,,,SWE-agent,2026-06-09,https://huggingface.co/CohereLabs/North-Mini-Code-1.0,SWE-Bench Verified,resolved,True,1,False
+184,sakana/fugu,CTI-REALM,67.5,,,,,,,https://console.sakana.ai/models,CTI-REALM,unspecified,True,1,False
+261,moonshotai/kimi-k3,DeepSWE,67.5,resolve rate,max effort,1.1,,Kimi Code,2026-07-16,https://www.kimi.com/blog/kimi-k3,DeepSWE,resolve rate,True,1,False
+553,microsoft/phi-4-mini,MMLU,67.3,accuracy,,,,,,https://huggingface.co/microsoft/Phi-4-mini-instruct/resolve/main/README.md,MMLU,accuracy,True,1,False
+262,openai/gpt-5.6-luna,DeepSWE,67.2,resolve rate,,1.1,,,2026-07-09,https://openai.com/index/gpt-5-6/,DeepSWE,resolve rate,True,1,False
+242,deepseek/deepseek-v4-pro-0813,DSBench-Hard,67.2,score,,,internal,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,DSBench-Hard,score,True,1,False
+213,stepfun/step-3.7-flash,ClawEval,67.1,pass^3,,1.1,,,2026-05-29,https://static.stepfun.com/blog/step-3.7-flash/,ClawEval,pass^3,True,1,False
+971,anthropic/claude-sonnet-4-6,Terminal-Bench,67.0,success rate,,2.1,,Terminus-2,2026-06-30,https://www.anthropic.com/news/claude-sonnet-5,Terminal-Bench,success rate,True,1,False
+84,openai/gpt-6-astra,Artificial Analysis Coding Agent Index,67.0,index score,max,1.4,,Codex,2026-09-03,https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra,Artificial Analysis Coding Agent Index,index score,True,1,True
+620,meta/muse-spark-1.3,OSWorld,66.9,mean partial score,max effort,2.0,08.08,Meta internal evaluation framework,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,OSWorld,mean partial score,True,1,False
+263,zhipuai/glm-5.3,DeepSWE,66.9,resolved,max effort; 6h timeout; 400K context,1.1,,mini-swe-agent,,https://huggingface.co/zai-org/GLM-5.3,DeepSWE,resolved,True,1,False
+264,openai/gpt-6-luna,DeepSWE,66.6,score,max effort,1.1,,,2026-09-22,https://openai.com/index/introducing-gpt-6-sol-and-luna/,DeepSWE,score,True,1,False
+85,anthropic/claude-opus-4-7,Artificial Analysis Coding Agent Index,66.6,average pass@1,max,,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,Artificial Analysis Coding Agent Index,average pass@1,True,3,False
+972,anthropic/claude-opus-5-5,Terminal-Bench,66.4,score,xhigh effort; production safeguards with fallback,4.0,,,2026-09-22,https://www.anthropic.com/claude-opus-5-5,Terminal-Bench,score,True,1,False
+531,alibaba/qwen3.8-max,LongBench,66.3,score,,2,,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,LongBench,score,True,1,False
+577,meta/muse-spark-1.2,MRCR,66.3,mean sequence-match ratio,xhigh effort,2,"8-needle, 256K-512K",,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,MRCR,mean sequence-match ratio,True,2,False
+685,xiaomi/mimo-v2.6-pro,SEC-Bench Pro,66.3,score,MiMo-V2.6 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,SEC-Bench Pro,score,True,1,False
+973,anthropic/claude-opus-4-7,Terminal-Bench,66.1,success rate,,2.1,,Terminus-2,2026-05-28,https://www.anthropic.com/news/claude-opus-4-8,Terminal-Bench,success rate,True,1,False
+974,minimax/MiniMax-M3,Terminal-Bench,66.0,success rate,,2.1,,,2026-06-01,https://www.minimax.io/blog/minimax-m3,Terminal-Bench,success rate,True,1,False
+650,meta/muse-glimmer-30b,OSWorld-Verified,65.9,success rate,,,,,2026-08-10,https://huggingface.co/meta-models/Muse-Glimmer-30B,OSWorld-Verified,success rate,True,1,False
+975,xiaomi/mimo-v2.5,Terminal-Bench,65.8,score,,2.0,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.5,Terminal-Bench,score,True,1,False
+581,deepseek/deepseek-v4.1-flash,MathArena Apex,65.6,pass@1,reasoning_effort=100,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,MathArena Apex,pass@1,True,1,False
+295,alibaba/qwen3.8-27b,ERQA,65.5,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-27B,ERQA,score,True,1,False
+268,google/gemini-3.7-flash,DeepSWE,65.3,resolve rate,,1.1,,,2026-08-13,https://deepmind.google/models/model-cards/gemini-3-7-flash/,DeepSWE,resolve rate,True,1,False
+86,openai/gpt-5.5,Artificial Analysis Coding Agent Index,65.3,average pass@1,xhigh,,,Codex,,https://artificialanalysis.ai/agents/coding-agents,Artificial Analysis Coding Agent Index,average pass@1,True,3,False
+976,xiaomi/mimo-v2.5-pro,Terminal-Bench,65.2,score,MiMo-V2.5 Pro comparison column,2.1,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,Terminal-Bench,score,True,2,False
+269,xai/grok-4.6,DeepSWE,65.2,score,high effort,1.1,,,2026-09-21,https://x.ai/news/grok-4-7,DeepSWE,score,True,1,False
+977,zhipuai/glm-5.1,Terminal-Bench,65.1,pass@1,,2.1,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,Terminal-Bench,pass@1,True,1,False
+432,anthropic/claude-fable-5-1,Humanity's Last Exam,65.0,score,with tools; production safeguards with fallback,,,,2026-09-01,https://www.anthropic.com/claude-fable-and-mythos-5-1,Humanity's Last Exam,score,True,2,False
+502,meta/muse-spark-1.3,JobBench,64.9,mean rubric score,max effort,,,OpenCode,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,JobBench,mean rubric score,True,1,False
+55,anthropic/claude-3-7-sonnet-20250219,Aider Polyglot,64.9,percent correct,,,,,2025-02-24,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+1064,alibaba/qwen3.8-27b,WebArena-Verified,64.8,score,,,,OSWorld scaffold; official WebArena-Verified grader,,https://huggingface.co/Qwen/Qwen3.8-27B,WebArena-Verified,score,True,1,False
+978,deepseek/deepseek-v4-pro,Terminal-Bench,64.7,pass@1,high,2.1,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,Terminal-Bench,pass@1,True,1,False
+767,xai/grok-4.5,SWE-Bench Pro,64.7,resolve rate,,,,,2026-07-08,https://x.ai/news/grok-4-5,SWE-Bench Pro,resolve rate,True,1,False
+433,anthropic/claude-opus-5,Humanity's Last Exam,64.7,accuracy,with tools,,,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,Humanity's Last Exam,accuracy,True,2,False
+1032,openai/gpt-6-astra,Terminal-Bench Science,64.6,success rate,,0.1,,,2026-09-03,https://openai.com/index/gpt-6-astra/,Terminal-Bench-Science,success rate,True,1,True
+768,openai/gpt-5.6-sol,SWE-Bench Pro,64.6,resolve rate,,,,,2026-07-09,https://openai.com/index/gpt-5-6/,SWE-Bench Pro,resolve rate,True,1,False
+318,openai/gpt-6-astra,FrontierCode,64.5,score,,1.1,Extended,,2026-09-03,https://openai.com/index/gpt-6-astra/,FrontierCode,score,True,1,True
+434,anthropic/claude-fable-5,Humanity's Last Exam,64.5,accuracy,with tools,,,,2026-06-09,https://www.anthropic.com/news/claude-fable-5-mythos-5,Humanity's Last Exam,accuracy,True,2,False
+435,anthropic/claude-sonnet-5-5,Humanity's Last Exam,64.5,score,with tools,,,,2026-09-28,https://www.anthropic.com/claude-sonnet-5-5,Humanity's Last Exam,score,True,1,False
+214,alibaba/qwen3.8-flash-next,ClawEval-MM,64.4,pass@3,,,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,ClawEval-MM,pass@3,True,1,False
+204,deepseek/deepseek-v4-flash-vision-exp,Chartography,64.3,score,,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp,Chartography,score,True,1,False
+769,anthropic/claude-opus-4-7,SWE-Bench Pro,64.3,resolve rate,,,,,2026-05-28,https://www.anthropic.com/news/claude-opus-4-8,SWE-Bench Pro,resolve rate,True,1,False
+980,moonshotai/kimi-k2.6,Terminal-Bench,64.3,pass@1,,2.1,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,Terminal-Bench,pass@1,True,1,False
+1006,deepreinforce/ornith-1.0-35b,Terminal-Bench 2.1,64.2,percent,Terminus-2,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B,Terminal-Bench 2.1,percent,True,2,False
+1061,xiaomi/mimo-v2.5,VideoHolmes,64.0,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.5,VideoHolmes,score,True,1,False
+1062,alibaba/qwen3.8-flash-next,Vision2Web,64.0,score,gpt-5.4-2026-03-05 judge,,,Claude Code,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,Vision2Web,score,True,1,False
+292,xai/grok-4.7,EEBench,64.0,score,xhigh effort,,,,2026-09-21,https://x.ai/news/grok-4-7,EEBench,score,True,1,False
+600,deepseek/deepseek-v4.1-flash,NL2Repo,64.0,score,reasoning_effort=100,,,DeepSeek Harness minimal mode,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,NL2Repo,score,True,1,False
+436,deepseek/deepseek-v4.1-flash,Humanity's Last Exam,63.9,pass@1,reasoning_effort=100; with tools,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,Humanity's Last Exam,pass@1,True,3,False
+548,google/gemini-3.6-flash,MLE-Bench,63.9,average position score,,,Partial 30,,2026-07-21,https://deepmind.google/models/evals-methodology/gemini-3-6-flash/,MLE-Bench,average position score,True,1,False
+669,zhipuai/glm-5.2,Program Bench,63.7,score,,,,,2026-06-16,https://z.ai/blog/glm-5.2,Program Bench,score,True,1,False
+243,deepseek/deepseek-v4-flash-vision-exp,DSBench-Hard,63.6,score,max effort,,internal,DeepSeek Harness minimal mode,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp,DSBench-Hard,score,True,1,False
+770,openai/gpt-5.6-terra,SWE-Bench Pro,63.4,resolve rate,,,,,2026-07-09,https://openai.com/index/gpt-5-6/,SWE-Bench Pro,resolve rate,True,1,False
+270,zhipuai/glm-5.3-flash,DeepSWE,63.4,resolved,max effort,1.1,,mini-swe-agent,,https://huggingface.co/zai-org/GLM-5.3-Flash,DeepSWE,resolved,True,1,False
+771,anthropic/claude-sonnet-5,SWE-Bench Pro,63.2,resolve rate,,,,,2026-06-30,https://www.anthropic.com/news/claude-sonnet-5,SWE-Bench Pro,resolve rate,True,1,False
+591,xiaomi/mimo-v2.6-pro,MiMo Code Bench,63.2,score,MiMo-V2.6 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,MiMo Code Bench,score,True,1,False
+211,deepreinforce/ornith-1.0-9b,Claw-eval,63.1,percent,,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B,Claw-eval,percent,True,1,False
+981,anthropic/claude-sonnet-4-6,Terminal-Bench,63.1,pass@1,medium,2.1,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,Terminal-Bench,pass@1,True,1,False
+758,poolside/laguna-xs-2.1,SWE-Bench Multilingual,63.1,resolve rate,,,,Harbor,2026-07-02,https://poolside.ai/blog/introducing-laguna-xs-2-1,SWE-Bench Multilingual,resolve rate,True,1,False
+1063,alibaba/qwen3.8-27b,Vision2Web,62.9,score,gpt-5.4-2026-03-05 judge,,,Claude Code,,https://huggingface.co/Qwen/Qwen3.8-27B,Vision2Web,score,True,1,False
+686,deepseek/deepseek-v4.1-flash,SEC-Bench Pro,62.8,pass@1,reasoning_effort=100,,,Claude Code,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,SEC-Bench Pro,pass@1,True,1,False
+271,deepseek/deepseek-v4-pro-0813,DeepSWE,62.7,score,max effort,,,DeepSeek Harness minimal mode,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,DeepSWE,score,True,1,False
+772,openai/gpt-5.6-luna,SWE-Bench Pro,62.7,resolve rate,,,,,2026-07-09,https://openai.com/index/gpt-5-6/,SWE-Bench Pro,resolve rate,True,1,False
+621,openai/gpt-5.6-sol,OSWorld,62.6,success rate,,2.0,,,2026-07-09,https://openai.com/index/gpt-5-6/,OSWorld,success rate,True,1,False
+437,zhipuai/glm-5.3,Humanity's Last Exam,62.5,accuracy,max effort; with tools,,,,,https://huggingface.co/zai-org/GLM-5.3,Humanity's Last Exam,accuracy,True,1,False
+773,alibaba/qwen3.8-flash-next,SWE-Bench Pro,62.5,score,,,Qwen refined and corrected task set,Claude Code,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,SWE-Bench Pro,score,True,1,False
+207,xiaomi/mimo-v2.5,Claw-Eval,62.3,score,text,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.5,Claw-eval,score,True,2,False
+774,deepreinforce/ornith-1.0-397b,SWE-Bench Pro,62.2,percent resolved,,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-397B,SWE-Bench Pro,percent resolved,True,1,False
+775,zhipuai/glm-5.2,SWE-Bench Pro,62.1,resolve rate,,,,,2026-06-16,https://z.ai/blog/glm-5.2,SWE-Bench Pro,resolve rate,True,1,False
+438,meta/muse-spark-1.1,Humanity's Last Exam,62.1,accuracy,with tools,,,,2026-07-09,https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/,Humanity's Last Exam,accuracy,True,1,False
+513,moonshotai/kimi-k2.7-code,Kimi Code Bench,62.0,,,v2,,Kimi Code CLI,2026-06-12,https://huggingface.co/moonshotai/Kimi-K2.7-Code,Kimi Code Bench,unspecified,True,1,False
+272,xai/grok-4.5,DeepSWE,62.0,resolve rate,,1.0,,,2026-07-08,https://x.ai/news/grok-4-5,DeepSWE,resolve rate,True,2,False
+503,xiaomi/mimo-v2.6-pro,JobBench,62.0,score,MiMo-V2.6 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,JobBench,score,True,1,False
+224,deepseek/deepseek-v4-pro,CorpusQA,62.0,accuracy,preview checkpoint; max effort,,1M context,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,CorpusQA,accuracy,True,1,False
+874,alibaba/qwen3.8-27b,SWE-bench Pro,61.7,resolved,,,,,,https://huggingface.co/Qwen/Qwen3.8-27B,SWE-Bench Pro,resolved,True,1,False
+56,openai/o1,Aider Polyglot,61.7,percent correct,,,,,2024-12-21,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+868,mistral/devstral-medium-2507,SWE-Bench Verified,61.6,resolved,,,,,2025-07-10,https://mistral.ai/news/devstral-2507,SWE-Bench Verified,resolved,True,1,False
+504,meta/muse-spark-1.2,JobBench,61.6,mean rubric score,xhigh effort,,,OpenCode,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,JobBench,mean rubric score,True,1,False
+601,deepseek/deepseek-v4-pro-0813,NL2Repo,61.5,score,max effort,,,DeepSeek Harness minimal mode,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,NL2Repo,score,True,1,False
+776,meta/muse-spark-1.1,SWE-Bench Pro,61.5,resolve rate,,,,,2026-07-09,https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/,SWE-Bench Pro,resolve rate,True,1,False
+316,openai/gpt-5.4-pro,FinanceAgent,61.5,accuracy,,1.1,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,FinanceAgent,accuracy,True,1,False
+313,google/gemini-3.8-flash,Finance Agent,61.4,pass@1,,2,,,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/,Finance Agent,pass@1,True,1,False
+57,anthropic/claude-sonnet-4-0,Aider Polyglot,61.3,percent correct,,,,,2025-05-24,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+58,anthropic/claude-sonnet-4-20250514,Aider Polyglot,61.3,percent correct,,,,,2025-05-24,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+592,xiaomi/mimo-v2.6-flash,MiMo Code Bench,61.2,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,MiMo Code Bench,score,True,1,False
+505,xiaomi/mimo-v2.6-flash,JobBench,61.2,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,JobBench,score,True,1,False
+126,openai/gpt-6-astra,Artificial Analysis Intelligence Index,61.0,index score,max,4.1.1,,,2026-09-03,https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra,Artificial Analysis Intelligence Index,index score,True,1,True
+777,alibaba/qwen3.7-max,SWE-Bench Pro,60.6,resolve rate,,,,,2026-05-19,https://qwen.ai/blog?id=qwen3.7,SWE-Bench Pro,resolve rate,True,1,True
+225,deepseek/deepseek-v4-flash,CorpusQA,60.5,accuracy,preview checkpoint; max effort,,1M context,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,CorpusQA,accuracy,True,1,False
+622,openai/gpt-6-sol,OSWorld,60.5,partial reward,xhigh effort,2.0,offline v2026.08.08,,2026-09-22,https://openai.com/index/introducing-gpt-6-sol-and-luna/,OSWorld,partial reward,True,1,False
+59,openai/o3-mini,Aider Polyglot,60.4,percent correct,,,,,2025-01-31,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+215,alibaba/qwen3.8-flash-next,ClawEval-MM,60.4,average score,,,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,ClawEval-MM,average score,True,1,False
+426,alibaba/qwen3.8-max,HealthBench,60.2,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,HealthBench,score,True,1,False
+875,sakana/fugu,SciCode,60.1,,,,,,,https://console.sakana.ai/models,SciCode,unspecified,True,1,False
+982,openai/gpt-5.4-mini,Terminal-Bench,60.0,accuracy,reasoning effort xhigh,2.0,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,Terminal-Bench,accuracy,True,1,False
+440,deepseek/deepseek-v4-pro-0813,Humanity's Last Exam,60.0,score,with tools,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,Humanity's Last Exam,score,True,2,False
+707,moonshotai/kimi-k2.6,SWE-Atlas Codebase QnA,59.8,pass@1,,,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,SWE-Atlas Codebase QnA,pass@1,True,1,False
+429,anthropic/claude-opus-5,HealthBench Professional,59.8,score,max effort,,,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,HealthBench Professional,score,True,1,False
+983,stepfun/step-3.7-flash,Terminal-Bench,59.6,success rate,,2.1,,,2026-05-29,https://static.stepfun.com/blog/step-3.7-flash/,Terminal-Bench,success rate,True,1,False
+60,alibaba/qwen3-235b-a22b,Aider Polyglot,59.6,percent correct,,,,,2025-05-09,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+244,deepseek/deepseek-v4-flash-0731,DSBench-Hard,59.6,score,max effort,,internal,,2026-07-31,https://api-docs.deepseek.com/updates/,DSBench-Hard,score,True,1,False
+778,meituan/longcat-2.0,SWE-Bench Pro,59.5,resolve rate,,,,,2026-06-30,https://github.com/meituan-longcat/longcat-2.0,SWE-Bench Pro,resolve rate,True,1,False
+761,anthropic/claude-opus-5,SWE-Bench Multimodal,59.4,resolve rate,,,,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,SWE-Bench Multimodal,resolve rate,True,1,False
+708,meta/muse-spark-1.3,SWE-Atlas Codebase QnA,59.4,pass@1,max effort,,,mini-swe-agent,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,SWE-Atlas Codebase QnA,pass@1,True,1,False
+273,deepseek/deepseek-v4-flash-vision-exp,DeepSWE,59.3,score,max effort,,,DeepSeek Harness minimal mode,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp,DeepSWE,score,True,1,False
+274,meta/muse-spark-1.2,DeepSWE,59.3,pass@1,xhigh effort,1.1,,Muse Code,2026-08-05,https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2,DeepSWE,pass@1,True,2,False
+26,openai/gpt-6-astra,Agents' Last Exam,59.3,,,,,,2026-09-03,https://openai.com/index/gpt-6-astra/,Agents' Last Exam,unspecified,True,1,True
+869,zhipuai/glm-4.7-flash,SWE-Bench Verified,59.2,resolved,,,,,,https://huggingface.co/zai-org/GLM-4.7-Flash,SWE-Bench Verified,resolved,True,1,False
+779,openai/gpt-5.4,SWE-Bench Pro,59.1,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+623,google/gemini-3.8-flash,OSWorld,59.0,partial score,batched tool calls; best of 3 runs; 500 steps,2.0,before 2026-08-08 patch,Gemini CUA,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/,OSWorld,partial score,True,1,False
+691,sakana/fugu,SWE Bench Pro,59.0,,,,,,,https://console.sakana.ai/models,SWE-Bench Pro,unspecified,True,1,False
+780,minimax/MiniMax-M3,SWE-Bench Pro,59.0,resolve rate,,,,Claude Code,2026-06-01,https://www.minimax.io/blog/minimax-m3,SWE-Bench Pro,resolve rate,True,1,False
+127,openai/gpt-5.6-sol,Artificial Analysis Intelligence Index,58.9,index score,max,4.1,,,2026-07-09,https://artificialanalysis.ai/articles/gpt-5-6-has-landed,Artificial Analysis Intelligence Index,index score,True,1,False
+876,sakana/fugu-ultra,SciCode,58.7,,,,,,,https://console.sakana.ai/models,SciCode,unspecified,True,1,False
+781,google/gemini-3.6-flash,SWE-Bench Pro,58.7,resolve rate,,,,Antigravity,2026-07-21,https://deepmind.google/models/evals-methodology/gemini-3-6-flash/,SWE-Bench Pro,resolve rate,True,1,False
+442,openai/gpt-5.4-pro,Humanity's Last Exam,58.7,accuracy,with tools,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,Humanity's Last Exam,accuracy,True,2,False
+275,alibaba/qwen3.8-flash-next,DeepSWE,58.7,score,,1.1,,mini-swe-agent,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,DeepSWE,score,True,1,False
+1033,anthropic/claude-opus-5-5,Terminal-Bench-Science,58.7,score,max effort; production safeguards with fallback,0.1,,,2026-09-22,https://www.anthropic.com/claude-opus-5-5,Terminal-Bench-Science,score,True,1,False
+782,openai/gpt-5.5,SWE-Bench Pro,58.6,resolve rate,,,,,2026-05-28,https://www.anthropic.com/news/claude-opus-4-8,SWE-Bench Pro,resolve rate,True,1,False
+676,alibaba/qwen3.8-max,QwenQoderBench,58.4,avg@5,,,internal,Claude Code,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,QwenQoderBench,avg@5,True,1,False
+662,alibaba/qwen3.8-max,PRBench,58.3,score,finance,,,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,PRBench,score,True,2,False
+1036,openai/gpt-5.6-sol,Toolathlon,58.0,success rate,,,,,2026-07-09,https://openai.com/index/gpt-5-6/,Toolathlon,success rate,True,1,False
+602,zhipuai/glm-5.3,NL2Repo,58.0,score,max effort,,,,,https://huggingface.co/zai-org/GLM-5.3,NL2Repo,score,True,1,False
+783,tencent/hy3,SWE-Bench Pro,57.9,score,highest reasoning effort,,,SWE-agent,,https://huggingface.co/tencent/Hy3,SWE-Bench Pro,score,True,1,False
+907,deepseek/deepseek-v4-pro,SimpleQA-Verified,57.9,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,SimpleQA-Verified,pass@1,True,1,False
+984,openai/gpt-6-astra,Terminal-Bench,57.9,success rate,,4.0,,,2026-09-03,https://openai.com/index/gpt-6-astra/,Terminal-Bench,success rate,True,1,True
+443,anthropic/claude-opus-4-8,Humanity's Last Exam,57.9,accuracy,with tools,,,,2026-06-09,https://www.anthropic.com/news/claude-fable-5-mythos-5,Humanity's Last Exam,accuracy,True,2,False
+228,anthropic/claude-opus-5-5,CursorBench,57.8,score,max effort; production safeguards with fallback,4.0,,,2026-09-22,https://www.anthropic.com/claude-opus-5-5,CursorBench,score,True,1,False
+24,meta/muse-spark-1.3,Agentic IF Index,57.8,score,max effort,,Meta internal,,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,Agentic IF Index,score,True,1,False
+603,deepseek/deepseek-v4-flash-vision-exp,NL2Repo,57.7,score,max effort,,,DeepSeek Harness minimal mode,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp,NL2Repo,score,True,1,False
+545,openai/gpt-5.4-mini,MCP Atlas,57.7,score,reasoning effort xhigh,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,MCP Atlas,score,True,1,False
+216,alibaba/qwen3.8-27b,ClawEval-MM,57.4,pass@3,,,,,,https://huggingface.co/Qwen/Qwen3.8-27B,ClawEval-MM,pass@3,True,1,False
+444,openai/gpt-5.5-pro,Humanity's Last Exam,57.2,accuracy,with tools,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,Humanity's Last Exam,accuracy,True,2,False
+445,openai/gpt-6-astra,Humanity's Last Exam,57.2,accuracy,with tools,,,,2026-09-03,https://openai.com/index/gpt-6-astra/,Humanity's Last Exam,accuracy,True,1,True
+784,xiaomi/mimo-v2.5-pro,SWE-Bench Pro,57.2,resolve rate,,,,,2026-04-22,https://mimo.xiaomi.com/mimo-v2-5-pro/,SWE-Bench Pro,resolve rate,True,1,False
+315,meta/muse-spark-1.1,Finance Agent,57.2,accuracy,,v2,,,2026-07-09,https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/,Finance Agent,accuracy,True,1,False
+985,deepseek/deepseek-v4-flash,Terminal-Bench,56.9,accuracy,preview checkpoint; max effort,2.0,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,Terminal-Bench,accuracy,True,1,False
+217,alibaba/qwen3.8-27b,ClawEval-MM,56.9,average score,,,,,,https://huggingface.co/Qwen/Qwen3.8-27B,ClawEval-MM,average score,True,1,False
+61,deepseek/deepseek-r1,Aider Polyglot,56.9,percent correct,,,,,2025-01-20,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+427,xai/grok-4.7,HealthBench,56.7,score,xhigh effort; professional,,,,2026-09-21,https://x.ai/news/grok-4-7,HealthBench,score,True,1,False
+276,alibaba/qwen3.8-max-preview,DeepSWE,56.6,resolve rate,xhigh,1.1,,Claude Code,2026-08-03,https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421,DeepSWE,resolve rate,True,1,False
+277,alibaba/qwen3.8-max,DeepSWE,56.6,score,,1.1,,Claude Code,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,DeepSWE,score,True,1,False
+1037,google/gemini-3.5-flash,Toolathlon,56.5,success rate,,,,,2026-05-19,https://deepmind.google/models/gemini/flash/,Toolathlon,success rate,True,1,False
+27,openai/gpt-6-sol,Agents' Last Exam,56.4,score,max effort,1,,,2026-09-22,https://openai.com/index/introducing-gpt-6-sol-and-luna/,Agents' Last Exam,score,True,1,False
+986,nvidia/nemotron-3-ultra-550b-a55b,Terminal-Bench,56.4,success rate,,2.1,,,2026-06-04,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16,Terminal-Bench,success rate,True,1,False
+308,sakana/sakana-namazu,FairPoliticsQA,56.3,,,,,,,https://console.sakana.ai/models?model=sakana-namazu,FairPoliticsQA,unspecified,True,1,False
+785,stepfun/step-3.7-flash,SWE-Bench Pro,56.3,resolve rate,,,,,2026-05-29,https://static.stepfun.com/blog/step-3.7-flash/,SWE-Bench Pro,resolve rate,True,1,False
+786,minimax/MiniMax-M2.7,SWE-Bench Pro,56.2,resolve rate,,,,Claude Code,2026-06-01,https://www.minimax.io/blog/minimax-m3,SWE-Bench Pro,resolve rate,True,1,False
+447,alibaba/qwen3.8-max-preview,Humanity's Last Exam,56.2,accuracy,"xhigh, with tools",,,,2026-08-03,https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421,Humanity's Last Exam,accuracy,True,2,False
+448,alibaba/qwen3.8-max,Humanity's Last Exam,56.2,score,with tools,,,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,Humanity's Last Exam,score,True,2,False
+787,xiaomi/mimo-v2.5,SWE-Bench Pro,56.1,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.5,SWE-Bench Pro,score,True,1,False
+546,openai/gpt-5.4-nano,MCP Atlas,56.1,score,reasoning effort xhigh,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,MCP Atlas,score,True,1,False
+604,alibaba/qwen3.8-max-preview,NL2Repo,55.9,resolve rate,xhigh,,,Claude Code,2026-08-03,https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421,NL2Repo,resolve rate,True,1,False
+605,alibaba/qwen3.8-max,NL2Repo,55.9,score,,,,Claude Code,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,NL2Repo,score,True,1,False
+987,anthropic/claude-fable-5-1,Terminal-Bench,55.8,score,production safeguards with fallback,4.0,,,2026-09-01,https://www.anthropic.com/claude-fable-and-mythos-5-1,Terminal-Bench,score,True,1,False
+506,alibaba/qwen3.8-flash-next,JobBench,55.7,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,JobBench,score,True,1,False
+1038,openai/gpt-5.5,Toolathlon,55.6,success rate,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,Toolathlon,success rate,True,1,False
+229,anthropic/claude-sonnet-5-5,CursorBench,55.5,score,,4.0,,,2026-09-28,https://www.anthropic.com/claude-sonnet-5-5,CursorBench,score,True,1,False
+788,deepseek/deepseek-v4-pro,SWE-Bench Pro,55.4,resolved,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,SWE-Bench Pro,resolved,True,1,False
+449,zhipuai/glm-5.3-flash,Humanity's Last Exam,55.3,accuracy,max effort; with tools,,full set,,,https://huggingface.co/zai-org/GLM-5.3-Flash,Humanity's Last Exam,accuracy,True,1,False
+910,tencent/hy3,SkillsBench,55.3,average over 3 runs,highest reasoning effort,,79 text-only tasks,Claude Code,,https://huggingface.co/tencent/Hy3,SkillsBench,average over 3 runs,True,1,False
+789,google/gemini-3.5-flash,SWE-Bench Pro,55.1,resolve rate,single attempt,,public,,2026-05-19,https://deepmind.google/models/gemini/flash/,SWE-Bench Pro,resolve rate,True,1,False
+62,google/gemini-2.5-flash,Aider Polyglot,55.1,percent correct,,,,,2025-05-25,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,True
+128,openai/gpt-5.6-terra,Artificial Analysis Intelligence Index,55.0,index score,max,4.1,,,2026-07-09,https://artificialanalysis.ai/articles/gpt-5-6-has-landed,Artificial Analysis Intelligence Index,index score,True,1,False
+417,google/gemini-3.8-flash,HLE-Verified,54.9,accuracy,,,1811 verified and revised items,,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/,HLE-Verified,accuracy,True,1,False
+914,tencent/hy3,SuperChem,54.9,score,highest reasoning effort,,,,,https://huggingface.co/tencent/Hy3,SuperChem,score,True,1,False
+133,deepseek/deepseek-v4.1-flash,AutomationBench,54.8,pass@1,reasoning_effort=100,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,AutomationBench,pass@1,True,1,False
+988,microsoft/mai-code-1-flash,Terminal-Bench,54.8,success rate,,2.0,,,,https://llm-stats.com/benchmarks/terminal-bench-2,Terminal-Bench,success rate,True,1,False
+451,zhipuai/glm-5.2,Humanity's Last Exam,54.7,accuracy,with tools,,text-only subset,,2026-06-16,https://z.ai/blog/glm-5.2,Humanity's Last Exam,accuracy,True,2,False
+450,anthropic/claude-opus-4-7,Humanity's Last Exam,54.7,accuracy,with tools,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,Humanity's Last Exam,accuracy,True,2,False
+507,meta/muse-spark-1.1,JobBench,54.7,success rate,,,,,2026-07-09,https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/,JobBench,success rate,True,1,False
+279,deepseek/deepseek-v4-flash-0731,DeepSWE,54.4,resolve rate,max effort,,,DeepSeek Harness minimal mode,2026-07-31,https://api-docs.deepseek.com/updates/,DeepSWE,resolve rate,True,1,False
+319,anthropic/claude-opus-5-5,FrontierCode,54.4,score,max effort; production safeguards with fallback,1.1,Main,,2026-09-22,https://www.anthropic.com/claude-opus-5-5,FrontierCode,score,True,1,False
+790,openai/gpt-5.4-mini,SWE-Bench Pro,54.4,resolve rate,reasoning effort xhigh,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,SWE-Bench Pro,resolve rate,True,1,False
+297,zhipuai/glm-5.3,ExploitBench,54.4,average coverage,max effort; union over 3 revisions,,,Claude Code 2.1.207,,https://huggingface.co/zai-org/GLM-5.3,ExploitBench,average coverage,True,1,False
+791,google/gemini-3.1-pro-preview,SWE-Bench Pro,54.2,resolve rate,,,,,2026-05-28,https://www.anthropic.com/news/claude-opus-4-8,SWE-Bench Pro,resolve rate,True,2,False
+606,deepseek/deepseek-v4-flash-0731,NL2Repo,54.2,resolve rate,max effort,,,DeepSeek Harness minimal mode,2026-07-31,https://api-docs.deepseek.com/updates/,NL2Repo,resolve rate,True,1,False
+792,google/gemini-3.5-flash-lite,SWE-Bench Pro,54.2,resolve rate,,,,,2026-07-21,https://deepmind.google/models/model-cards/gemini-3-5-flash-lite/,SWE-Bench Pro,resolve rate,True,1,False
+989,google/gemini-3.5-flash-lite,Terminal-Bench,54.0,accuracy,,2.1,,Terminus 2,2026-07-21,https://deepmind.google/models/model-cards/gemini-3-5-flash-lite/,Terminal-Bench,accuracy,True,1,False
+1068,tencent/hy3,WildClawBench,53.6,score,highest reasoning effort,,35 text-only tasks,OpenClaw,,https://huggingface.co/tencent/Hy3,WildClawBench,score,True,1,False
+91,openai/gpt-5.4,Artificial Analysis Coding Agent Index,53.6,average pass@1,medium,,,Codex,,https://artificialanalysis.ai/agents/coding-agents,Artificial Analysis Coding Agent Index,average pass@1,True,2,False
+670,moonshotai/kimi-k2.7-code,Program Bench,53.6,,,,,Kimi Code CLI,2026-06-12,https://huggingface.co/moonshotai/Kimi-K2.7-Code,Program Bench,unspecified,True,1,False
+870,mistral/devstral-small-2507,SWE-Bench Verified,53.6,resolved,,,,,2025-07-10,https://mistral.ai/news/devstral-2507,SWE-Bench Verified,resolved,True,1,False
+877,alibaba/qwen3.7-max,SciCode,53.5,,,,,,2026-05-19,https://qwen.ai/blog?id=qwen3.7,SciCode,unspecified,True,1,True
+320,anthropic/claude-opus-5,FrontierCode,53.4,mean@5,medium effort,1.1,Main,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,FrontierCode,mean@5,True,1,False
+1039,openai/gpt-5.6-luna,Toolathlon,53.4,success rate,,,,,2026-07-09,https://openai.com/index/gpt-5-6/,Toolathlon,success rate,True,1,False
+508,alibaba/qwen3.8-max,JobBench,53.4,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,JobBench,score,True,1,False
+280,meta/muse-spark-1.1,DeepSWE,53.3,resolve rate,,1.1,,,2026-07-09,https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/,DeepSWE,resolve rate,True,1,False
+452,tencent/hy3,Humanity's Last Exam,53.2,score,highest reasoning effort; with tools,,text-only,,,https://huggingface.co/tencent/Hy3,Humanity's Last Exam,score,True,2,False
+1040,openai/gpt-5.6-terra,Toolathlon,53.1,success rate,,,,,2026-07-09,https://openai.com/index/gpt-5-6/,Toolathlon,success rate,True,1,False
+134,xiaomi/mimo-v2.6-pro,AutomationBench,53.1,score,MiMo-V2.6 Pro comparison column,1.0.6,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,AutomationBench,score,True,1,False
+293,xai/grok-4.6,EEBench,53.0,score,high effort,,,,2026-09-21,https://x.ai/news/grok-4-7,EEBench,score,True,1,False
+129,xai/grok-4.3,Artificial Analysis Intelligence Index,53.0,index score,,4.0,,,2026-04-30,https://artificialanalysis.ai/articles/xai-launches-grok-4-3-with-improved-agentic-performance-and-lower-pricing,Artificial Analysis Intelligence Index,index score,True,1,False
+509,moonshotai/kimi-k3,JobBench,52.9,score,max effort,,,,2026-07-16,https://www.kimi.com/blog/kimi-k3,JobBench,score,True,1,False
+310,inclusionai/ling-3.0-flash-fin,FinFIRST,52.85,score,highest reasoning effort,,,"ReAct with web search, visit, and Python",,https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin,FinFIRST,score,True,1,False
+92,zhipuai/glm-5.1,Artificial Analysis Coding Agent Index,52.7,average pass@1,,,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,Artificial Analysis Coding Agent Index,average pass@1,True,1,False
+28,openai/gpt-5.6-sol,Agents' Last Exam,52.7,,,,,,2026-07-09,https://openai.com/index/gpt-5-6/,Agents' Last Exam,unspecified,True,1,False
+1034,anthropic/claude-fable-5-1,Terminal-Bench-Science,52.6,score,production safeguards with fallback,0.1,,,2026-09-01,https://www.anthropic.com/claude-fable-and-mythos-5-1,Terminal-Bench-Science,score,True,1,False
+793,deepseek/deepseek-v4-flash,SWE-Bench Pro,52.6,resolved,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,SWE-Bench Pro,resolved,True,1,False
+1,alibaba/qwen3.8-max,$OneMillion-Bench,52.5,expert score,gemini-3.1-pro-preview judge,,,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,$OneMillion-Bench,expert score,True,1,False
+794,openai/gpt-5.4-nano,SWE-Bench Pro,52.4,resolve rate,reasoning effort xhigh,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,SWE-Bench Pro,resolve rate,True,1,False
+63,openai/gpt-4.1,Aider Polyglot,52.4,percent correct,,,,,2025-04-14,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+330,openai/gpt-5.5-pro,FrontierMath,52.4,accuracy,,,Tier 1-3,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,FrontierMath,accuracy,True,2,False
+29,alibaba/qwen3.8-max,Agents' Last Exam,52.4,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,Agents' Last Exam,score,True,1,False
+135,xiaomi/mimo-v2.6-flash,AutomationBench,52.3,score,,1.0.6,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,AutomationBench,score,True,1,False
+624,alibaba/qwen3.8-flash-next,OSWorld,52.3,partial score,,2.0,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,OSWorld,partial score,True,1,False
+1058,sakana/sakana-namazu,Translation,52.2,,,,,,,https://console.sakana.ai/models?model=sakana-namazu,Translation,unspecified,True,1,False
+132,tencent/hy3,ArxivMath,52.2,score,highest reasoning effort,,,,,https://huggingface.co/tencent/Hy3,ArxivMath,score,True,1,False
+453,openai/gpt-5.5,Humanity's Last Exam,52.2,accuracy,with tools,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,Humanity's Last Exam,accuracy,True,2,False
+454,openai/gpt-5.4,Humanity's Last Exam,52.1,accuracy,with tools,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,Humanity's Last Exam,accuracy,True,2,False
+7,nvidia/nemotron-3.5-lightning,AA-LCR,52.0,score,BF16; reasoning,,,NeMo Gym / NeMo Evaluator SDK,,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,AA-LCR,score,True,1,False
+759,deepreinforce/ornith-1.0-9b,SWE-Bench Multilingual,52.0,percent resolved,,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B,SWE-Bench Multilingual,percent resolved,True,1,False
+795,anthropic/claude-opus-4-6,SWE-Bench Pro,51.9,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+1041,deepseek/deepseek-v4-pro,Toolathlon,51.8,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,Toolathlon,pass@1,True,1,False
+309,inclusionai/ling-3.0-flash-fin,FinCRAFT,51.74,score,highest reasoning effort,,internal,,,https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin,FinCRAFT,score,True,1,False
+990,meta/muse-glimmer-30b,Terminal-Bench,51.7,success rate,with terminus2,2.1,,,2026-08-10,https://huggingface.co/meta-models/Muse-Glimmer-30B,Terminal-Bench,success rate,True,1,False
+331,openai/gpt-5.5,FrontierMath,51.7,accuracy,,,Tier 1-3,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,FrontierMath,accuracy,True,2,False
+64,anthropic/claude-3-5-sonnet-20241022,Aider Polyglot,51.6,percent correct,,,,,2025-01-17,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+871,nvidia/nemotron-3.5-lightning,SWE-Bench Verified,51.56,accuracy,BF16; reasoning,,,NeMo Evaluator,,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,SWE-Bench Verified,accuracy,True,1,False
+94,anthropic/claude-opus-4-6,Artificial Analysis Coding Agent Index,51.3,average pass@1,medium,,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,Artificial Analysis Coding Agent Index,average pass@1,True,1,False
+130,openai/gpt-5.6-luna,Artificial Analysis Intelligence Index,51.2,index score,max,4.1,,,2026-07-09,https://artificialanalysis.ai/articles/gpt-5-6-has-landed,Artificial Analysis Intelligence Index,index score,True,1,False
+797,microsoft/mai-code-1-flash,SWE-Bench Pro,51.2,resolve rate,,,,GitHub Copilot,2026-06-02,https://microsoft.ai/news/introducingmai-code-1-flash/,SWE-Bench Pro,resolve rate,True,1,False
+796,meta/muse-glimmer-30b,SWE-Bench Pro,51.2,resolve rate,,,,,2026-08-10,https://huggingface.co/meta-models/Muse-Glimmer-30B,SWE-Bench Pro,resolve rate,True,1,False
+30,alibaba/qwen3.8-flash-next,Agents' Last Exam,51.2,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,Agents' Last Exam,score,True,1,False
+991,minimax/MiniMax-M2.7,Terminal-Bench,51.1,success rate,,2.1,,,2026-06-01,https://www.minimax.io/blog/minimax-m3,Terminal-Bench,success rate,True,1,False
+95,moonshotai/kimi-k2.6,Artificial Analysis Coding Agent Index,50.5,average pass@1,,,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,Artificial Analysis Coding Agent Index,average pass@1,True,1,False
+31,openai/gpt-5.6-terra,Agents' Last Exam,50.4,,,,,,2026-07-09,https://openai.com/index/gpt-5-6/,Agents' Last Exam,unspecified,True,1,False
+798,deepreinforce/ornith-1.0-35b,SWE-Bench Pro,50.4,percent resolved,,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B,SWE-Bench Pro,percent resolved,True,1,False
+32,openai/gpt-5.6-luna,Agents' Last Exam,50.3,,,,,,2026-07-09,https://openai.com/index/gpt-5-6/,Agents' Last Exam,unspecified,True,1,False
+625,openai/gpt-5.6-terra,OSWorld,50.2,success rate,,2.0,,,2026-07-09,https://openai.com/index/gpt-5-6/,OSWorld,success rate,True,1,False
+96,deepseek/deepseek-v4-pro,Artificial Analysis Coding Agent Index,50.1,average pass@1,high,,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,Artificial Analysis Coding Agent Index,average pass@1,True,1,False
+487,sakana/fugu-ultra,Humanity’s Last Exam,50.0,,,,,,,https://console.sakana.ai/models,Humanity's Last Exam,unspecified,True,1,False
+332,openai/gpt-5.4-pro,FrontierMath,50.0,accuracy,,,Tier 1-3,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,FrontierMath,accuracy,True,2,False
+683,alibaba/qwen3.8-flash-next,RecreationBench,49.9,score,,,internal,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,RecreationBench,score,True,1,False
+136,meta/muse-spark-1.3,AutomationBench,49.6,pass@1,max effort,,public v3 task set,,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,AutomationBench,pass@1,True,1,False
+1042,stepfun/step-3.7-flash,Toolathlon,49.5,success rate,,,,,2026-05-29,https://static.stepfun.com/blog/step-3.7-flash/,Toolathlon,success rate,True,1,False
+97,anthropic/claude-sonnet-4-6,Artificial Analysis Coding Agent Index,49.4,average pass@1,medium,,,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,Artificial Analysis Coding Agent Index,average pass@1,True,1,False
+1057,xiaomi/mimo-v2.5-pro,Toolathlon-Verified,49.1,score,MiMo-V2.5 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,Toolathlon-Verified,score,True,1,False
+1070,deepseek/deepseek-v4.1-flash,ZeroBench,49.0,pass@5,reasoning_effort=100; with tools,,main,Claude Code,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,ZeroBench,pass@5,True,1,False
+282,google/gemini-3.6-flash,DeepSWE,49.0,resolve rate,high reasoning,1.1,,,2026-07-21,https://deepmind.google/models/evals-methodology/gemini-3-6-flash/,DeepSWE,resolve rate,True,1,False
+607,zhipuai/glm-5.2,NL2Repo,48.9,resolve rate,,,,,2026-06-16,https://z.ai/blog/glm-5.2,NL2Repo,resolve rate,True,1,False
+137,zhipuai/glm-5.3-flash,AutomationBench,48.8,pass@1,max effort,1.0.6,,,,https://huggingface.co/zai-org/GLM-5.3-Flash,AutomationBench,pass@1,True,1,False
+723,anthropic/claude-opus-4-7,SWE-Atlas Refactoring,48.57,score,,,,Claude Code,,https://labs.scale.com/leaderboard/sweatlas-refactoring,SWE-Atlas Refactoring,score,True,1,False
+1043,tencent/hy3,Toolathlon,48.5,score,highest reasoning effort,,,,,https://huggingface.co/tencent/Hy3,Toolathlon,score,True,1,False
+428,xai/grok-4.6,HealthBench,48.5,score,high effort; professional,,,,2026-09-21,https://x.ai/news/grok-4-7,HealthBench,score,True,1,False
+456,deepseek/deepseek-v4-pro,Humanity's Last Exam,48.2,pass@1,preview checkpoint; max effort; with tools,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,Humanity's Last Exam,pass@1,True,2,False
+138,zhipuai/glm-5.3,AutomationBench,48.2,pass@1,max effort,1.0.6,,,,https://huggingface.co/zai-org/GLM-5.3,AutomationBench,pass@1,True,1,False
+1035,zhipuai/glm-5.2,Tool-Decathlon,48.2,score,,,,,2026-06-16,https://z.ai/blog/glm-5.2,Tool-Decathlon,score,True,1,False
+608,deepreinforce/ornith-1.0-397b,NL2Repo,48.2,percent,,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-397B,NL2Repo,percent,True,1,False
+609,alibaba/qwen3.8-flash-next,NL2Repo,48.1,score,,,,Claude Code,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,NL2Repo,score,True,1,False
+298,xiaomi/mimo-v2.6-pro,ExploitBench,47.9,score,MiMo-V2.6 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,ExploitBench,score,True,1,False
+1044,deepseek/deepseek-v4-flash,Toolathlon,47.8,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,Toolathlon,pass@1,True,1,False
+656,openai/gpt-5.4-mini,OpenAI MRCR,47.7,accuracy,"8-needle, 64K-128K",v2,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,OpenAI MRCR,accuracy,True,2,False
+626,meta/muse-spark-1.2,OSWorld,47.6,mean partial score,xhigh effort,2.0,06.24,Meta internal evaluation framework,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,OSWorld,mean partial score,True,1,False
+799,poolside/laguna-xs-2.1,SWE-Bench Pro,47.6,resolve rate,,,,Harbor,2026-07-02,https://poolside.ai/blog/introducing-laguna-xs-2-1,SWE-Bench Pro,resolve rate,True,1,False
+333,openai/gpt-5.4,FrontierMath,47.6,accuracy,,,Tier 1-3,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,FrontierMath,accuracy,True,2,False
+687,xiaomi/mimo-v2.6-flash,SEC-Bench Pro,47.5,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,SEC-Bench Pro,score,True,1,False
+488,sakana/fugu,Humanity’s Last Exam,47.2,,,,,,,https://console.sakana.ai/models,Humanity's Last Exam,unspecified,True,1,False
+610,alibaba/qwen3.7-max,NL2Repo,47.2,,,,,Claude Code,2026-05-19,https://qwen.ai/blog?id=qwen3.7,NL2Repo,unspecified,True,1,True
+457,stepfun/step-3.7-flash,Humanity's Last Exam,47.2,accuracy,with tools,,,,2026-05-29,https://static.stepfun.com/blog/step-3.7-flash/,Humanity's Last Exam,accuracy,True,1,False
+684,alibaba/qwen3.8-27b,RecreationBench,47.1,score,,,internal,,,https://huggingface.co/Qwen/Qwen3.8-27B,RecreationBench,score,True,1,False
+512,moonshotai/kimi-k2.7-code,Kimi Claw 24/7 Bench,46.9,,,,,Kimi Code CLI,2026-06-12,https://huggingface.co/moonshotai/Kimi-K2.7-Code,Kimi Claw 24/7 Bench,unspecified,True,1,False
+459,anthropic/claude-sonnet-4-6,Humanity's Last Exam,46.8,accuracy,with tools,,,,2026-06-30,https://www.anthropic.com/news/claude-sonnet-5,Humanity's Last Exam,accuracy,True,2,False
+358,nvidia/nemotron-3-ultra-550b-a55b,GDPval,46.7,wins or ties,,,,,2026-06-04,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16,GDPval,wins or ties,True,1,False
+230,xai/grok-4.7,CursorBench,46.3,score,xhigh effort,4.0,,,2026-09-21,https://x.ai/news/grok-4-7,CursorBench,score,True,1,False
+992,openai/gpt-5.4-nano,Terminal-Bench,46.3,accuracy,reasoning effort xhigh,2.0,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,Terminal-Bench,accuracy,True,1,False
+709,meta/muse-spark-1.2,SWE-Atlas Codebase QnA,46.2,pass@1,xhigh effort,,,mini-swe-agent,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,SWE-Atlas Codebase QnA,pass@1,True,1,False
+283,zhipuai/glm-5.2,DeepSWE,46.2,resolve rate,,,,,2026-06-16,https://z.ai/blog/glm-5.2,DeepSWE,resolve rate,True,1,False
+25,meta/muse-spark-1.2,Agentic IF Index,46.2,score,xhigh effort,,Meta internal,,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,Agentic IF Index,score,True,1,False
+321,anthropic/claude-sonnet-5-5,FrontierCode,46.2,score,max effort,1.1,Main,,2026-09-28,https://www.anthropic.com/claude-sonnet-5-5,FrontierCode,score,True,1,False
+801,anthropic/claude-opus-4-5-20251101,SWE-Bench Pro,45.89,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+359,stepfun/step-3.7-flash,GDPval,45.8,wins or ties,,,,,2026-05-29,https://static.stepfun.com/blog/step-3.7-flash/,GDPval,wins or ties,True,1,False
+627,openai/gpt-5.6-luna,OSWorld,45.6,success rate,,2.0,,,2026-07-09,https://openai.com/index/gpt-5-6/,OSWorld,success rate,True,1,False
+611,tencent/hy3,NL2Repo,45.6,score,highest reasoning effort; 250 turns; 12000s timeout,,,Claude Code,,https://huggingface.co/tencent/Hy3,NL2Repo,score,True,1,False
+710,google/gemini-3.1-pro-preview,SWE-Atlas Codebase QnA,45.6,pass@1,high,,,Gemini CLI,,https://artificialanalysis.ai/agents/coding-agents,SWE-Atlas Codebase QnA,pass@1,True,1,False
+711,openai/gpt-5.5,SWE-Atlas Codebase QnA,45.43,score,,,,Codex,,https://labs.scale.com/leaderboard/sweatlas-qna,SWE-Atlas Codebase QnA,score,True,1,False
+460,deepseek/deepseek-v4-flash,Humanity's Last Exam,45.1,pass@1,preview checkpoint; max effort; with tools,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,Humanity's Last Exam,pass@1,True,2,False
+802,anthropic/claude-opus-4-7,SWE-Bench Pro,44.9,pass@1,max,,hard-aa,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,SWE-Bench Pro,pass@1,True,3,False
+724,openai/gpt-5.5,SWE-Atlas Refactoring,44.79,score,,,,Codex,,https://labs.scale.com/leaderboard/sweatlas-refactoring,SWE-Atlas Refactoring,score,True,1,False
+178,nvidia/nemotron-3-ultra-550b-a55b,BrowseComp,44.4,accuracy,,,,,2026-06-04,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16,BrowseComp,accuracy,True,1,False
+461,google/gemini-3.1-pro-preview,Humanity's Last Exam,44.4,accuracy,,,"full set, text + MM",,2026-05-19,https://deepmind.google/models/gemini/flash/,Humanity's Last Exam,accuracy,True,1,False
+734,openai/gpt-5.4,SWE-Atlas Test Writing,44.36,score,,,,Codex CLI,,https://labs.scale.com/leaderboard/sweatlas-tw,SWE-Atlas Test Writing,score,True,2,False
+725,openai/gpt-5.4,SWE-Atlas Refactoring,44.29,score,,,,Codex,,https://labs.scale.com/leaderboard/sweatlas-refactoring,SWE-Atlas Refactoring,score,True,1,False
+657,openai/gpt-5.4-nano,OpenAI MRCR,44.2,accuracy,"8-needle, 64K-128K",v2,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,OpenAI MRCR,accuracy,True,2,False
+803,anthropic/claude-sonnet-4-5,SWE-Bench Pro,43.6,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+322,google/gemini-3.7-flash,FrontierCode,43.6,score,,1.1 Main,,,2026-08-13,https://deepmind.google/models/model-cards/gemini-3-7-flash/,FrontierCode,score,True,1,False
+317,anthropic/claude-opus-5,Frontier-Bench,43.3,mean reward,max effort,v0.1,,mini-SWE-agent,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,Frontier-Bench,mean reward,True,1,False
+804,google/gemini-3-pro-preview,SWE-Bench Pro,43.3,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+1008,deepreinforce/ornith-1.0-9b,Terminal-Bench 2.1,43.1,percent,Terminus-2,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B,Terminal-Bench 2.1,percent,True,2,False
+98,google/gemini-3.1-pro-preview,Artificial Analysis Coding Agent Index,43.0,average pass@1,high,,,Gemini CLI,,https://artificialanalysis.ai/agents/coding-agents,Artificial Analysis Coding Agent Index,average pass@1,True,1,False
+805,deepreinforce/ornith-1.0-9b,SWE-Bench Pro,42.9,percent resolved,,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B,SWE-Bench Pro,percent resolved,True,1,False
+1045,openai/gpt-5.4-mini,Toolathlon,42.9,score,reasoning effort xhigh,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,Toolathlon,score,True,1,False
+33,alibaba/qwen3.8-27b,Agents' Last Exam,42.9,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-27B,Agents' Last Exam,score,True,1,False
+878,google/gemini-2.5-pro,SciCode,42.8,percent correct,,,,,2026-06-02,https://openrouter.ai/google/gemini-2.5-pro/benchmarks,SciCode,percent correct,True,1,False
+806,anthropic/claude-sonnet-4-0,SWE-Bench Pro,42.7,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+735,openai/gpt-5.5,SWE-Atlas Test Writing,42.59,score,,,,Codex,,https://labs.scale.com/leaderboard/sweatlas-tw,SWE-Atlas Test Writing,score,True,1,False
+873,zhipuai/glm-5.3,SWE-Marathon,42.5,score,max effort; modified anti-cheat checks,1.1,,Claude Code 2.1.207,,https://huggingface.co/zai-org/GLM-5.3,SWE Marathon,score,True,1,False
+726,openai/gpt-5.3-codex,SWE-Atlas Refactoring,42.38,score,,,,Codex,,https://labs.scale.com/leaderboard/sweatlas-refactoring,SWE-Atlas Refactoring,score,True,1,False
+612,alibaba/qwen3.8-27b,NL2Repo,42.3,score,,,,Claude Code,,https://huggingface.co/Qwen/Qwen3.8-27B,NL2Repo,score,True,1,False
+284,alibaba/qwen3.8-27b,DeepSWE,42.2,score,,1.1,,Claude Code,,https://huggingface.co/Qwen/Qwen3.8-27B,DeepSWE,score,True,1,False
+692,moonshotai/kimi-k3,SWE Marathon,42.0,resolve rate,max effort,1.1,,Claude Code,2026-07-16,https://www.kimi.com/blog/kimi-k3,SWE Marathon,resolve rate,True,1,False
+807,openai/gpt-5,SWE-Bench Pro,41.78,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+628,anthropic/claude-fable-5-1,OSWorld,41.7,strict success rate,production safeguards; interventions score zero; no fallback,2.0,August 2026 task release,,2026-09-01,https://www.anthropic.com/claude-fable-and-mythos-5-1,OSWorld,strict success rate,True,1,False
+467,openai/gpt-5.4-mini,Humanity's Last Exam,41.5,accuracy,with tools,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,Humanity's Last Exam,accuracy,True,2,False
+468,alibaba/qwen3.7-max,Humanity's Last Exam,41.4,accuracy,,,,,2026-05-19,https://qwen.ai/blog?id=qwen3.7,Humanity's Last Exam,accuracy,True,1,True
+139,openai/gpt-6-astra,AutomationBench,41.4,success rate,,,,,2026-09-03,https://openai.com/index/gpt-6-astra/,AutomationBench,success rate,True,1,True
+808,openai/gpt-5.2-codex,SWE-Bench Pro,41.04,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+552,alibaba/qwen3.8-max,MLS-Bench-Lite,41.0,score,5h timeout,,,Claude Code,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,MLS-Bench-Lite,score,True,1,False
+1071,moonshotai/kimi-k3,ZeroBench,41.0,pass@5,"max effort, with tools",,,,2026-07-16,https://www.kimi.com/blog/kimi-k3,ZeroBench,pass@5,True,1,False
+551,alibaba/qwen3.8-max-preview,MLS-Bench-Lite,41.0,score,xhigh,,,Claude Code,2026-08-03,https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421,MLS-Bench-Lite,score,True,1,False
+1073,inclusionai/ling-3.0-flash-fin,tau3-bench,41.0,score,highest reasoning effort; banking,,,,,https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin,tau3-bench,score,True,1,False
+879,openai/gpt-5-codex,SciCode,40.9,percent correct,,,,,2026-06-01,https://openrouter.ai/openai/gpt-5-codex/benchmarks,SciCode,percent correct,True,1,False
+712,openai/gpt-5.4,SWE-Atlas Codebase QnA,40.8,score,,,,Codex,,https://labs.scale.com/leaderboard/sweatlas-qna,SWE-Atlas Codebase QnA,score,True,2,False
+880,stepfun/step-3.5-flash,SciCode,40.4,percent correct,,,,,2026-06-02,https://openrouter.ai/stepfun/step-3.5-flash/benchmarks,SciCode,percent correct,True,1,False
+593,xiaomi/mimo-v2.5-pro,MiMo Code Bench,40.4,score,MiMo-V2.5 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,MiMo Code Bench,score,True,1,False
+231,xai/grok-4.6,CursorBench,40.4,score,high effort,4.0,,,2026-09-21,https://x.ai/news/grok-4-7,CursorBench,score,True,1,False
+471,google/gemini-3.5-flash,Humanity's Last Exam,40.2,accuracy,,,"full set, text + MM",,2026-05-19,https://deepmind.google/models/gemini/flash/,Humanity's Last Exam,accuracy,True,1,False
+809,cohere/north-mini-code-1-0,SWE-Bench Pro,40.2,resolve rate,,,,SWE-agent,2026-06-09,https://huggingface.co/CohereLabs/North-Mini-Code-1.0,SWE-Bench Pro,resolve rate,True,1,False
+65,alibaba/qwen3-32b,Aider Polyglot,40.0,percent correct,,,,,2025-05-08,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+239,xiaomi/mimo-v2.5-pro,CyberGym,40.0,score,MiMo-V2.5 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,CyberGym,score,True,1,False
+140,anthropic/claude-opus-5-5,AutomationBench,40.0,pass rate,max effort; production safeguards; no fallback,,,,2026-09-22,https://www.anthropic.com/claude-opus-5-5,AutomationBench,pass rate,True,1,False
+881,stepfun/step-3.7-flash,SciCode,40.0,percent correct,,,,,2026-06-15,https://openrouter.ai/stepfun/step-3.7-flash/benchmarks,SciCode,percent correct,True,1,False
+666,zhipuai/glm-5.3,PostTrainBench,39.8,weighted average,max effort; 3 runs; modified external-API checks,,,Claude Code 2.1.207,,https://huggingface.co/zai-org/GLM-5.3,PostTrainBench,weighted average,True,1,False
+810,anthropic/claude-haiku-4-5,SWE-Bench Pro,39.45,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+882,google/gemini-2.5-flash,SciCode,39.4,percent correct,,,,,2026-06-02,https://openrouter.ai/google/gemini-2.5-flash/benchmarks,SciCode,percent correct,True,1,False
+760,nvidia/nemotron-3.5-lightning,SWE-Bench Multilingual,39.33,accuracy,BF16; reasoning,,,NeMo Evaluator,,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,SWE-Bench Multilingual,accuracy,True,1,False
+549,google/gemini-3.5-flash-lite,MLE-Bench,39.2,average position score,,,,,2026-07-21,https://deepmind.google/models/model-cards/gemini-3-5-flash-lite/,MLE-Bench,average position score,True,1,False
+651,openai/gpt-5.4-nano,OSWorld-Verified,39.0,success rate,reasoning effort xhigh,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,OSWorld-Verified,success rate,True,1,False
+737,openai/gpt-5.3-codex,SWE-Atlas Test Writing,38.98,score,,,,Codex,,https://labs.scale.com/leaderboard/sweatlas-tw,SWE-Atlas Test Writing,score,True,1,False
+99,openai/gpt-5-codex,Artificial Analysis Coding Index,38.9,index,,,,,2026-06-01,https://openrouter.ai/openai/gpt-5-codex/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+323,anthropic/claude-sonnet-5,FrontierCode,38.8,pass rate,,v1,,,2026-06-30,https://www.anthropic.com/news/claude-sonnet-5,FrontierCode,pass rate,True,1,False
+582,tencent/hy3,MathArena Apex,38.7,score,highest reasoning effort,,,,,https://huggingface.co/tencent/Hy3,MathArena Apex,score,True,1,False
+811,alibaba/qwen3-coder-480b-a35b-instruct,SWE-Bench Pro,38.7,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+872,alibaba/qwen3.8-27b,SWE-MM,38.6,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-27B,SWE-MM,score,True,1,False
+883,stepfun/step-3.5-flash-2603,SciCode,38.5,percent correct,,,,,2026-06-02,https://openrouter.ai/stepfun/step-3.5-flash/benchmarks,SciCode,percent correct,True,1,False
+884,zhipuai/glm-4.6,SciCode,38.4,percent correct,,,,,2026-05-22,https://openrouter.ai/z-ai/glm-4.6/benchmarks,SciCode,percent correct,True,1,False
+885,alibaba/qwen3-max,SciCode,38.3,percent correct,,,,,2026-05-30,https://openrouter.ai/qwen/qwen3-max/benchmarks,SciCode,percent correct,True,1,False
+583,deepseek/deepseek-v4-pro,MathArena Apex,38.3,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,MathArena Apex,pass@1,True,1,False
+141,meta/muse-spark-1.2,AutomationBench,38.2,pass@1,xhigh effort,,public v3 task set,,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,AutomationBench,pass@1,True,1,False
+886,mistral/mistral-small-2603,SciCode,38.0,percent correct,,,,,2026-06-01,https://openrouter.ai/mistralai/mistral-small-2603/benchmarks,SciCode,percent correct,True,1,False
+1010,openai/gpt-5-codex,Terminal-Bench Hard,37.9,success rate,,,,,2026-06-01,https://openrouter.ai/openai/gpt-5-codex/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+182,tencent/hy3,CMT Benchmark,37.8,score,highest reasoning effort,,,,,https://huggingface.co/tencent/Hy3,CMT Benchmark,score,True,1,False
+475,openai/gpt-5.4-nano,Humanity's Last Exam,37.7,accuracy,with tools,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,Humanity's Last Exam,accuracy,True,2,False
+993,xai/grok-4.7,Terminal-Bench,37.6,score,xhigh effort,4.0,,,2026-09-21,https://x.ai/news/grok-4-7,Terminal-Bench,score,True,1,False
+994,poolside/laguna-xs-2.1,Terminal-Bench,37.5,success rate,,2.0,,Harbor,2026-07-02,https://poolside.ai/blog/introducing-laguna-xs-2-1,Terminal-Bench,success rate,True,1,False
+501,sakana/sakana-namazu,JFBench,37.4,,,,,,,https://console.sakana.ai/models?model=sakana-namazu,JFBench,unspecified,True,1,False
+476,nvidia/nemotron-3-ultra-550b-a55b,Humanity's Last Exam,37.4,accuracy,with tools,,,,2026-06-04,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16,Humanity's Last Exam,accuracy,True,2,False
+100,stepfun/step-3.7-flash,Artificial Analysis Coding Index,37.1,index,,,,,2026-06-15,https://openrouter.ai/stepfun/step-3.7-flash/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+1081,cohere/north-mini-code-1-0,τ²-Bench Telecom,37.0,success rate,,,,,2026-06-09,https://artificialanalysis.ai/articles/north-mini-code-cohere-s-small-coding-focused-moe-model,τ²-Bench Telecom,success rate,True,1,False
+179,nvidia/nemotron-3.5-lightning,BrowseComp,36.97,score,BF16; reasoning,,,NeMo Gym / NeMo Evaluator SDK,,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,BrowseComp,score,True,1,False
+812,minimax/MiniMax-M2.1,SWE-Bench Pro,36.81,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+738,anthropic/claude-opus-4-6,SWE-Atlas Test Writing,36.67,score,,,,Claude Code,,https://labs.scale.com/leaderboard/sweatlas-tw,SWE-Atlas Test Writing,score,True,2,False
+80,deepseek/deepseek-v4-flash-vision-exp,ApexBench,36.5,pass@1,,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp,ApexBench,pass@1,True,1,False
+887,mistral/mistral-large-2512,SciCode,36.2,percent correct,,,,,2026-06-04,https://openrouter.ai/mistralai/mistral-large-2512/benchmarks,SciCode,percent correct,True,1,False
+479,alibaba/qwen3.8-flash-next,Humanity's Last Exam,35.9,score,without tools; GPT-4o judge,,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,Humanity's Last Exam,score,True,1,False
+888,deepseek/deepseek-r1,SciCode,35.7,percent correct,,,,,2026-03-11,https://openrouter.ai/deepseek/deepseek-r1/benchmarks,SciCode,percent correct,True,1,False
+1011,stepfun/step-3.7-flash,Terminal-Bench Hard,35.6,success rate,,,,,2026-06-15,https://openrouter.ai/stepfun/step-3.7-flash/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+727,anthropic/claude-opus-4-6,SWE-Atlas Refactoring,35.58,score,,,,Claude Code,,https://labs.scale.com/leaderboard/sweatlas-refactoring,SWE-Atlas Refactoring,score,True,1,False
+1046,openai/gpt-5.4-nano,Toolathlon,35.5,score,reasoning effort xhigh,,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,Toolathlon,score,True,1,False
+550,moonshotai/kimi-k2.7-code,MLS Bench Lite,35.1,,,,,Kimi Code CLI,2026-06-12,https://huggingface.co/moonshotai/Kimi-K2.7-Code,MLS-Bench-Lite,unspecified,True,1,False
+1072,deepseek/deepseek-v4-flash-vision-exp,ZeroBench,35.0,pass@5,,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp,ZeroBench,pass@5,True,1,False
+350,google/gemini-3.8-flash,GDP.PDF,35.0,all-pass rate,,,,,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/,GDP.PDF,all-pass rate,True,1,False
+912,moonshotai/kimi-k3,SpreadsheetBench,34.8,score,max effort,2,,Claude Code,2026-07-16,https://www.kimi.com/blog/kimi-k3,SpreadsheetBench,score,True,1,False
+889,zhipuai/glm-4.5,SciCode,34.8,percent correct,,,,,2026-03-11,https://openrouter.ai/z-ai/glm-4.5/benchmarks,SciCode,percent correct,True,1,False
+814,google/gemini-3-flash-preview,SWE-Bench Pro,34.63,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+613,deepreinforce/ornith-1.0-35b,NL2Repo,34.6,percent,,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B,NL2Repo,percent,True,1,False
+101,stepfun/step-3.5-flash-2603,Artificial Analysis Coding Index,34.6,index,,,,,2026-06-02,https://openrouter.ai/stepfun/step-3.5-flash/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+667,zhipuai/glm-5.2,PostTrainBench,34.3,score,,,,,2026-06-16,https://z.ai/blog/glm-5.2,PostTrainBench,score,True,1,False
+908,deepseek/deepseek-v4-flash,SimpleQA-Verified,34.1,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,SimpleQA-Verified,pass@1,True,1,False
+351,google/gemini-3.7-flash,GDP.pdf,34.0,accuracy,,,,,2026-08-13,https://deepmind.google/models/model-cards/gemini-3-7-flash/,GDP.PDF,accuracy,True,1,False
+728,google/gemini-3.1-pro-preview,SWE-Atlas Refactoring,33.81,score,,,,Gemini CLI,,https://labs.scale.com/leaderboard/sweatlas-refactoring,SWE-Atlas Refactoring,score,True,1,False
+915,zhipuai/glm-4.7,Terminal Bench 2.0,33.4,score,,,,,,https://huggingface.co/zai-org/GLM-4.7,Terminal Bench 2.0,score,True,1,False
+510,alibaba/qwen3.8-27b,JobBench,33.4,score,,,,,,https://huggingface.co/Qwen/Qwen3.8-27B,JobBench,score,True,1,False
+102,cohere/north-mini-code-1-0,Artificial Analysis Coding Index,33.4,index score,,,,,2026-06-09,https://artificialanalysis.ai/articles/north-mini-code-cohere-s-small-coding-focused-moe-model,Artificial Analysis Coding Index,index score,True,1,False
+890,openai/gpt-4o-2024-11-20,SciCode,33.3,percent correct,,,,,2026-03-11,https://openrouter.ai/openai/gpt-4o-2024-11-20/benchmarks,SciCode,percent correct,True,1,False
+714,anthropic/claude-opus-4-6,SWE-Atlas Codebase QnA,33.3,score,,,,Claude Code,,https://labs.scale.com/leaderboard/sweatlas-qna,SWE-Atlas Codebase QnA,score,True,2,False
+411,openai/gpt-5.5-pro,GeneBench,33.2,accuracy,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,GeneBench,accuracy,True,1,False
+142,openai/gpt-6-sol,AutomationBench,33.2,score,xhigh effort,1.0.6,,,2026-09-22,https://openai.com/index/introducing-gpt-6-sol-and-luna/,AutomationBench,score,True,1,False
+893,openai/gpt-4o-2024-08-06,SciCode,33.1,percent correct,,,,,2026-03-11,https://openrouter.ai/openai/gpt-4o-2024-08-06/benchmarks,SciCode,percent correct,True,1,False
+891,mistral/devstral-2512,SciCode,33.1,percent correct,,,,,2026-05-31,https://openrouter.ai/mistralai/devstral-2512/benchmarks,SciCode,percent correct,True,1,False
+892,mistral/mistral-medium-2505,SciCode,33.1,percent correct,,,,,2026-05-30,https://openrouter.ai/mistralai/mistral-medium-3/benchmarks,SciCode,percent correct,True,1,False
+584,deepseek/deepseek-v4-flash,MathArena Apex,33.0,pass@1,preview checkpoint; max effort,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash,MathArena Apex,pass@1,True,1,False
+1012,stepfun/step-3.5-flash-2603,Terminal-Bench Hard,32.6,success rate,,,,,2026-06-02,https://openrouter.ai/stepfun/step-3.5-flash/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+715,openai/gpt-5.3-codex,SWE-Atlas Codebase QnA,32.6,score,,,,Codex,,https://labs.scale.com/leaderboard/sweatlas-qna,SWE-Atlas Codebase QnA,score,True,1,False
+894,nvidia/nemotron-3.5-lightning,SciCode,32.6,score,BF16; reasoning,,,NeMo Gym / NeMo Evaluator SDK,,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,SciCode,score,True,1,False
+66,openai/gpt-4.1-mini,Aider Polyglot,32.4,percent correct,,,,,2025-04-14,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+729,anthropic/claude-sonnet-4-6,SWE-Atlas Refactoring,32.21,score,,,,Claude Code,,https://labs.scale.com/leaderboard/sweatlas-refactoring,SWE-Atlas Refactoring,score,True,1,False
+103,google/gemini-2.5-pro,Artificial Analysis Coding Index,32.0,index,,,,,2026-06-02,https://openrouter.ai/google/gemini-2.5-pro/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+629,meta/muse-spark-1.3,OSWorld,32.0,binary completion rate,max effort,2.0,08.08,Meta internal evaluation framework,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,OSWorld,binary completion rate,True,1,False
+895,openai/gpt-4-turbo,SciCode,31.9,percent correct,,,,,2026-03-11,https://openrouter.ai/openai/gpt-4-turbo/benchmarks,SciCode,percent correct,True,1,False
+143,deepseek/deepseek-v4-pro-0813,AutomationBench,31.8,score,,,public,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,AutomationBench,score,True,1,False
+34,deepseek/deepseek-v4.1-flash,Agents' Last Exam,31.8,pass@1,reasoning_effort=100,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,Agents' Last Exam,pass@1,True,1,False
+740,anthropic/claude-sonnet-4-6,SWE-Atlas Test Writing,31.76,score,,,,Claude Code,,https://labs.scale.com/leaderboard/sweatlas-tw,SWE-Atlas Test Writing,score,True,1,False
+35,xiaomi/mimo-v2.6-pro,Agents' Last Exam,31.6,score,MiMo-V2.6 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,Agents' Last Exam,score,True,1,False
+104,stepfun/step-3.5-flash,Artificial Analysis Coding Index,31.6,index,,,,,2026-06-02,https://openrouter.ai/stepfun/step-3.5-flash/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+144,anthropic/claude-fable-5-1,AutomationBench,31.4,pass rate,production safeguards with fallback,,,,2026-09-01,https://www.anthropic.com/claude-fable-and-mythos-5-1,AutomationBench,pass rate,True,1,False
+716,anthropic/claude-sonnet-4-6,SWE-Atlas Codebase QnA,31.2,score,,,,Claude Code,,https://labs.scale.com/leaderboard/sweatlas-qna,SWE-Atlas Codebase QnA,score,True,1,False
+896,openai/gpt-4o-2024-05-13,SciCode,30.9,percent correct,,,,,2026-03-11,https://openrouter.ai/openai/gpt-4o-2024-05-13/benchmarks,SciCode,percent correct,True,1,False
+816,openai/gpt-5.5,SWE-Bench Pro,30.9,pass@1,xhigh,,hard-aa,Codex,,https://artificialanalysis.ai/agents/coding-agents,SWE-Bench Pro,pass@1,True,3,False
+482,alibaba/qwen3.8-27b,Humanity's Last Exam,30.8,score,without tools; GPT-4o judge,,,,,https://huggingface.co/Qwen/Qwen3.8-27B,Humanity's Last Exam,score,True,1,False
+145,moonshotai/kimi-k3,AutomationBench,30.8,success rate,max effort,,600-task public subset,,2026-07-16,https://www.kimi.com/blog/kimi-k3,AutomationBench,success rate,True,1,False
+897,zhipuai/glm-4.5-air,SciCode,30.6,percent correct,,,,,2026-05-30,https://openrouter.ai/z-ai/glm-4.5-air/benchmarks,SciCode,percent correct,True,1,False
+146,google/gemini-3.7-flash,AutomationBench,30.4,accuracy,,,private set,,2026-08-13,https://deepmind.google/models/model-cards/gemini-3-7-flash/,AutomationBench,accuracy,True,1,False
+741,google/gemini-3-flash-preview,SWE-Atlas Test Writing,30.3,score,,,,Mini-SWE-Agent,,https://labs.scale.com/leaderboard/sweatlas-tw,SWE-Atlas Test Writing,score,True,1,False
+23,anthropic/claude-opus-5,ARC-AGI-3,30.2,RHAE,high effort,,,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,ARC-AGI-3,rhae,True,1,False
+817,openai/gpt-5.2,SWE-Bench Pro,29.94,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+742,google/gemini-3.1-pro-preview,SWE-Atlas Test Writing,29.84,score,,,,Mini-SWE-Agent,,https://labs.scale.com/leaderboard/sweatlas-tw,SWE-Atlas Test Writing,score,True,1,False
+105,zhipuai/glm-4.6,Artificial Analysis Coding Index,29.5,index,,,,,2026-05-22,https://openrouter.ai/z-ai/glm-4.6/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+324,anthropic/claude-fable-5,FrontierCode,29.3,pass rate,high effort,,Diamond,,2026-06-09,https://www.anthropic.com/news/claude-fable-5-mythos-5,FrontierCode,pass rate,True,1,False
+898,mistral/mistral-large-2411,SciCode,29.2,percent correct,,,,,2026-03-11,https://openrouter.ai/mistralai/mistral-large-2407/benchmarks,SciCode,percent correct,True,1,False
+12,inclusionai/ling-3.0-flash-fin,APEX-Agents,29.17,score,highest reasoning effort,,,,,https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin,APEX-Agents,score,True,1,False
+693,xai/grok-4.5,SWE Marathon,29.0,pass@1,,,,,2026-07-08,https://x.ai/news/grok-4-5,SWE Marathon,pass@1,True,1,False
+743,zhipuai/glm-5,SWE-Atlas Test Writing,28.74,score,,,,Mini-SWE-Agent,,https://labs.scale.com/leaderboard/sweatlas-tw,SWE-Atlas Test Writing,score,True,1,False
+36,zhipuai/glm-5.3,Agents' Last Exam,28.5,score,max effort; CLI,,,Claude Code 2.1.207,,https://huggingface.co/zai-org/GLM-5.3,Agents' Last Exam,score,True,1,False
+999,zhipuai/glm-5.3,Terminal-Bench,28.3,avg@3,max effort,3.0,,Claude Code 2.1.207,,https://huggingface.co/zai-org/GLM-5.3,Terminal-Bench,avg@3,True,1,False
+67,anthropic/claude-3-5-haiku-20241022,Aider Polyglot,28.0,percent correct,,,,,2024-12-21,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+285,tencent/hy3,DeepSWE,28.0,score,highest reasoning effort; 2h timeout,,,mini-swe-agent,,https://huggingface.co/tencent/Hy3,DeepSWE,score,True,1,False
+899,alibaba/qwen3-coder-30b-a3b-instruct,SciCode,27.8,percent correct,,,,,2026-06-02,https://openrouter.ai/qwen/qwen3-coder-30b-a3b-instruct/benchmarks,SciCode,percent correct,True,1,False
+37,xiaomi/mimo-v2.6-flash,Agents' Last Exam,27.6,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,Agents' Last Exam,score,True,1,False
+131,cohere/north-mini-code-1-0,Artificial Analysis Intelligence Index,27.6,index score,,,,,2026-06-09,https://artificialanalysis.ai/articles/north-mini-code-cohere-s-small-coding-focused-moe-model,Artificial Analysis Intelligence Index,index score,True,1,False
+38,deepseek/deepseek-v4-flash-vision-exp,Agents' Last Exam,27.3,score,,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp,Agents' Last Exam,score,True,1,False
+147,alibaba/qwen3.8-max-preview,AutomationBench,27.3,pass@1,xhigh,,600-task public subset,,2026-08-03,https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421,AutomationBench,pass@1,True,1,False
+1013,stepfun/step-3.5-flash,Terminal-Bench Hard,27.3,success rate,,,,,2026-06-02,https://openrouter.ai/stepfun/step-3.5-flash/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+148,alibaba/qwen3.8-max,AutomationBench,27.3,pass@1,,,600 public tasks,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,AutomationBench,pass@1,True,1,False
+818,moonshotai/kimi-k2.6,SWE-Bench Pro,27.3,pass@1,,,hard-aa,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,SWE-Bench Pro,pass@1,True,1,False
+614,deepreinforce/ornith-1.0-9b,NL2Repo,27.2,percent,,,,,,https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B,NL2Repo,percent,True,1,False
+39,alibaba/qwen3.8-max,Agents' Last Exam,27.0,pass@1,,,,,,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B,Agents' Last Exam,pass@1,True,1,False
+1014,google/gemini-2.5-pro,Terminal-Bench Hard,26.5,success rate,,,,,2026-06-02,https://openrouter.ai/google/gemini-2.5-pro/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+671,xiaomi/mimo-v2.6-pro,ProgramBench,26.5,score,MiMo-V2.6 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,ProgramBench,score,True,1,False
+106,alibaba/qwen3-max,Artificial Analysis Coding Index,26.4,index,,,,,2026-05-30,https://openrouter.ai/qwen/qwen3-max/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+40,zhipuai/glm-5.3-flash,Agents' Last Exam,26.3,score,max effort,,,,,https://huggingface.co/zai-org/GLM-5.3-Flash,Agents' Last Exam,score,True,1,False
+107,zhipuai/glm-4.5,Artificial Analysis Coding Index,26.3,index,,,,,2026-03-11,https://openrouter.ai/z-ai/glm-4.5/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+149,anthropic/claude-opus-5,AutomationBench,26.0,success rate,max effort,,,,2026-07-24,https://www.anthropic.com/claude-opus-5-system-card,AutomationBench,success rate,True,1,False
+900,meta/llama-3.3-70b-instruct,SciCode,26.0,percent correct,,,,,2026-03-11,https://openrouter.ai/meta-llama/llama-3.3-70b-instruct/benchmarks,SciCode,percent correct,True,1,False
+672,xiaomi/mimo-v2.6-flash,ProgramBench,26.0,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,ProgramBench,score,True,1,False
+744,moonshotai/kimi-k2.5,SWE-Atlas Test Writing,25.77,score,,,,Mini-SWE-Agent,,https://labs.scale.com/leaderboard/sweatlas-tw,SWE-Atlas Test Writing,score,True,1,False
+41,deepseek/deepseek-v4-pro-0813,Agents' Last Exam,25.7,score,,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,Agents' Last Exam,score,True,1,False
+150,deepseek/deepseek-v4-flash-vision-exp,AutomationBench,25.7,score,max effort,,public,DeepSeek Harness minimal mode,,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp,AutomationBench,score,True,1,False
+412,openai/gpt-5.4-pro,GeneBench,25.6,accuracy,,,,,2026-04-23,https://openai.com/index/introducing-gpt-5-5/,GeneBench,accuracy,True,1,False
+13,tencent/hy3,APEX-Agents,25.6,pass@1,highest reasoning effort,,,,,https://huggingface.co/tencent/Hy3,APEX-Agents,pass@1,True,1,False
+299,xiaomi/mimo-v2.6-flash,ExploitBench,25.3,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,ExploitBench,score,True,1,False
+42,deepseek/deepseek-v4-flash-0731,Agents' Last Exam,25.2,score,max effort,,,DeepSeek Harness minimal mode,2026-07-31,https://api-docs.deepseek.com/updates/,Agents' Last Exam,score,True,1,False
+151,deepseek/deepseek-v4-flash-0731,AutomationBench,25.1,success rate,max effort,,public,,2026-07-31,https://api-docs.deepseek.com/updates/,AutomationBench,success rate,True,1,False
+511,xiaomi/mimo-v2.5-pro,JobBench,25.0,score,MiMo-V2.5 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,JobBench,score,True,1,False
+1015,zhipuai/glm-4.6,Terminal-Bench Hard,25.0,success rate,,,,,2026-05-22,https://openrouter.ai/z-ai/glm-4.6/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+1000,nvidia/nemotron-3.5-lightning,Terminal-Bench,24.58,accuracy,BF16; reasoning,2.1,,NeMo Evaluator,,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,Terminal-Bench,accuracy,True,1,False
+108,mistral/mistral-small-2603,Artificial Analysis Coding Index,24.3,index,,,,,2026-06-01,https://openrouter.ai/mistralai/mistral-small-2603/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+43,alibaba/qwen3.8-flash-next,Agents' Last Exam,24.3,pass@1,,,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,Agents' Last Exam,pass@1,True,1,False
+730,zhipuai/glm-5,SWE-Atlas Refactoring,24.24,score,,,,Mini-SWE-Agent,,https://labs.scale.com/leaderboard/sweatlas-refactoring,SWE-Atlas Refactoring,score,True,1,False
+109,openai/gpt-4o-2024-05-13,Artificial Analysis Coding Index,24.2,index,,,,,2026-03-11,https://openrouter.ai/openai/gpt-4o-2024-05-13/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+110,zhipuai/glm-4.5-air,Artificial Analysis Coding Index,23.8,index,,,,,2026-05-30,https://openrouter.ai/z-ai/glm-4.5-air/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+180,tencent/hy3,CL-bench,23.8,score,highest reasoning effort,,,,,https://huggingface.co/tencent/Hy3,CL-bench,score,True,1,False
+111,mistral/devstral-2512,Artificial Analysis Coding Index,23.7,index,,,,,2026-05-31,https://openrouter.ai/mistralai/devstral-2512/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+68,openai/gpt-4o-2024-08-06,Aider Polyglot,23.1,percent correct,,,,,2024-12-30,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+69,openai/gpt-4o,Aider Polyglot,23.1,percent correct,,,,,2024-12-30,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+901,openai/gpt-4o-mini,SciCode,22.9,percent correct,,,,,2026-03-11,https://openrouter.ai/openai/gpt-4o-mini/benchmarks,SciCode,percent correct,True,1,False
+902,perplexity/sonar,SciCode,22.9,percent correct,,,,,2026-03-11,https://openrouter.ai/perplexity/sonar/benchmarks,SciCode,percent correct,True,1,False
+112,mistral/mistral-large-2512,Artificial Analysis Coding Index,22.7,index,,,,,2026-06-04,https://openrouter.ai/mistralai/mistral-large-2512/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+903,perplexity/sonar-pro,SciCode,22.6,percent correct,,,,,2026-03-11,https://openrouter.ai/perplexity/sonar-pro/benchmarks,SciCode,percent correct,True,1,False
+113,google/gemini-2.5-flash,Artificial Analysis Coding Index,22.2,index,,,,,2026-06-02,https://openrouter.ai/google/gemini-2.5-flash/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+904,zhipuai/glm-4.5v,SciCode,22.1,percent correct,,,,,2026-04-29,https://openrouter.ai/z-ai/glm-4.5v/benchmarks,SciCode,percent correct,True,1,False
+1016,zhipuai/glm-4.5,Terminal-Bench Hard,22.0,success rate,,,,,2026-03-11,https://openrouter.ai/z-ai/glm-4.5/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+70,alibaba/qwen-max,Aider Polyglot,21.8,percent correct,,,,,2025-01-28,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+1075,sakana/fugu,τ3 Banking,21.7,,,,,,,https://console.sakana.ai/models,τ3 Banking,unspecified,True,1,False
+114,openai/gpt-4-turbo,Artificial Analysis Coding Index,21.5,index,,,,,2026-03-11,https://openrouter.ai/openai/gpt-4-turbo/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+821,alibaba/qwen3-235b-a22b,SWE-Bench Pro,21.41,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+731,moonshotai/kimi-k2.5,SWE-Atlas Refactoring,20.95,score,,,,Mini-SWE-Agent,,https://labs.scale.com/leaderboard/sweatlas-refactoring,SWE-Atlas Refactoring,score,True,1,False
+226,zhipuai/glm-5.2,CritPt,20.9,accuracy,,,,,2026-06-16,https://z.ai/blog/glm-5.2,CritPt,accuracy,True,1,False
+1076,sakana/fugu-ultra,τ3 Banking,20.6,,,,,,,https://console.sakana.ai/models,τ3 Banking,unspecified,True,1,False
+1017,alibaba/qwen3-max,Terminal-Bench Hard,20.5,success rate,,,,,2026-05-30,https://openrouter.ai/qwen/qwen3-max/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+718,zhipuai/glm-5,SWE-Atlas Codebase QnA,20.5,score,,,,Mini-SWE-Agent,,https://labs.scale.com/leaderboard/sweatlas-qna,SWE-Atlas Codebase QnA,score,True,1,False
+1018,zhipuai/glm-4.5-air,Terminal-Bench Hard,20.5,success rate,,,,,2026-05-30,https://openrouter.ai/z-ai/glm-4.5-air/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+44,alibaba/qwen3.8-27b,Agents' Last Exam,20.4,pass@1,,,,,,https://huggingface.co/Qwen/Qwen3.8-27B,Agents' Last Exam,pass@1,True,1,False
+1001,xai/grok-4.6,Terminal-Bench,20.3,score,high effort,4.0,,,2026-09-21,https://x.ai/news/grok-4-7,Terminal-Bench,score,True,1,False
+673,deepseek/deepseek-v4.1-flash,ProgramBench,20.3,almost@1,reasoning_effort=100,,,DeepSeek Harness minimal mode,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,ProgramBench,almost@1,True,1,False
+822,zhipuai/glm-5.1,SWE-Bench Pro,19.8,pass@1,,,hard-aa,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,SWE-Bench Pro,pass@1,True,1,False
+423,xai/grok-4.7,Harvey Legal Agent Benchmark,19.6,score,xhigh effort,,,,2026-09-21,https://x.ai/news/grok-4-7,Harvey Legal Agent Benchmark,score,True,1,False
+732,minimax/MiniMax-M2.5,SWE-Atlas Refactoring,19.52,score,,,,Mini-SWE-Agent,,https://labs.scale.com/leaderboard/sweatlas-refactoring,SWE-Atlas Refactoring,score,True,1,False
+630,alibaba/qwen3.8-flash-next,OSWorld,19.4,binary completion rate,,2.0,,,,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,OSWorld,binary completion rate,True,1,False
+115,alibaba/qwen3-coder-30b-a3b-instruct,Artificial Analysis Coding Index,19.4,index,,,,,2026-06-02,https://openrouter.ai/qwen/qwen3-coder-30b-a3b-instruct/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+905,google/gemini-2.5-flash-lite,SciCode,19.3,percent correct,,,,,2026-03-11,https://openrouter.ai/google/gemini-2.5-flash-lite/benchmarks,SciCode,percent correct,True,1,False
+286,xiaomi/mimo-v2.5-pro,DeepSWE,19.0,score,MiMo-V2.5 Pro comparison column,1.1,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,DeepSWE,score,True,1,False
+674,zhipuai/glm-5.3,ProgramBench,19.0,almost solved,max effort,,,,,https://huggingface.co/zai-org/GLM-5.3,ProgramBench,almost solved,True,1,False
+823,openai/gpt-5.4,SWE-Bench Pro,18.9,pass@1,medium,,hard-aa,Cursor CLI,,https://artificialanalysis.ai/agents/coding-agents,SWE-Bench Pro,pass@1,True,2,False
+1019,mistral/devstral-2512,Terminal-Bench Hard,18.9,success rate,,,,,2026-05-31,https://openrouter.ai/mistralai/devstral-2512/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+745,minimax/MiniMax-M2.5,SWE-Atlas Test Writing,18.6,score,,,,Mini-SWE-Agent,,https://labs.scale.com/leaderboard/sweatlas-tw,SWE-Atlas Test Writing,score,True,1,False
+71,openai/gpt-4o-2024-11-20,Aider Polyglot,18.2,percent correct,,,,,2024-12-30,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+825,deepseek/deepseek-v4-pro,SWE-Bench Pro,18.0,pass@1,high,,hard-aa,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,SWE-Bench Pro,pass@1,True,1,False
+631,meta/muse-spark-1.2,OSWorld,17.9,binary completion rate,xhigh effort,2.0,06.24,Meta internal evaluation framework,2026-09-02,https://research.meta.ai/blog/introducing-muse-spark-1-3,OSWorld,binary completion rate,True,1,False
+303,xiaomi/mimo-v2.6-pro,ExploitGym,17.8,score,MiMo-V2.6 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,ExploitGym,score,True,1,False
+688,xiaomi/mimo-v2.5-pro,SEC-Bench Pro,17.7,score,MiMo-V2.5 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,SEC-Bench Pro,score,True,1,False
+8,nvidia/nemotron-3.5-lightning,AA-Omniscience,17.5,score,BF16; reasoning,,,NeMo Gym / NeMo Evaluator SDK,,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,AA-Omniscience,score,True,1,False
+152,anthropic/claude-fable-5,AutomationBench,17.4,success rate,,,,,2026-06-09,https://www.anthropic.com/news/claude-fable-5-mythos-5,AutomationBench,success rate,True,1,False
+1020,mistral/mistral-small-2603,Terminal-Bench Hard,17.4,success rate,,,,,2026-06-01,https://openrouter.ai/mistralai/mistral-small-2603/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+181,tencent/hy3,CL-bench-life,17.0,score,highest reasoning effort,,,,,https://huggingface.co/tencent/Hy3,CL-bench-life,score,True,1,False
+116,openai/gpt-4o-2024-11-20,Artificial Analysis Coding Index,16.7,index,,,,,2026-03-11,https://openrouter.ai/openai/gpt-4o-2024-11-20/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+117,openai/gpt-4o-2024-08-06,Artificial Analysis Coding Index,16.6,index,,,,,2026-03-11,https://openrouter.ai/openai/gpt-4o-2024-08-06/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+300,xiaomi/mimo-v2.5-pro,ExploitBench,16.6,score,MiMo-V2.5 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,ExploitBench,score,True,1,False
+153,xiaomi/mimo-v2.5-pro,AutomationBench,16.0,score,MiMo-V2.5 Pro comparison column,1.0.6,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,AutomationBench,score,True,1,False
+118,deepseek/deepseek-r1,Artificial Analysis Coding Index,15.9,index,,,,,2026-03-11,https://openrouter.ai/deepseek/deepseek-r1/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+1021,mistral/mistral-large-2512,Terminal-Bench Hard,15.9,success rate,,,,,2026-06-04,https://openrouter.ai/mistralai/mistral-large-2512/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+424,xai/grok-4.6,Harvey Legal Agent Benchmark,15.8,score,high effort,,,,2026-09-21,https://x.ai/news/grok-4-7,Harvey Legal Agent Benchmark,score,True,1,False
+72,meta/llama-4-maverick-17b-instruct,Aider Polyglot,15.6,percent correct,,,,,2025-04-06,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+304,deepseek/deepseek-v4.1-flash,ExploitGym,15.3,pass@1,reasoning_effort=100,,,,,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,ExploitGym,pass@1,True,1,False
+1022,alibaba/qwen3-coder-30b-a3b-instruct,Terminal-Bench Hard,15.2,success rate,,,,,2026-06-02,https://openrouter.ai/qwen/qwen3-coder-30b-a3b-instruct/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+826,google/gemini-3.1-pro-preview,SWE-Bench Pro,15.1,pass@1,high,,hard-aa,Gemini CLI,,https://artificialanalysis.ai/agents/coding-agents,SWE-Bench Pro,pass@1,True,1,False
+827,anthropic/claude-sonnet-4-6,SWE-Bench Pro,14.9,pass@1,medium,,hard-aa,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,SWE-Bench Pro,pass@1,True,1,False
+381,cohere/north-mini-code-1-0,GDPval-AA,14.0,win rate,,,,,2026-06-09,https://artificialanalysis.ai/articles/north-mini-code-cohere-s-small-coding-focused-moe-model,GDPval-AA,win rate,True,1,False
+119,mistral/mistral-large-2411,Artificial Analysis Coding Index,13.8,index,,,,,2026-03-11,https://openrouter.ai/mistralai/mistral-large-2407/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+120,mistral/mistral-medium-2505,Artificial Analysis Coding Index,13.6,index,,,,,2026-05-30,https://openrouter.ai/mistralai/mistral-medium-3/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+1023,google/gemini-2.5-flash,Terminal-Bench Hard,13.6,success rate,,,,,2026-06-02,https://openrouter.ai/google/gemini-2.5-flash/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+719,google/gemini-3.1-pro-preview,SWE-Atlas Codebase QnA,13.5,score,,,,Mini-SWE-Agent,,https://labs.scale.com/leaderboard/sweatlas-qna,SWE-Atlas Codebase QnA,score,True,1,False
+325,anthropic/claude-opus-4-8,FrontierCode,13.4,pass rate,high effort,,Diamond,,2026-06-09,https://www.anthropic.com/news/claude-fable-5-mythos-5,FrontierCode,pass rate,True,1,False
+45,xiaomi/mimo-v2.5-pro,Agents' Last Exam,13.2,score,MiMo-V2.5 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,Agents' Last Exam,score,True,1,False
+121,openai/gpt-4,Artificial Analysis Coding Index,13.1,index,,,,,2026-03-11,https://openrouter.ai/openai/gpt-4/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+720,moonshotai/kimi-k2.5,SWE-Atlas Codebase QnA,13.1,score,,,,Mini-SWE-Agent,,https://labs.scale.com/leaderboard/sweatlas-qna,SWE-Atlas Codebase QnA,score,True,1,False
+694,zhipuai/glm-5.2,SWE Marathon,13.0,resolve rate,,,,,2026-06-16,https://z.ai/blog/glm-5.2,SWE Marathon,resolve rate,True,1,False
+675,xiaomi/mimo-v2.5-pro,ProgramBench,12.5,score,MiMo-V2.5 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,ProgramBench,score,True,1,False
+73,cohere/command-a-03-2025,Aider Polyglot,12.0,percent correct,,,,,2025-03-14,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+828,anthropic/claude-opus-4-6,SWE-Bench Pro,11.8,pass@1,medium,,hard-aa,Claude Code,,https://artificialanalysis.ai/agents/coding-agents,SWE-Bench Pro,pass@1,True,1,False
+486,nvidia/nemotron-3.5-lightning,Humanity's Last Exam,11.72,accuracy,BF16; reasoning; no tools,,text-only,,,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,Humanity's Last Exam,accuracy,True,1,False
+74,mistral/codestral-latest,Aider Polyglot,11.1,percent correct,,,,,2025-01-13,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+122,zhipuai/glm-4.5v,Artificial Analysis Coding Index,10.9,index,,,,,2026-04-29,https://openrouter.ai/z-ai/glm-4.5v/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+123,meta/llama-3.3-70b-instruct,Artificial Analysis Coding Index,10.7,index,,,,,2026-03-11,https://openrouter.ai/meta-llama/llama-3.3-70b-instruct/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+124,openai/gpt-3.5-turbo,Artificial Analysis Coding Index,10.7,index,,,,,2026-03-11,https://openrouter.ai/openai/gpt-3.5-turbo/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+721,minimax/MiniMax-M2.5,SWE-Atlas Codebase QnA,10.3,score,,,,Mini-SWE-Agent,,https://labs.scale.com/leaderboard/sweatlas-qna,SWE-Atlas Codebase QnA,score,True,1,False
+733,google/gemini-3-flash-preview,SWE-Atlas Refactoring,10.0,score,,,,Mini-SWE-Agent,,https://labs.scale.com/leaderboard/sweatlas-refactoring,SWE-Atlas Refactoring,score,True,1,False
+425,google/gemini-3.8-flash,Harvey Legal Agent Benchmark,10.0,all-pass rate,,,,,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/,Harvey Legal Agent Benchmark,all-pass rate,True,1,False
+829,zhipuai/glm-4.6,SWE-Bench Pro,9.67,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+125,google/gemini-2.5-flash-lite,Artificial Analysis Coding Index,9.5,index,,,,,2026-03-11,https://openrouter.ai/google/gemini-2.5-flash-lite/benchmarks,Artificial Analysis Coding Index,index,True,1,False
+1074,nvidia/nemotron-3.5-lightning,tau3-bench,9.28,score,BF16; reasoning; banking,,,,,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,tau3-bench,score,True,1,False
+75,openai/gpt-4.1-nano,Aider Polyglot,8.9,percent correct,,,,,2025-04-14,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+1025,openai/gpt-4o-2024-11-20,Terminal-Bench Hard,8.3,success rate,,,,,2026-03-11,https://openrouter.ai/openai/gpt-4o-2024-11-20/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+1024,openai/gpt-4o-2024-08-06,Terminal-Bench Hard,8.3,success rate,,,,,2026-03-11,https://openrouter.ai/openai/gpt-4o-2024-08-06/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+722,google/gemini-3-flash-preview,SWE-Atlas Codebase QnA,8.2,score,,,,Mini-SWE-Agent,,https://labs.scale.com/leaderboard/sweatlas-qna,SWE-Atlas Codebase QnA,score,True,1,False
+430,tencent/hy3,HorizonMath,7.1,pass@12,highest reasoning effort,,,,,https://huggingface.co/tencent/Hy3,HorizonMath,pass@12,True,1,False
+1027,mistral/mistral-large-2411,Terminal-Bench Hard,6.1,success rate,,,,,2026-03-11,https://openrouter.ai/mistralai/mistral-large-2407/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+1026,deepseek/deepseek-r1,Terminal-Bench Hard,6.1,success rate,,,,,2026-03-11,https://openrouter.ai/deepseek/deepseek-r1/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+305,xiaomi/mimo-v2.6-flash,ExploitGym,6.0,score,,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,ExploitGym,score,True,1,False
+1028,zhipuai/glm-4.5v,Terminal-Bench Hard,5.3,success rate,,,,,2026-04-29,https://openrouter.ai/z-ai/glm-4.5v/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+830,meta/llama-4-maverick-17b-instruct,SWE-Bench Pro,5.24,resolve rate,,,public,,,https://labs.scale.com/leaderboard/swe_bench_pro_public,SWE-Bench Pro,resolve rate,True,1,False
+1029,google/gemini-2.5-flash-lite,Terminal-Bench Hard,4.5,success rate,,,,,2026-03-11,https://openrouter.ai/google/gemini-2.5-flash-lite/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+1030,mistral/mistral-medium-2505,Terminal-Bench Hard,3.8,success rate,,,,,2026-05-30,https://openrouter.ai/mistralai/mistral-medium-3/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+76,openai/gpt-4o-mini,Aider Polyglot,3.6,percent correct,,,,,2024-12-21,https://aider.chat/docs/leaderboards/,Aider Polyglot,percent correct,True,1,False
+1031,meta/llama-3.3-70b-instruct,Terminal-Bench Hard,3.0,success rate,,,,,2026-03-11,https://openrouter.ai/meta-llama/llama-3.3-70b-instruct/benchmarks,Terminal-Bench Hard,success rate,True,1,False
+306,xiaomi/mimo-v2.5-pro,ExploitGym,0.2,score,MiMo-V2.5 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,ExploitGym,score,True,1,False
+597,xiaomi/mimo-v2.5-pro,MiMo Cyber Bench,0.0,score,MiMo-V2.5 Pro comparison column,,,,,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,MiMo Cyber Bench,score,True,1,False
+655,openai/gpt-5.4-mini,OmniDocBench,0.1263,overall edit distance,reasoning effort none,1.5,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,OmniDocBench,overall edit distance,False,1,False
+654,openai/gpt-5.4-nano,OmniDocBench,0.2419,overall edit distance,reasoning effort none,1.5,,,2026-03-17,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,OmniDocBench,overall edit distance,False,1,False

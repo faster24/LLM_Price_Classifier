@@ -1,0 +1,148 @@
+model_id,model_name,keys_matched,alias_used,matched,n_price_series
+anthropic/claude-sonnet-5-5,Claude Sonnet 5.5,claudesonnet55,False,True,18
+anthropic/claude-opus-5-5,Claude Opus 5.5,claudeopus55,False,True,17
+openai/gpt-6-luna,GPT-6 Luna,gpt6luna,False,True,11
+openai/gpt-6-sol,GPT-6 Sol,gpt6sol,False,True,11
+xiaomi/mimo-v2.6-flash,MiMo-V2.6-Flash,mimov26flash,False,True,2
+xiaomi/mimo-v2.6-pro,MiMo-V2.6-Pro,mimov26pro,False,True,2
+xai/grok-4.7,Grok 4.7,grok47,False,True,5
+deepseek/deepseek-v4.1-flash,DeepSeek V4.1 Flash,deepseekv41flash,False,True,9
+openai/gpt-6-astra,GPT-6 Astra,gpt6astra,False,True,10
+google/gemini-3.8-flash,Gemini 3.8 Flash,gemini38flash,False,True,5
+meta/muse-spark-1.3,Muse Spark 1.3,musespark13,False,True,3
+anthropic/claude-fable-5-1,Claude Fable 5.1,claudefable51,False,True,12
+alibaba/qwen3.8-flash-next,Qwen3.8 Flash Next,,False,False,0
+inclusionai/ling-3.0-flash-fin,Ling 3.0 Flash Fin,ling30flashfin,False,True,2
+zhipuai/glm-5.3-flash,GLM-5.3-Flash,glm53flash,False,True,11
+deepseek/deepseek-v4-flash-vision-exp,DeepSeek V4 Flash Vision Exp,deepseekv4flashvisionexp,False,True,7
+alibaba/qwen3.8-27b,Qwen3.8 27B,qwen3827b,False,True,6
+zhipuai/glm-5.3,GLM-5.3,glm53,False,True,11
+google/gemini-3.7-flash,Gemini 3.7 Flash,gemini37flash,False,True,8
+deepseek/deepseek-v4-pro-0813,DeepSeek V4 Pro 0813,deepseekv4pro0813,False,True,11
+xai/grok-4.6,Grok 4.6,grok46,False,True,12
+nvidia/nemotron-3.5-lightning,Nemotron 3.5 Lightning 30B A3B,"nemotron35lightning,nemotron35lightning30ba3b",False,True,4
+meta/muse-glimmer-30b,Muse Glimmer 30B,museglimmer30b,False,True,6
+meta/muse-spark-1.2,Muse Spark 1.2,musespark12,False,True,3
+alibaba/qwen3.8-max,Qwen3.8 Max,qwen38max,False,True,8
+sakana/sakana-namazu,Sakana Namazu,sakananamazu,False,True,1
+deepseek/deepseek-v4-flash-0731,DeepSeek V4 Flash 0731,deepseekv4flash0731,False,True,18
+anthropic/claude-opus-5,Claude Opus 5,claudeopus5,False,True,18
+google/gemini-3.5-flash-lite,Gemini 3.5 Flash Lite,gemini35flashlite,False,True,7
+google/gemini-3.6-flash,Gemini 3.6 Flash,gemini36flash,False,True,6
+alibaba/qwen3.8-max-preview,Qwen3.8 Max Preview,,False,False,0
+moonshotai/kimi-k3,Kimi K3,kimik3,False,True,16
+openai/gpt-5.6-luna,GPT-5.6 Luna,gpt56luna,False,True,12
+openai/gpt-5.6-sol,GPT-5.6 Sol,gpt56sol,False,True,10
+openai/gpt-5.6-terra,GPT-5.6 Terra,gpt56terra,False,True,12
+xai/grok-4.5,Grok 4.5,grok45,False,True,3
+tencent/hy3,Hy3,hy3,False,True,4
+anthropic/claude-sonnet-5,Claude Sonnet 5,claudesonnet5,False,True,18
+meituan/longcat-2.0,LongCat-2.0,longcat20,False,True,2
+sakana/fugu-ultra,Fugu Ultra,fuguultra,False,True,2
+zhipuai/glm-5.2,GLM-5.2,glm52,False,True,19
+moonshotai/kimi-k2.7-code,Kimi K2.7 Code,kimik27code,False,True,14
+anthropic/claude-fable-5,Claude Fable 5,claudefable5,False,True,14
+nvidia/nemotron-3-ultra-550b-a55b,Nemotron 3 Ultra 550B A55B,nemotron3ultra550ba55b,False,True,5
+microsoft/mai-code-1-flash,MAI-Code-1-Flash,maicode1flash,False,True,1
+minimax/MiniMax-M3,MiniMax-M3,minimaxm3,False,True,13
+stepfun/step-3.7-flash,Step 3.7 Flash,step37flash,False,True,4
+anthropic/claude-opus-4-8,Claude Opus 4.8,claudeopus48,False,True,17
+alibaba/qwen3.7-max,Qwen3.7 Max,qwen37max,False,True,7
+google/gemini-3.5-flash,Gemini 3.5 Flash,gemini35flash,False,True,7
+mistral/mistral-medium-2604,Mistral Medium 3.5,"mistralmedium2604,mistralmedium35",False,True,6
+mistral/mistral-medium-latest,Mistral Medium (latest),mistralmediumlatest,False,True,1
+deepseek/deepseek-v4-flash,DeepSeek V4 Flash,deepseekv4flash,False,True,19
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseekv4pro,False,True,17
+openai/gpt-5.5-pro,GPT-5.5 Pro,gpt55pro,False,True,5
+openai/gpt-5.5,GPT-5.5,gpt55,False,True,12
+alibaba/qwen3.6-27b,Qwen3.6 27B,qwen3627b,False,True,7
+xiaomi/mimo-v2.5-pro,MiMo-V2.5-Pro,mimov25pro,False,True,3
+xiaomi/mimo-v2.5,MiMo-V2.5,mimov25,False,True,3
+moonshotai/kimi-k2.6,Kimi K2.6,kimik26,False,True,13
+tencent/hy3-preview,Hy3 preview,hy3preview,False,True,1
+alibaba/qwen3.6-35b-a3b,Qwen3.6 35B-A3B,qwen3635ba3b,False,True,9
+xai/grok-4.3,Grok 4.3,grok43,False,True,8
+anthropic/claude-opus-4-7,Claude Opus 4.7,claudeopus47,False,True,15
+meta/muse-spark-1.1,Muse Spark 1.1,musespark11,False,True,2
+zhipuai/glm-5.1,GLM-5.1,glm51,False,True,10
+stepfun/step-3.5-flash-2603,Step 3.5 Flash 2603,,False,False,0
+minimax/MiniMax-M2.7,MiniMax-M2.7,minimaxm27,False,True,8
+openai/gpt-5.4-mini,GPT-5.4 mini,gpt54mini,False,True,9
+openai/gpt-5.4-nano,GPT-5.4 nano,gpt54nano,False,True,9
+mistral/mistral-small-2603,Mistral Small 4,mistralsmall2603,False,True,3
+openai/gpt-5.4-pro,GPT-5.4 Pro,gpt54pro,False,True,7
+openai/gpt-5.4,GPT-5.4,gpt54,False,True,13
+alibaba/qwen3.5-122b-a10b,Qwen3.5 122B-A10B,qwen35122ba10b,False,True,5
+alibaba/qwen3.5-27b,Qwen3.5 27B,qwen3527b,False,True,3
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,gemini31propreview,False,True,7
+anthropic/claude-sonnet-4-6,Claude Sonnet 4.6,claudesonnet46,False,True,16
+alibaba/qwen3.5-397b-a17b,Qwen3.5 397B-A17B,qwen35397ba17b,False,True,7
+minimax/MiniMax-M2.5,MiniMax-M2.5,minimaxm25,False,True,22
+zhipuai/glm-5,GLM-5,glm5,False,True,9
+anthropic/claude-opus-4-6,Claude Opus 4.6,claudeopus46,False,True,19
+openai/gpt-5.3-codex,GPT-5.3 Codex,gpt53codex,False,True,7
+stepfun/step-3.5-flash,Step 3.5 Flash,step35flash,False,True,1
+zhipuai/glm-4.7-flash,GLM-4.7-Flash,glm47flash,False,True,6
+moonshotai/kimi-k2.5,Kimi K2.5,kimik25,False,True,18
+minimax/MiniMax-M2.1,MiniMax-M2.1,minimaxm21,False,True,17
+zhipuai/glm-4.7,GLM-4.7,glm47,False,True,7
+google/gemini-3-flash-preview,Gemini 3 Flash Preview,gemini3flashpreview,False,True,8
+openai/gpt-5.2-codex,GPT-5.2 Codex,gpt52codex,False,True,5
+openai/gpt-5.2,GPT-5.2,gpt52,False,True,8
+mistral/devstral-2512,Devstral 2,devstral2512,False,True,3
+mistral/mistral-large-2512,Mistral Large 3,"mistrallarge2512,mistrallarge3",False,True,5
+deepseek/deepseek-chat,DeepSeek Chat,deepseekchat,False,True,3
+deepseek/deepseek-reasoner,DeepSeek Reasoner,deepseekreasoner,False,True,2
+google/gemini-3-pro-preview,Gemini 3 Pro Preview,gemini3propreview,False,True,5
+moonshotai/kimi-k2-thinking,Kimi K2 Thinking,kimik2thinking,False,True,15
+anthropic/claude-opus-4-5-20251101,Claude Opus 4.5,claudeopus45,False,True,13
+minimax/MiniMax-M2,MiniMax-M2,minimaxm2,False,True,5
+anthropic/claude-haiku-4-5,Claude Haiku 4.5 (latest),claudehaiku45,False,True,23
+zhipuai/glm-4.6,GLM-4.6,glm46,False,True,9
+anthropic/claude-sonnet-4-5,Claude Sonnet 4.5 (latest),claudesonnet45,False,True,23
+alibaba/qwen3-max,Qwen3 Max,qwen3max,False,True,3
+openai/gpt-5-codex,GPT-5-Codex,gpt5codex,False,True,5
+zhipuai/glm-4.5v,GLM-4.5V,glm45v,False,True,3
+openai/gpt-5,GPT-5,gpt5,False,True,10
+zhipuai/glm-4.5-air,GLM-4.5-Air,glm45air,False,True,7
+zhipuai/glm-4.5,GLM-4.5,glm45,False,True,5
+mistral/devstral-medium-2507,Devstral Medium,"devstralmedium,devstralmedium2507",False,True,2
+mistral/devstral-small-2507,Devstral Small,"devstralsmall,devstralsmall2507",False,True,4
+google/gemini-2.5-flash-lite,Gemini 2.5 Flash-Lite,gemini25flashlite,False,True,5
+google/gemini-2.5-flash,Gemini 2.5 Flash,gemini25flash,False,True,8
+google/gemini-2.5-pro,Gemini 2.5 Pro,gemini25pro,False,True,7
+openai/o3-pro,o3-pro,o3pro,False,True,3
+anthropic/claude-opus-4-20250514,Claude Opus 4,claudeopus4,False,True,8
+anthropic/claude-sonnet-4-0,Claude Sonnet 4 (latest),,False,False,0
+anthropic/claude-sonnet-4-20250514,Claude Sonnet 4,claudesonnet4,False,True,11
+mistral/mistral-medium-2505,Mistral Medium 3,"mistralmedium2505,mistralmedium3",False,True,7
+openai/o3,o3,o3,False,True,5
+openai/o4-mini,o4-mini,o4mini,False,True,6
+openai/gpt-4.1-mini,GPT-4.1 mini,gpt41mini,False,True,8
+openai/gpt-4.1-nano,GPT-4.1 nano,gpt41nano,False,True,8
+openai/gpt-4.1,GPT-4.1,gpt41,False,True,8
+meta/llama-4-maverick-17b-instruct,Llama 4 Maverick 17B Instruct,llama4maverick17binstruct,False,True,2
+alibaba/qwen3-235b-a22b,Qwen3 235B-A22B,qwen3235ba22b,False,True,6
+alibaba/qwen3-32b,Qwen3 32B,qwen332b,False,True,11
+alibaba/qwen3-coder-30b-a3b-instruct,Qwen3-Coder 30B-A3B Instruct,qwen3coder30ba3binstruct,False,True,5
+alibaba/qwen3-coder-480b-a35b-instruct,Qwen3-Coder 480B-A35B Instruct,qwen3coder480ba35binstruct,False,True,5
+cohere/command-a-03-2025,Command A,"commanda,commanda032025",False,True,4
+anthropic/claude-3-7-sonnet-20250219,Claude Sonnet 3.7,claude37sonnet,False,True,13
+deepseek/deepseek-r1,DeepSeek-R1,deepseekr1,False,True,14
+openai/o3-mini,o3-mini,o3mini,False,True,6
+meta/llama-3.3-70b-instruct,Llama-3.3-70B-Instruct,llama3370binstruct,False,True,16
+openai/o1,o1,o1,False,True,5
+openai/gpt-4o-2024-11-20,GPT-4o (2024-11-20),gpt4o20241120,False,True,7
+mistral/mistral-large-2411,Mistral Large 2.1,mistrallarge2411,False,True,3
+anthropic/claude-3-5-sonnet-20241022,Claude Sonnet 3.5 v2,claude35sonnet,False,True,25
+openai/gpt-4o-2024-08-06,GPT-4o (2024-08-06),gpt4o20240806,False,True,7
+openai/gpt-4o-mini,GPT-4o mini,gpt4omini,False,True,8
+mistral/codestral-latest,Codestral (latest),codestrallatest,False,True,4
+openai/gpt-4o-2024-05-13,GPT-4o (2024-05-13),gpt4o20240513,False,True,5
+openai/gpt-4o,GPT-4o,gpt4o,False,True,8
+alibaba/qwen-max,Qwen Max,qwenmax,False,True,4
+perplexity/sonar-pro,Sonar Pro,sonarpro,False,True,3
+perplexity/sonar,Sonar,sonar,False,True,4
+openai/gpt-4-turbo,GPT-4 Turbo,gpt4turbo,False,True,5
+openai/gpt-4,GPT-4,gpt4,False,True,3
+openai/gpt-3.5-turbo,GPT-3.5-turbo,gpt35turbo,False,True,6

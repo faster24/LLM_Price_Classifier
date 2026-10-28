@@ -1,0 +1,16 @@
+# Raw Kaggle data (download separately, see data/raw/README.md)
+data/raw/*
+!data/raw/README.md
+
+# Local assistant notes
+CLAUDE.md
+.claude/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# OS
+.DS_Store

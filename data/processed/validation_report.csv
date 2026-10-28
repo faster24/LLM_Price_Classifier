@@ -1,0 +1,50 @@
+table,check,passed,rows_affected,action
+database,SQLite integrity_check,True,0,none
+database,foreign-key violations,True,0,none
+labs,primary key ['lab'] unique,True,0,none
+providers,primary key ['provider_id'] unique,True,0,none
+models,primary key ['model_id'] unique,True,0,none
+catalog_models,primary key ['model_id'] unique,True,0,none
+provider_offerings,"primary key ['provider_id', 'offering_id'] unique",True,0,none
+price_history,"primary key ['week_start', 'provider', 'model_id'] unique",True,0,none
+catalog_models,row parity with ai_models_2026.csv,True,0,none
+price_history,row parity with ai_model_price_history.csv,True,0,none
+models,row parity with llm_models.csv,True,0,none
+benchmark_results,row parity with llm_benchmarks.csv,True,0,none
+provider_offerings,row parity with llm_provider_offerings.csv,True,0,none
+models,duplicate model names,True,0,none
+models,invalid release_date format,True,0,none
+models,release_date after today,True,0,none
+models,negative prices,True,0,none
+models,min price > median price,True,0,none
+models,n_benchmarks mismatch,True,0,none
+models,n_providers != distinct providers,True,0,none
+models,non-text-LLM models removed,True,37,dropped
+models,text LLMs without a valid (>0) median price,True,55,flagged has_valid_price=False
+models,input price > output price (text LLMs),True,0,reviewed
+models,context_window null or 0,True,1,set to NaN
+benchmark_results,benchmark name spelling variants,True,15,merged to canonical name
+benchmark_results,empty metric label,True,41,filled 'unspecified'
+benchmark_results,lower-is-better metric,True,2,flagged higher_is_better=False
+benchmark_results,percent score outside 0-100,True,0,none
+benchmark_results,percent score on 0-1 scale,True,0,none
+benchmark_results,"multiple variants per (model, benchmark, metric)",True,104,kept best score
+benchmark_results,reported_date before release_date,True,31,flagged (pre-release eval)
+benchmark_results,rows of non-text-LLM models,True,1,dropped
+catalog_models,non-text modes,True,886,dropped
+catalog_models,"regional/variant duplicates per (provider, name, mode)",True,573,kept base (shortest id)
+catalog_models,null input/output price,True,141,dropped
+catalog_models,free (zero-price) entries,True,97,flagged is_free
+catalog_models,deprecated entries,True,111,flagged is_deprecated
+price_history,non-text modes,True,9674,dropped
+price_history,null input/output price rows,True,1031,dropped
+price_history,week_start not a Monday,True,0,none
+price_history,calendar weeks missing in whole table,True,2,noted (gap-fill covers them)
+price_history,one-week price spikes (A→B→A),True,34,reverted to A
+price_history,extreme week-to-week jump (>10x),True,34,flagged extreme_jump
+price_history,series with internal weekly gaps,True,324,forward-filled inside series
+price_history,series shorter than 8 weeks,True,1526,flagged eligible_for_trend=False
+price_history,rows without catalog_model_id link,True,34464,noted (delisted models; name join later)
+provider_offerings,negative price,True,0,none
+provider_offerings,zero-price offers,True,645,flagged is_free
+provider_offerings,offers not linked to a model,True,3094,kept (unbenchmarked models)
