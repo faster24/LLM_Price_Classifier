@@ -8,6 +8,8 @@ Recommends LLM API models for a task, requirements and monthly budget. It uses t
 | `engine.py` | Filter-then-rank rules in plain Python, with no pandas needed at runtime. |
 | `api.py` | FastAPI service. |
 
+Live: https://llm-price-classifier.vercel.app
+
 ## Run
 
 ```bash
@@ -16,15 +18,16 @@ uv run --with pandas python src/llm_recommender/build_snapshot.py
 
 # 2. start the API
 uv run --with fastapi,uvicorn uvicorn llm_recommender.api:app --app-dir src --port 8000
-# interactive docs: http://localhost:8000/docs
+# demo page: http://localhost:8000/   interactive docs: http://localhost:8000/docs
 ```
 
-To deploy elsewhere, copy `src/llm_recommender/` and the snapshot JSON, then set `LLM_RECOMMENDER_SNAPSHOT=/path/to/recommender_snapshot.json`.
+The demo page is `static/index.html`, served at `GET /`. For Vercel, the root `app.py` imports this app (see the main README). To deploy elsewhere, copy `src/llm_recommender/` and the snapshot JSON, then set `LLM_RECOMMENDER_SNAPSHOT=/path/to/recommender_snapshot.json`.
 
 ## Endpoints
 
 | Method | Path | Returns |
 |---|---|---|
+| GET | `/` | demo web page |
 | GET | `/health` | status and snapshot version |
 | GET | `/meta` | snapshot week, price/score rules, task → benchmark mapping, trend source |
 | GET | `/models?task=coding` | models in the snapshot (without per-provider offers) |

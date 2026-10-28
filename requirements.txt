@@ -1,12 +1,2 @@
-pandas
-numpy
-scipy
-scikit-learn
-matplotlib
-seaborn
-xgboost
-shap
-nbconvert
-ipykernel
 fastapi
 uvicorn

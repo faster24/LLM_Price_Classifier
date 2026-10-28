@@ -1,0 +1,10 @@
+notebooks/
+reports/
+data/raw/
+data/processed/*
+!data/processed/recommender_snapshot.json
+requirements-analysis.txt
+CLAUDE.md
+.claude/
+.env*
+.vercel/

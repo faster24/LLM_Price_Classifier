@@ -11,6 +11,7 @@ import os
 from typing import List, Literal, Optional
 
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
 try:
@@ -23,6 +24,7 @@ DEFAULT_SNAPSHOT = os.path.join(os.path.dirname(__file__), "..", "..", "data", "
 SNAPSHOT_PATH = os.environ.get("LLM_RECOMMENDER_SNAPSHOT", DEFAULT_SNAPSHOT)
 SNAPSHOT = engine.load_snapshot(SNAPSHOT_PATH)
 TASKS = tuple(SNAPSHOT["meta"]["task_benchmarks"])
+INDEX_HTML = os.path.join(os.path.dirname(__file__), "static", "index.html")
 
 app = FastAPI(
     title="LLM Model Recommender",
@@ -59,6 +61,11 @@ class RecommendRequest(BaseModel):
     model_config = {"json_schema_extra": {"examples": [{
         "task": "coding", "monthly_input_tokens_m": 100, "monthly_output_tokens_m": 20,
         "monthly_budget_usd": 200, "requirements": {"open_only": True}, "rank_by": "score"}]}}
+
+
+@app.get("/", include_in_schema=False)
+def index():
+    return FileResponse(INDEX_HTML)
 
 
 @app.get("/health")

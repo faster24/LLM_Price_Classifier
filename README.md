@@ -7,6 +7,8 @@ Team Straw Hats: Mr. Nyi Ye Naing (6703332). Supervisor: Asst. Prof. Dr. Kritsad
 
 How can LLM API models be grouped into price/performance tiers and price-trend classes, and how can those classes help someone pick a model on a budget, now and in the near future?
 
+**Live demo:** https://llm-price-classifier.vercel.app (API docs at [/docs](https://llm-price-classifier.vercel.app/docs))
+
 The project follows CRISP-DM. Clustering creates tier labels, classifiers assign tiers and price trends, and a rule-based decision algorithm turns both into a model recommendation, which is also served as a small REST API.
 
 ## Research questions and results
@@ -78,14 +80,14 @@ uv run --with pandas,numpy,scipy,scikit-learn,matplotlib,seaborn,nbconvert,ipyke
 - Notebook 02 also needs `xgboost,shap` and takes about 7 minutes.
 - Notebook 04 runs in about 1 minute.
 
-Alternatively, `pip install -r requirements.txt` and use Jupyter as usual. Random seeds are fixed, so results are reproducible.
+Alternatively, `pip install -r requirements-analysis.txt` and use Jupyter as usual (`requirements.txt` holds only the API's runtime deps, for deployment). Random seeds are fixed, so results are reproducible.
 
 ### Recommender API
 
 ```bash
 uv run --with pandas python src/llm_recommender/build_snapshot.py      # rebuild snapshot (optional)
-uv run --with fastapi,uvicorn uvicorn llm_recommender.api:app --app-dir src --port 8000
-# docs at http://localhost:8000/docs
+uv run --with fastapi,uvicorn uvicorn app:app --port 8000
+# demo page at http://localhost:8000/, docs at http://localhost:8000/docs
 
 curl -s localhost:8000/recommend -H 'content-type: application/json' -d '{
   "task": "coding", "monthly_input_tokens_m": 100, "monthly_output_tokens_m": 20,
@@ -93,7 +95,18 @@ curl -s localhost:8000/recommend -H 'content-type: application/json' -d '{
 }'
 ```
 
-Endpoints: `/health`, `/meta`, `/models`, `/models/{model_id}`, `POST /recommend`. `rank_by` is `score` (default, the exploratory rule) or `value` (the proposal's rule, which failed H4). Full details in [`src/llm_recommender/README.md`](src/llm_recommender/README.md).
+Endpoints: `/` (demo web page), `/health`, `/meta`, `/models`, `/models/{model_id}`, `POST /recommend`. `rank_by` is `score` (default, the exploratory rule) or `value` (the proposal's rule, which failed H4). Full details in [`src/llm_recommender/README.md`](src/llm_recommender/README.md).
+
+### Deploy (Vercel, free Hobby plan)
+
+`app.py` at the repo root is Vercel's FastAPI entrypoint; `requirements.txt` keeps the bundle to `fastapi` + `uvicorn`, and `.vercelignore` uploads only the code and `recommender_snapshot.json`.
+
+```bash
+vercel login
+vercel --prod
+```
+
+Or import the GitHub repo in the Vercel dashboard so every push to `main` redeploys. Rebuild and commit the snapshot before deploying when data changes.
 
 ## Figures
 
