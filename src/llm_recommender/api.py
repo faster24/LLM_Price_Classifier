@@ -57,6 +57,7 @@ class RecommendRequest(BaseModel):
                              "'value' = score / cost, the proposal's rule (did not beat baselines in RQ4)")
     use_trend: bool = True
     top_n: int = Field(3, ge=1, le=10)
+    offset: int = Field(0, ge=0, description="skip this many ranked models (for 'show more' paging)")
 
     model_config = {"json_schema_extra": {"examples": [{
         "task": "coding", "monthly_input_tokens_m": 100, "monthly_output_tokens_m": 20,
@@ -96,4 +97,4 @@ def get_model(model_id: str):
 def recommend(req: RecommendRequest):
     return engine.recommend(
         SNAPSHOT, req.task, req.monthly_input_tokens_m, req.monthly_output_tokens_m,
-        req.monthly_budget_usd, req.requirements.model_dump(), req.rank_by, req.use_trend, req.top_n)
+        req.monthly_budget_usd, req.requirements.model_dump(), req.rank_by, req.use_trend, req.top_n, req.offset)

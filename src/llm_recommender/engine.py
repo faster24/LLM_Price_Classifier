@@ -43,8 +43,8 @@ def _months_before(iso_day, months):
 
 
 def recommend(snapshot, task, input_m, output_m, budget, requirements=None,
-              rank_by="score", use_trend=True, top_n=3):
-    """Return a dict with the top-n recommendations and funnel counts."""
+              rank_by="score", use_trend=True, top_n=3, offset=0):
+    """Return a dict with n recommendations starting after the first `offset` ranked models, plus funnel counts."""
     if task not in snapshot["meta"]["task_benchmarks"]:
         raise ValueError(f"unknown task {task!r}")
     if rank_by not in ("score", "value"):
@@ -91,13 +91,14 @@ def recommend(snapshot, task, input_m, output_m, budget, requirements=None,
         fits.sort(key=lambda x: (-x[5], -x[1]))
     else:
         fits.sort(key=lambda x: (-x[1], x[2]))
-    recs = [{"rank": i + 1, "model_id": m["model_id"], "model_name": m["model_name"], "lab": m["lab"],
+    recs = [{"rank": offset + i + 1, "model_id": m["model_id"], "model_name": m["model_name"], "lab": m["lab"],
              "tier": m["tier"], "trend": m["trend"], "task_score": round(s, 4),
              "monthly_cost_usd": round(c, 4), "cheapest_provider": p, "budget_used": round(c / budget, 4),
              "value": round(v, 6)}
-            for i, (m, s, c, p, v, _) in enumerate(fits[:top_n])]                       # step 6
+            for i, (m, s, c, p, v, _) in enumerate(fits[offset:offset + top_n])]        # step 6
     return {"as_of_week": as_of, "task": task, "rank_by": rank_by, "use_trend": use_trend,
             "trend_source": snapshot["meta"]["trend_source"],
             "note": VALUE_WARNING if rank_by == "value" else SCORE_NOTE,
             "funnel": {"capable": len(capable), "meet_requirements": len(meets), "within_budget": len(fits)},
+            "offset": offset, "has_more": offset + top_n < len(fits),
             "recommendations": recs}

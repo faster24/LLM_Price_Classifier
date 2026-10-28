@@ -48,7 +48,7 @@ Request fields:
 - `task`: `coding`, `reasoning` or `vision`
 - token volumes in **millions per month**, and the budget in **USD per month**
 - `requirements`: `needs_tools`, `needs_json`, `open_only`, `min_context`, `include_labs`, `exclude_labs`, `min_score` (0–1), `released_within_months`
-- `rank_by`, `use_trend`, `top_n` (1–10)
+- `rank_by`, `use_trend`, `top_n` (1–10), `offset` (skip that many ranked models; the response's `has_more` says whether more remain)
 
 The response lists each pick's task score, monthly cost, cheapest provider, share of budget used, RQ1 tier and price trend. It also includes a `funnel` showing how many models passed each filter.
 
