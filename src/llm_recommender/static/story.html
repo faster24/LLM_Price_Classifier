@@ -103,8 +103,8 @@
 </head>
 <body>
 <nav class="toc" aria-label="Sections"><div>
-  <a href="#problem">Problem</a><a href="#data">Data</a><a href="#cleaning">Cleaning</a>
-  <a href="#groups">Groups</a><a href="#guessing">Guessing</a><a href="#picking">Picking</a><a href="#try">Try it</a>
+  <a href="#problem">1 · Business</a><a href="#data">2 · Data</a><a href="#cleaning">3 · Preparation</a>
+  <a href="#groups">4–5 · Groups</a><a href="#guessing">4–5 · Guessing</a><a href="#picking">4–5 · Picking</a><a href="#try">6 · Deployment</a>
 </div></nav>
 <main>
   <header class="hero">
@@ -127,7 +127,7 @@
 
   <!-- STEP 1 -->
   <section id="problem">
-    <div class="step">Step 1</div>
+    <div class="step">Business understanding</div>
     <h2>The problem</h2>
     <p class="lead">Choosing an AI model is hard because prices vary wildly and keep changing.</p>
     <div class="tiles">
@@ -161,7 +161,7 @@
 
   <!-- STEP 2 -->
   <section id="data">
-    <div class="step">Step 2</div>
+    <div class="step">Data understanding</div>
     <h2>The data</h2>
     <p class="lead">We combined two public datasets: one with prices, one with test scores.</p>
     <div class="grid2">
@@ -187,7 +187,7 @@
 
   <!-- STEP 3 -->
   <section id="cleaning">
-    <div class="step">Step 3</div>
+    <div class="step">Data preparation</div>
     <h2>Cleaning the data</h2>
     <p class="lead">We kept only text models, fixed bad prices, and gave every model one price and one score.</p>
     <div class="tiles" id="funnel"></div>
@@ -210,7 +210,7 @@
 
   <!-- STEP 4 -->
   <section id="groups">
-    <div class="step">Step 4 · Question 1</div>
+    <div class="step">Modeling &amp; evaluation · Question 1</div>
     <h2>Finding the groups <span class="badge yes">✓ Confirmed</span></h2>
     <p class="lead" id="h1lead">…</p>
     <p>We gave the computer each model's price and score and let it sort them into groups of similar models (clustering). We tried two different sorting methods; both agreed on 7 groups.</p>
@@ -230,7 +230,7 @@
 
   <!-- STEP 5 -->
   <section id="guessing">
-    <div class="step">Step 5 · Question 2</div>
+    <div class="step">Modeling &amp; evaluation · Question 2</div>
     <h2>Guessing a model's group <span class="badge part">~ Partly confirmed</span></h2>
     <p class="lead">Basic facts about a model reveal its group much better than chance, but the release date matters more than the maker.</p>
     <p>We trained prediction methods to guess each model's group from facts like maker, release date and abilities. We hid price and score, otherwise it would just copy the answer.</p>
@@ -256,7 +256,7 @@
 
   <!-- STEP 6 -->
   <section id="picking">
-    <div class="step">Step 6 · Question 3</div>
+    <div class="step">Modeling &amp; evaluation · Question 3</div>
     <h2>Picking a model <span class="badge no">✗ Not confirmed</span></h2>
     <p class="lead">Our "best score per dollar" rule ended up picking the cheapest model every time in our test.</p>
     <p>The picker takes a task, any must-haves, expected usage and a monthly budget. Then it:</p>
@@ -282,7 +282,7 @@
 
   <!-- STEP 7 -->
   <section id="try">
-    <div class="step">Step 7</div>
+    <div class="step">Deployment</div>
     <h2>Try it</h2>
     <p class="lead">The model picker is live: enter a task and a budget, get 3 models with their cost, score and group.</p>
     <div class="btns">
@@ -438,7 +438,7 @@ function currentFilter() {
 function renderTable() {
   const f = filt = currentFilter();
   const rows = D.tiers.filter(f).sort((a, b) => a.tier_id - b.tier_id || b.performance - a.performance);
-  $("#count").textContent = `${rows.length} of ${D.tiers.length} models` + (rows.length < D.tiers.length ? " (also highlighted on the chart in Step 4)" : "");
+  $("#count").textContent = `${rows.length} of ${D.tiers.length} models` + (rows.length < D.tiers.length ? " (also highlighted on the Groups chart)" : "");
   $("#rows").innerHTML = rows.map(m => `<tr><td>${esc(m.model_name)}${m.open_weights ? ' <span class="muted">· open</span>' : ""}</td>
     <td>${esc(m.lab)}</td><td><span class="dot" style="background:var(--s${m.tier_id})"></span>T${m.tier_id}</td>
     <td class="num">${m.blended_price.toFixed(2)}</td><td class="num">${m.performance.toFixed(2)}</td></tr>`).join("");
