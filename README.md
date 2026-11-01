@@ -7,7 +7,7 @@ Team Straw Hats: Mr. Nyi Ye Naing (6703332). Supervisor: Asst. Prof. Dr. Kritsad
 
 How can LLM API models be grouped into price/performance tiers and price-trend classes, and how can those classes help someone pick a model on a budget, now and in the near future?
 
-**Live demo:** https://llm-price-classifier.vercel.app (API docs at [/docs](https://llm-price-classifier.vercel.app/docs))
+**Live site:** https://llm-price-classifier.vercel.app: the project story (CRISP-DM step by step) at `/`, the recommender at [/demo](https://llm-price-classifier.vercel.app/demo), API docs at [/docs](https://llm-price-classifier.vercel.app/docs)
 
 The project follows CRISP-DM. Clustering creates tier labels, classifiers assign tiers and price trends, and a rule-based decision algorithm turns both into a model recommendation, which is also served as a small REST API.
 
@@ -65,6 +65,7 @@ Main cleaning steps (notebook 00): keep text LLMs only, drop regional duplicates
 | `rq2_cv_results.csv`, `rq2_feature_importance.csv` | 02 | report |
 | `rq4_backtest_results.csv`, `rq4_summary.csv`, `rq4_mapping.csv` | 04 | report |
 | `recommender_snapshot.json` | `src/llm_recommender/build_snapshot.py` | API |
+| `site_data.json` | `src/llm_recommender/build_site_data.py` | story page (`/`) |
 
 ## Running
 
@@ -86,8 +87,9 @@ Alternatively, `pip install -r requirements-analysis.txt` and use Jupyter as usu
 
 ```bash
 uv run --with pandas python src/llm_recommender/build_snapshot.py      # rebuild snapshot (optional)
+uv run --with pandas python src/llm_recommender/build_site_data.py     # rebuild story-page data (optional)
 uv run --with fastapi,uvicorn uvicorn app:app --port 8000
-# demo page at http://localhost:8000/, docs at http://localhost:8000/docs
+# story page at http://localhost:8000/, recommender at /demo, docs at /docs
 
 curl -s localhost:8000/recommend -H 'content-type: application/json' -d '{
   "task": "coding", "monthly_input_tokens_m": 100, "monthly_output_tokens_m": 20,
@@ -99,14 +101,14 @@ Endpoints: `/` (demo web page), `/health`, `/meta`, `/models`, `/models/{model_i
 
 ### Deploy (Vercel, free Hobby plan)
 
-`app.py` at the repo root is Vercel's FastAPI entrypoint; `requirements.txt` keeps the bundle to `fastapi` + `uvicorn`, and `.vercelignore` uploads only the code and `recommender_snapshot.json`.
+`app.py` at the repo root is Vercel's FastAPI entrypoint; `requirements.txt` keeps the bundle to `fastapi` + `uvicorn`, and `.vercelignore` uploads only the code, `recommender_snapshot.json` and `site_data.json`.
 
 ```bash
 vercel login
 vercel --prod
 ```
 
-Or import the GitHub repo in the Vercel dashboard so every push to `main` redeploys. Rebuild and commit the snapshot before deploying when data changes.
+Or import the GitHub repo in the Vercel dashboard so every push to `main` redeploys. Rebuild and commit both JSON files before deploying when data changes.
 
 ## Figures
 

@@ -5,6 +5,7 @@ Recommends LLM API models for a task, requirements and monthly budget. It uses t
 | File | Role |
 |---|---|
 | `build_snapshot.py` | Builds `data/processed/recommender_snapshot.json` from the clean data (pandas). Re-run it whenever the data or `rq3_trends.csv` changes. |
+| `build_site_data.py` | Builds `data/processed/site_data.json` (counts, tiers, RQ2/RQ3 results) for the story page. Re-run after any notebook re-run. |
 | `engine.py` | Filter-then-rank rules in plain Python, with no pandas needed at runtime. |
 | `api.py` | FastAPI service. |
 
@@ -18,10 +19,10 @@ uv run --with pandas python src/llm_recommender/build_snapshot.py
 
 # 2. start the API
 uv run --with fastapi,uvicorn uvicorn llm_recommender.api:app --app-dir src --port 8000
-# demo page: http://localhost:8000/   interactive docs: http://localhost:8000/docs
+# story page: http://localhost:8000/   recommender: /demo   interactive docs: /docs
 ```
 
-The demo page is `static/index.html`, served at `GET /`. For Vercel, the root `app.py` imports this app (see the main README). To deploy elsewhere, copy `src/llm_recommender/` and the snapshot JSON, then set `LLM_RECOMMENDER_SNAPSHOT=/path/to/recommender_snapshot.json`.
+The project story page is `static/story.html` at `GET /` (data from `GET /site-data`); the recommender page is `static/index.html` at `GET /demo`. For Vercel, the root `app.py` imports this app (see the main README). To deploy elsewhere, copy `src/llm_recommender/` and the snapshot JSON, then set `LLM_RECOMMENDER_SNAPSHOT=/path/to/recommender_snapshot.json`.
 
 ## Endpoints
 

@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LLM Market Tiers</title>
+<meta name="description" content="Classifying the 2026 LLM API market into price/performance tiers and using them for budget-based model selection. ICT324 · Team Straw Hats.">
+<style>
+  :root {
+    --bg: #f7f7f5; --card: #ffffff; --text: #1c1c1a; --muted: #5f5e59; --line: #e2e1dc;
+    --accent: #2f5fd0; --accent-ink: #ffffff; --good: #1f7a4d; --bad: #b3412e; --part: #8a5a00;
+    --good-bg: #e6f4ec; --bad-bg: #fbe9e5; --part-bg: #fff3d6; --warn-bg: #fff6e0; --warn-line: #e8c76a;
+    --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4; --s6: #008300; --s7: #6250d6;
+    --grid: #ecebe6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151514; --card: #1f1f1d; --text: #ecebe6; --muted: #a8a7a1; --line: #34332f;
+      --accent: #7c9ef0; --accent-ink: #10131a; --good: #5fc48f; --bad: #ef8a76; --part: #e8b84d;
+      --good-bg: #17291f; --bad-bg: #321c17; --part-bg: #2d2717; --warn-bg: #2d2717; --warn-line: #7a6627;
+      --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #008300; --s7: #9085e9;
+      --grid: #2a2a27;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--accent); }
+  .toc { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); }
+  .toc div { max-width: 1000px; margin: 0 auto; padding: 10px 16px; display: flex; gap: 6px 18px;
+             overflow-x: auto; white-space: nowrap; font-size: 0.88rem; }
+  .toc a { text-decoration: none; color: var(--muted); }
+  .toc a:hover, .toc a.on { color: var(--accent); }
+  main { max-width: 1000px; margin: 0 auto; padding: 0 16px 64px; }
+  .hero { padding: 48px 0 24px; }
+  .hero small { color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.78rem; }
+  .hero h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.15; margin: 8px 0 12px; letter-spacing: -0.02em; }
+  .hero .q { font-size: 1.15rem; max-width: 760px; }
+  .hero .who { color: var(--muted); font-size: 0.92rem; margin-top: 12px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .btn { display: inline-block; padding: 9px 16px; border-radius: 6px; border: 1px solid var(--accent);
+         text-decoration: none; font-weight: 600; font-size: 0.92rem; }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); }
+  section { padding-top: 40px; }
+  .phase { color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; }
+  h2 { font-size: 1.6rem; margin: 4px 0 12px; letter-spacing: -0.01em; }
+  h3 { font-size: 1.15rem; margin: 28px 0 8px; }
+  p { max-width: 760px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin: 14px 0; }
+  .www { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 14px 0; }
+  @media (max-width: 760px) { .www { grid-template-columns: 1fr; } }
+  .www > div { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; font-size: 0.93rem; }
+  .www b { display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 4px; }
+  .www p { margin: 0; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 14px 0; }
+  .tile { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .tile b { display: block; font-size: 1.5rem; font-variant-numeric: tabular-nums; line-height: 1.2; }
+  .tile span { color: var(--muted); font-size: 0.83rem; }
+  .tablewrap, .explorer { overflow-x: auto; }
+  .tablewrap table, .explorer table { min-width: 640px; }
+  #profiles td:first-child { white-space: nowrap; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .badge { display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 999px;
+           font-size: 0.8rem; font-weight: 700; white-space: nowrap; }
+  .badge.yes { color: var(--good); background: var(--good-bg); }
+  .badge.part { color: var(--part); background: var(--part-bg); }
+  .badge.no { color: var(--bad); background: var(--bad-bg); }
+  .learn { border-left: 3px solid var(--accent); padding: 8px 14px; margin: 12px 0; background: var(--card); border-radius: 0 8px 8px 0; }
+  .note { padding: 10px 12px; background: var(--warn-bg); border: 1px solid var(--warn-line); border-radius: 8px; font-size: 0.9rem; max-width: 760px; }
+  .chart { position: relative; height: 380px; }
+  .chart.short { height: 280px; }
+  .chart.tall { height: 420px; }
+  .caption { color: var(--muted); font-size: 0.85rem; margin: 8px 0 0; }
+  details { margin: 10px 0; max-width: 760px; }
+  summary { cursor: pointer; color: var(--accent); font-weight: 600; font-size: 0.92rem; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.86em; }
+  .steps { counter-reset: s; list-style: none; padding: 0; margin: 14px 0; display: grid; gap: 8px; max-width: 760px; }
+  .steps li { counter-increment: s; background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+              padding: 10px 14px 10px 52px; position: relative; }
+  .steps li::before { content: counter(s); position: absolute; left: 14px; top: 9px; width: 26px; height: 26px;
+                      border-radius: 50%; background: var(--accent); color: var(--accent-ink);
+                      font-weight: 700; font-size: 0.85rem; display: grid; place-items: center; }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: baseline; }
+  .controls { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+  .controls input, .controls select { padding: 7px 9px; font: inherit; font-size: 0.9rem; color: var(--text);
+    background: var(--bg); border: 1px solid var(--line); border-radius: 6px; min-width: 0; }
+  .controls input { flex: 1 1 220px; }
+  .explorer { max-height: 460px; overflow: auto; }
+  .explorer thead th { position: sticky; top: 0; background: var(--card); }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; }
+  .fill { color: var(--muted); }
+</style>
+</head>
+<body>
+<nav class="toc" aria-label="Sections"><div>
+  <a href="#business">1 · Business</a><a href="#data">2 · Data</a><a href="#prep">3 · Preparation</a>
+  <a href="#model">4 · Modeling</a><a href="#eval">5 · Evaluation</a><a href="#deploy">6 · Deployment</a>
+</div></nav>
+<main>
+  <header class="hero">
+    <small>ICT324 Data Warehousing &amp; Data Mining · Rangsit University International College</small>
+    <h1>Classifying the 2026 LLM API Market</h1>
+    <p class="q">What price/performance tiers exist in the LLM API market, and can these tiers help a company pick the best-value model for its task and budget?</p>
+    <p class="who">Team Straw Hats: Mr. Nyi Ye Naing (6703332) · Supervisor: Ajarn KonG, Asst. Prof. Dr. Kritsada Sriphaew · Method: CRISP-DM in Python (pandas, scikit-learn, XGBoost, SHAP)</p>
+    <div class="btns">
+      <a class="btn primary" href="/demo">Try the recommender</a>
+      <a class="btn" href="#deploy">Explore the tiers</a>
+      <a class="btn" href="https://docs.google.com/document/d/1B7jv1P0pwwHSJbfMsLKvi0tym-KsseLk-012M2l1nys/edit?usp=sharing" target="_blank" rel="noopener">Proposal (v3)</a>
+      <a class="btn" href="https://github.com/faster24/LLM_Price_Classifier" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </header>
+
+  <!-- 1 BUSINESS UNDERSTANDING -->
+  <section id="business">
+    <div class="phase">CRISP-DM phase 1</div>
+    <h2>Business understanding</h2>
+    <p>Companies that build on LLM APIs must choose from <b data-k="N">…</b> text models offered by <b data-k="M">…</b> providers.
+      Models with similar benchmark scores can differ in price by up to <b data-k="X">…</b>, and prices move:
+      <b data-k="Y">…</b> of models changed price at least once since January 2025. A company with a fixed budget cannot easily tell which model gives the best value for its task.</p>
+    <details><summary>How these four numbers were measured</summary>
+      <p><b>N</b> = distinct text-model names in the cleaned pricing catalog. <b>M</b> = distinct providers in that catalog.
+        <b>X</b> = the largest max ÷ min blended price among tiered models in the same performance decile (tenth of the composite score).
+        <b>Y</b> = share of models in the weekly price history (<span data-k="Yn">…</span> models, Jan 2025 → Sep 2026, observed weeks only) whose input or output price changed at least once at any provider.</p>
+    </details>
+    <p>Earlier work measured overall LLM price trends and built quality-adjusted price indexes (NBER w34608; <i>The Price of Intelligence</i>, 2026) or routed requests to cheaper models (FrugalGPT). None of them (a) splits the market into price/performance tiers or (b) turns those tiers into a budget-based selection method. This project does both.</p>
+
+    <h3>Research questions and hypotheses</h3>
+    <div class="card tablewrap"><table>
+      <thead><tr><th>RQ</th><th>Question</th><th>Hypothesis</th><th>Technique</th></tr></thead>
+      <tbody>
+        <tr><td><b>RQ1</b> Tiers</td><td>What price/performance tiers exist in the LLM API market?</td>
+          <td><b>H1:</b> The market forms at least 3 distinct tiers, including one with high price but no matching benchmark advantage.</td><td>Clustering</td></tr>
+        <tr><td><b>RQ2</b> Tier classification</td><td>Can a model's tier be classified from its features, and which features decide it?</td>
+          <td><b>H2:</b> A classifier assigns tiers better than a majority-class baseline, and non-performance features (provider, closed status) rank among the top deciding features.</td><td>Classification</td></tr>
+        <tr><td><b>RQ3</b> Model selection</td><td>Which model should a company choose for a given task, requirements and budget, now and in the near future?</td>
+          <td><b>H3:</b> In a backtest, models picked by the decision algorithm give better value than the rules "pick the cheapest" and "pick the top benchmark."</td><td>Rule-based decision algorithm</td></tr>
+      </tbody>
+    </table></div>
+    <p>The three questions form one pipeline: <b>clustering creates the tiers</b>, <b>classification explains them</b>, and a <b>decision algorithm uses them</b> to recommend a model.</p>
+  </section>
+
+  <!-- 2 DATA UNDERSTANDING -->
+  <section id="data">
+    <div class="phase">CRISP-DM phase 2</div>
+    <h2>Data understanding</h2>
+    <div class="www">
+      <div><b>What</b><p>Two public Kaggle datasets by the same author: one about prices, one about benchmarks.</p></div>
+      <div><b>How</b><p>Loaded every CSV into one SQLite database with keys and indexes, then profiled coverage and gaps.</p></div>
+      <div><b>Why</b><p>Price alone cannot show value, and benchmarks alone cannot show cost. We need both, linked per model.</p></div>
+    </div>
+    <div class="card tablewrap"><table>
+      <thead><tr><th>Dataset</th><th>Role</th><th>Content</th><th class="num">Raw rows</th></tr></thead>
+      <tbody>
+        <tr><td><a href="https://www.kaggle.com/datasets/abirambharathisa/ai-models-and-api-pricing-2026-price-history" target="_blank" rel="noopener">AI Models Pricing &amp; Price History 2023–2026</a></td>
+          <td>Main</td><td>Per-provider prices, context limits, capability flags; weekly prices 2023-09 → 2026-09 (157 weeks)</td>
+          <td class="num"><span data-raw="catalog_models">…</span> models<br><span data-raw="price_history">…</span> weekly prices</td></tr>
+        <tr><td><a href="https://www.kaggle.com/datasets/abirambharathisa/llm-benchmarks-and-specs-2026-448-ai-models" target="_blank" rel="noopener">LLM Benchmarks &amp; Specs 2026</a></td>
+          <td>Enrichment</td><td>Release dates, lab, open vs. closed weights, capabilities, benchmark scores</td>
+          <td class="num"><span data-raw="models">…</span> models<br><span data-raw="benchmark_results">…</span> scores</td></tr>
+      </tbody>
+    </table></div>
+    <h3>What we found while profiling</h3>
+    <ul>
+      <li><b>No shared key.</b> The two datasets name models differently (<span class="mono">anthropic/claude-sonnet-5-5</span> vs <span class="mono">us.anthropic.claude-sonnet-5-5</span>), so they must be joined by normalized names.</li>
+      <li><b>Sparse benchmarks.</b> 180 distinct benchmarks, but the most common covers only 86 rows. The model × test matrix is only <b>12.5% filled</b>.</li>
+      <li><b>Mixed scales.</b> Scores come as %, Elo or index points, so raw scores can never be compared across benchmarks.</li>
+      <li><b>Not all are text LLMs.</b> The catalog also lists image, embedding, audio and video models.</li>
+      <li><b>One model, many prices.</b> The same model appears once per provider, at different prices.</li>
+    </ul>
+  </section>
+
+  <!-- 3 PREPARATION -->
+  <section id="prep">
+    <div class="phase">CRISP-DM phase 3</div>
+    <h2>Data preparation</h2>
+    <div class="www">
+      <div><b>What</b><p>Validate and clean every table, then build one price number and one performance number per model.</p></div>
+      <div><b>How</b><p>Notebook 00 runs <span data-c="validation_checks">…</span> automated checks (<span data-c="validation_failed">…</span> open failures) and writes the clean files used by every later step.</p></div>
+      <div><b>Why</b><p>Clustering and classification are only as good as their inputs. Bad prices or mixed scales would create fake tiers.</p></div>
+    </div>
+    <h3>Raw → clean</h3>
+    <div class="tiles" id="funnel"></div>
+    <ul>
+      <li><b>Text LLMs only</b>: modes <span class="mono">chat</span>, <span class="mono">responses</span>, <span class="mono">completion</span>; image, video, audio, embedding and guard models dropped.</li>
+      <li><b>Duplicates</b>: regional copies (e.g. <span class="mono">azure/eu/…</span>) dropped; benchmark spelling variants merged (180 → 168 benchmarks); best score kept per model and test.</li>
+      <li><b>Price history</b>: one-week A→B→A spikes reverted, &gt;10× jumps flagged, internal gaps forward-filled and marked as imputed.</li>
+      <li><b>Join</b>: normalized names link <b><span data-c="linked">…</span> of <span data-c="link_pool">…</span></b> benchmarked models to their price series. The unmatched ones are genuinely different builds (previews, dated variants), so they stay visible instead of being force-matched.</li>
+    </ul>
+    <h3>One price, one performance score</h3>
+    <div class="card">
+      <p style="margin-top:0"><b>Price</b> = the 3 : 1 blended price, median across providers, in USD per 1M tokens. Typical workloads send about three times more input than output. The median ignores temporary free or promo listings.</p>
+      <p style="margin-bottom:0"><b>Performance</b> = for each test covered by ≥ 5 priced models, rank the models and scale the rank to 0 (worst) … 1 (best); a model's score is the mean of its percentiles. This puts %, Elo and index scores on one scale and works even though each model has a different set of tests.</p>
+    </div>
+    <details><summary>Formulas</summary>
+      <p><span class="mono">blended = (3 · input + 1 · output) / 4</span><br>
+        <span class="mono">percentile(model, test) = (rank − 1) / (n_test − 1)</span><br>
+        <span class="mono">performance(model) = mean over its tests of percentile</span></p>
+    </details>
+    <p>Result: <b><span data-c="tiered_models">…</span> priced text LLMs</b> with a performance score. This is the analysis set for RQ1 and RQ2.</p>
+  </section>
+
+  <!-- 4 MODELING -->
+  <section id="model">
+    <div class="phase">CRISP-DM phase 4</div>
+    <h2>Modeling</h2>
+
+    <h3>RQ1 · Clustering: finding the tiers</h3>
+    <div class="www">
+      <div><b>What</b><p>Group the models on two features: log price and performance.</p></div>
+      <div><b>How</b><p>Ward hierarchical clustering picks k by a vote across silhouette, Davies–Bouldin and Calinski–Harabasz (k = 2–8). K-means with that k gives the final tiers.</p></div>
+      <div><b>Why</b><p>Two methods with different assumptions: if both agree on k and on memberships, the tiers are not an artifact of one algorithm. Log price, because prices span three orders of magnitude.</p></div>
+    </div>
+    <div class="card">
+      <div class="chart tall"><canvas id="scatter" aria-label="Scatter plot of blended price against performance, colored by tier"></canvas></div>
+      <p class="caption">Each dot is one model. Horizontal axis: 3:1 blended price, log scale. Vertical axis: composite performance (0–1). Hover for details; the table in section 6 lists every model.</p>
+    </div>
+    <div class="card tablewrap"><table id="profiles">
+      <thead><tr><th>Tier</th><th class="num">Models</th><th class="num">Median price ($/1M)</th><th class="num">Median perf.</th><th class="num">Open-weight</th><th>Examples</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+    <details><summary>Stability checks</summary>
+      <p>Adjusted Rand Index between Ward and K-means, across 50 K-means seeds, and across 50 bootstrap 80% subsamples. A sensitivity re-run on better-measured models (more tests per model) checks that the tiers do not depend on models scored on a single test.</p>
+    </details>
+
+    <h3>RQ2 · Classification: what decides a tier?</h3>
+    <div class="www">
+      <div><b>What</b><p>Predict a model's tier from features that are <i>not</i> price or benchmark scores.</p></div>
+      <div><b>How</b><p>Decision Tree vs Random Forest vs XGBoost, nested and repeated 5×10 cross-validation, macro F1. Importance by SHAP and by grouped permutation.</p></div>
+      <div><b>Why</b><p>The tree is readable, the forest is robust, boosting is usually strongest: comparing them shows the price of interpretability. Macro F1 because tiers are imbalanced (smallest has 6 models).</p></div>
+    </div>
+    <div class="note"><b>Leakage guard.</b> The tiers were built from price and performance, so every price and benchmark column is removed. Otherwise the classifier would just re-learn the clustering (with them, macro F1 reaches 0.90).</div>
+    <p>Features fall into three groups: <span class="dot" style="background:var(--s1)"></span><b>Vendor</b> (lab, open weights, number of providers), <span class="dot" style="background:var(--s2)"></span><b>Capability</b> (context, max output, modalities, reasoning, tools…), <span class="dot" style="background:var(--s3)"></span><b>Time</b> (release date).</p>
+    <div class="card">
+      <div class="chart"><canvas id="importance" aria-label="Bar chart of mean absolute SHAP value per feature"></canvas></div>
+      <p class="caption">Mean |SHAP| per feature for the XGBoost classifier, colored by feature group. Hover for the permutation rank too.</p>
+    </div>
+
+    <h3>RQ3 · Decision algorithm: picking a model</h3>
+    <div class="www">
+      <div><b>What</b><p>A filter-then-rank rule that returns the top 3 models, with their RQ1 tier, for a task, requirements, monthly usage and budget.</p></div>
+      <div><b>How</b><p>Hard filters first, then a ranking by value. Price = cheapest provider at that week; free tiers excluded.</p></div>
+      <div><b>Why</b><p>Rules are transparent and auditable: a company can see why a model was dropped. Filters encode must-haves; ranking encodes preference.</p></div>
+    </div>
+    <ol class="steps">
+      <li><b>Task</b>: keep models with the needed capability (coding, reasoning, vision input, function calling, JSON output).</li>
+      <li><b>Requirements</b>: minimum context, open-weight or any, include/exclude providers, minimum task score, released within N months.</li>
+      <li><b>Budget</b>: expected input/output tokens × price ≤ monthly budget.</li>
+      <li><b>Rank</b> by value score = task benchmark score ÷ monthly cost.</li>
+      <li><b>Return</b> the top 3 models with their tier.</li>
+    </ol>
+    <p>Task → benchmark mapping, chosen by coverage: <b>coding</b> → SWE-Bench, Terminal-Bench, Aider Polyglot, SciCode, LiveCodeBench; <b>reasoning</b> → Humanity's Last Exam, GPQA Diamond, AIME; <b>vision</b> → MMMU Pro, MathVision.</p>
+  </section>
+
+  <!-- 5 EVALUATION -->
+  <section id="eval">
+    <div class="phase">CRISP-DM phase 5</div>
+    <h2>Evaluation</h2>
+    <p>Every result is shown next to its baseline. Verdict rules were written down before the results were computed.</p>
+
+    <h3>H1 · Tiers <span class="badge yes" id="h1badge">✓ Supported</span></h3>
+    <p id="h1text">…</p>
+
+    <h3>H2 · Tier classification <span class="badge part">~ Partly supported</span></h3>
+    <div class="card">
+      <div class="chart short"><canvas id="cv" aria-label="Bar chart of macro F1 for baselines and classifiers"></canvas></div>
+      <p class="caption">Mean macro F1 over nested 5×10 cross-validation; whiskers = ±1 SD. Grey = baselines.</p>
+    </div>
+    <p><b>H2a ✓</b> XGBoost reaches macro F1 <b data-f1="XGBoost">…</b> against <b data-f1="Majority">…</b> for the majority-class rule, and a label-permutation test gives p ≈ 0.01, so the features carry real information about the tier.<br>
+      <b>H2b ~</b> <span class="mono">open_weights</span> ranks 3rd in SHAP but 4th in permutation importance; <span class="mono">lab</span> ranks 5th and 8th. The pre-registered rule needed top 3 in both rankings, so this is partial.</p>
+    <div class="learn"><b>What we learned.</b> Release date is the strongest feature in both rankings. This points to an <b>era bias</b> in RQ1: older models are scored against older peers, so "when it was released" partly stands in for "how it performs". A fix to try is restricting the analysis to recent models.</div>
+
+    <h3>H3 · Model selection <span class="badge no">✗ Not supported</span></h3>
+    <p>Backtest: decide with the data available at <b>29 Dec 2025</b> (models, prices and scores up to that week only), then judge each pick at <b>28 Sep 2026</b>: the task score it delivers while staying under budget. A pick that went over budget or is no longer sold scores 0. Primary setting: coding, <span id="nscen">…</span> scenarios (usage × budget × requirements).</p>
+    <div class="card">
+      <div class="chart short"><canvas id="backtest" aria-label="Bar chart of mean achieved value per selection method"></canvas></div>
+      <p class="caption">Mean achieved score in 2026 (0–1) per method, coding. Blue = the proposed algorithm; grey = baselines and reference rules. Hover for the failure rate.</p>
+    </div>
+    <div class="learn"><b>What we learned.</b> Score ÷ cost is dominated by cost: the cheapest model wins almost every time, so the algorithm picks exactly what "pick the cheapest" picks. It never beats "pick the top benchmark" on average.
+      <br><br><b>Exploratory, not confirmed:</b> a budget-aware <b>score-first</b> rule (best score that fits the budget) beats both baselines. Because it was found after seeing the results, it needs a pre-registered test before it can be claimed. The live recommender offers both rules.</div>
+    <div class="note"><b>Limitations.</b> 144 models is a small sample; most performance scores rest on 1–3 tests; only coding has candidates at the Dec 2025 cutoff, because reasoning and vision benchmarks cover 2026 models only.</div>
+  </section>
+
+  <!-- 6 DEPLOYMENT -->
+  <section id="deploy">
+    <div class="phase">CRISP-DM phase 6</div>
+    <h2>Deployment: the final project</h2>
+    <div class="www">
+      <div><b>What</b><p>An LLM price/performance recommender, plus this explorer of the 7 tiers.</p></div>
+      <div><b>How</b><p>A Python script freezes the notebook rules into a JSON snapshot; a FastAPI app serves it on Vercel.</p></div>
+      <div><b>Why</b><p>Results a company can actually use: enter a task and a budget, get 3 models with cost, score and tier.</p></div>
+    </div>
+    <div class="btns">
+      <a class="btn primary" href="/demo">Open the recommender</a>
+      <a class="btn" href="/docs">API docs</a>
+    </div>
+    <h3>Tier explorer</h3>
+    <div class="card">
+      <div class="controls">
+        <input id="q" type="search" placeholder="Search model or lab…" aria-label="Search model or lab">
+        <select id="tierf" aria-label="Filter by tier"><option value="">All tiers</option></select>
+        <select id="openf" aria-label="Filter by weights"><option value="">Open + closed</option><option value="1">Open-weight</option><option value="0">Closed</option></select>
+      </div>
+      <p class="caption" id="count" style="margin:0 0 8px"></p>
+      <div class="explorer"><table>
+        <thead><tr><th>Model</th><th>Lab</th><th>Tier</th><th class="num">Price ($/1M)</th><th class="num">Perf.</th><th class="num">Tests</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <footer>
+    Data: Kaggle (abirambharathisa), price history to 2026-09-28. Notebooks 00, 01, 02 and 04 in the repository reproduce every number here.
+    References: NBER w34608 · Bergemann, Bonatti &amp; Smolin, arXiv:2502.07736 · <i>The Price of Intelligence</i>, arXiv:2608.29843 · Chen, Zaharia &amp; Zou, FrugalGPT, arXiv:2305.05176 · Epoch AI, LLM inference price trends.
+  </footer>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+const $ = s => document.querySelector(s);
+const fmt = n => n.toLocaleString("en-US");
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const tierColor = id => css("--s" + id);
+let D, charts = [], filt = () => true;
+
+function fillText() {
+  const p = D.placeholders, c = D.counts, raw = c.raw || {};
+  const set = {N: fmt(p.N_text_models), M: fmt(p.M_providers), X: Math.round(p.X_price_gap) + "×",
+               Y: p.Y_pct_price_changed + "%", Yn: fmt(p.Y_n_models)};
+  document.querySelectorAll("[data-k]").forEach(e => e.textContent = set[e.dataset.k]);
+  document.querySelectorAll("[data-raw]").forEach(e => e.textContent = raw[e.dataset.raw] ? fmt(raw[e.dataset.raw]) : "n/a");
+  document.querySelectorAll("[data-c]").forEach(e => e.textContent = fmt(c[e.dataset.c]));
+  const f1 = Object.fromEntries(D.rq2_cv.map(r => [r.run, r.macro_f1_mean]));
+  document.querySelectorAll("[data-f1]").forEach(e => e.textContent = f1[e.dataset.f1].toFixed(2));
+
+  const tiles = [["Models", raw.models, c.clean_models, "text LLMs kept"],
+                 ["Benchmark scores", raw.benchmark_results, c.clean_benchmarks, "best per model × test"],
+                 ["Catalog offers", raw.catalog_models, c.clean_catalog, "text, priced, no regional copies"],
+                 ["Weekly prices", raw.price_history, c.clean_price_history, "text, priced, spikes fixed"],
+                 ["Analysis set", c.priced_models, c.tiered_models, "priced + benchmarked"]];
+  $("#funnel").innerHTML = tiles.map(([k, a, b, s]) =>
+    `<div class="tile"><span>${k}</span><b>${a ? fmt(a) + " → " : ""}${fmt(b)}</b><span>${s}</span></div>`).join("");
+
+  $("#profiles tbody").innerHTML = D.tier_profiles.map(t => `<tr>
+    <td><span class="dot" style="background:var(--s${t.tier_id})"></span>T${t.tier_id} ${esc(t.tier)}</td>
+    <td class="num">${t.n}</td><td class="num">${t.median_price.toFixed(2)}</td><td class="num">${t.median_perf.toFixed(2)}</td>
+    <td class="num">${Math.round(t.open_weights_share * 100)}%</td><td>${esc(t.examples)}</td></tr>`).join("");
+
+  // H1 evidence computed from the profiles, not hard-coded
+  const prof = Object.fromEntries(D.tier_profiles.map(t => [t.tier_id, t]));
+  const t6 = prof[6], t2 = prof[2], t5 = prof[5];
+  $("#h1text").innerHTML = `Voting across the three metrics picks <b>k = ${D.tier_profiles.length}</b> tiers (≥ 3 required).
+    Tier <b>T6 "${esc(t6.tier)}"</b> has a median price of <b>$${t6.median_price.toFixed(2)}</b>, higher than T5 ($${t5.median_price.toFixed(2)})
+    and T2 ($${t2.median_price.toFixed(2)}), yet its median performance (${t6.median_perf.toFixed(2)}) is below both (T5 ${t5.median_perf.toFixed(2)}, T2 ${t2.median_perf.toFixed(2)}):
+    a high price with no matching benchmark advantage.`;
+
+  const bt = D.rq3_backtest.rows.filter(r => r.task === "coding");
+  $("#nscen").textContent = bt[0] ? bt[0].n : "…";
+
+  const sel = $("#tierf");
+  D.tier_profiles.forEach(t => sel.add(new Option(`T${t.tier_id} ${t.tier}`, t.tier_id)));
+}
+
+function drawCharts() {
+  charts.forEach(c => c.destroy());
+  const ink = css("--muted"), grid = css("--grid"), surf = css("--card");
+  Chart.defaults.color = ink;
+  Chart.defaults.font.family = getComputedStyle(document.body).fontFamily;
+  Chart.defaults.borderColor = grid;
+  const tip = {backgroundColor: css("--text"), titleColor: css("--bg"), bodyColor: css("--bg"), padding: 10, cornerRadius: 6};
+  charts = [
+    new Chart($("#scatter"), {
+      type: "scatter",
+      data: {datasets: D.tier_profiles.map(t => ({
+        label: `T${t.tier_id} ${t.tier}`,
+        data: D.tiers.filter(m => m.tier_id === t.tier_id).map(m => ({x: m.blended_price, y: m.performance, m})),
+        backgroundColor: tierColor(t.tier_id), borderColor: surf, borderWidth: 2,
+        pointRadius: ctx => filt(ctx.raw && ctx.raw.m) ? 6 : 2.5, pointHoverRadius: 8,
+        pointBackgroundColor: ctx => filt(ctx.raw && ctx.raw.m) ? tierColor(t.tier_id) : grid}))},
+      options: {maintainAspectRatio: false, animation: false,
+        scales: {x: {type: "logarithmic", title: {display: true, text: "Blended price, USD per 1M tokens (log)"},
+                     ticks: {callback: v => [0.1, 0.3, 1, 3, 10, 30, 100].includes(v) ? "$" + v : ""}, grid: {color: grid}},
+                 y: {min: 0, max: 1, title: {display: true, text: "Composite performance (0–1)"}, grid: {color: grid}}},
+        plugins: {legend: {position: "bottom", labels: {usePointStyle: true, boxWidth: 8}},
+          tooltip: {...tip, callbacks: {label: c => {const m = c.raw.m;
+            return [`${m.model_name} (${m.lab})`, `$${m.blended_price.toFixed(3)} / 1M · perf ${m.performance.toFixed(2)} · ${m.n_tests} test(s)`, `T${m.tier_id} ${m.tier}`];}}}}}
+    }),
+    new Chart($("#importance"), {
+      type: "bar",
+      data: {labels: D.rq2_importance.map(r => r.feature),
+        datasets: [{label: "Mean |SHAP|", data: D.rq2_importance.map(r => r.mean_abs_shap),
+          backgroundColor: D.rq2_importance.map(r => css({Vendor: "--s1", Capability: "--s2", Time: "--s3"}[r.group])),
+          borderRadius: 4, borderSkipped: "start", barPercentage: 0.7}]},
+      options: {indexAxis: "y", maintainAspectRatio: false, animation: false,
+        scales: {x: {title: {display: true, text: "Mean |SHAP value|"}, grid: {color: grid}}, y: {grid: {display: false}}},
+        plugins: {legend: {display: false}, tooltip: {...tip, callbacks: {label: c => {const r = D.rq2_importance[c.dataIndex];
+          return [`${r.group} · SHAP ${r.mean_abs_shap.toFixed(3)} (rank ${r.shap_rank})`, `Permutation F1 drop ${r.perm_f1_drop.toFixed(3)} (rank ${r.perm_rank})`];}}}}}
+    }),
+    barWithBase("#cv", D.rq2_cv.filter(r => r.section.startsWith("model comparison")),
+      r => r.run, r => r.macro_f1_mean, r => ["Majority", "Stratified random"].includes(r.run),
+      "Macro F1", r => `Macro F1 ${r.macro_f1_mean.toFixed(3)} ± ${r.macro_f1_sd.toFixed(3)} · accuracy ${r.accuracy_mean.toFixed(3)}`, tip, grid,
+      r => r.macro_f1_sd),
+    barWithBase("#backtest", D.rq3_backtest.rows.filter(r => r.task === "coding" && !/trend/.test(r.method)),
+      r => r.method === "Engine" ? "Decision algorithm (value)" : r.method === "Score-first variant" ? "Score-first (exploratory)" : r.method,
+      r => r.mean_achieved, r => r.method !== "Engine", "Mean achieved score",
+      r => `Mean achieved ${r.mean_achieved.toFixed(3)}` + (r.fail_rate != null ? ` · failed ${Math.round(r.fail_rate * 100)}% of scenarios` : ""), tip, grid)
+  ];
+}
+
+const sdBars = {id: "sd", afterDatasetsDraw(ch) {
+  const sd = ch.config.options.plugins.sd; if (!sd) return;
+  const {ctx, scales: {x}} = ch; ctx.save(); ctx.strokeStyle = css("--text"); ctx.lineWidth = 1.5;
+  ch.getDatasetMeta(0).data.forEach((b, i) => { const v = ch.data.datasets[0].data[i];
+    const a = x.getPixelForValue(v - sd[i]), z = x.getPixelForValue(v + sd[i]);
+    ctx.beginPath(); ctx.moveTo(a, b.y); ctx.lineTo(z, b.y); ctx.moveTo(a, b.y - 5); ctx.lineTo(a, b.y + 5);
+    ctx.moveTo(z, b.y - 5); ctx.lineTo(z, b.y + 5); ctx.stroke(); });
+  ctx.restore(); }};
+
+function barWithBase(sel, rows, label, val, isBase, title, tipText, tip, grid, sd) {
+  return new Chart($(sel), {
+    type: "bar", plugins: sd ? [sdBars] : [],
+    data: {labels: rows.map(label), datasets: [{label: title, data: rows.map(val),
+      backgroundColor: rows.map(r => isBase(r) ? css("--line") : css("--s1")),
+      borderRadius: 4, borderSkipped: "start", barPercentage: 0.7}]},
+    options: {indexAxis: "y", maintainAspectRatio: false, animation: false,
+      scales: {x: {min: 0, max: 1, title: {display: true, text: title}, grid: {color: grid}}, y: {grid: {display: false}}},
+      plugins: {legend: {display: false}, sd: sd ? rows.map(sd) : null,
+        tooltip: {...tip, callbacks: {label: c => tipText(rows[c.dataIndex])}}}}
+  });
+}
+
+function currentFilter() {
+  const q = $("#q").value.trim().toLowerCase(), t = $("#tierf").value, o = $("#openf").value;
+  return m => !!m && (!q || (m.model_name + " " + m.lab + " " + m.model_id).toLowerCase().includes(q))
+    && (!t || m.tier_id === +t) && (!o || m.open_weights === +o);
+}
+
+function renderTable() {
+  const f = filt = currentFilter();
+  const rows = D.tiers.filter(f).sort((a, b) => a.tier_id - b.tier_id || b.performance - a.performance);
+  $("#count").textContent = `${rows.length} of ${D.tiers.length} models` + (rows.length < D.tiers.length ? " (also highlighted on the scatter in section 4)" : "");
+  $("#rows").innerHTML = rows.map(m => `<tr><td>${esc(m.model_name)}${m.open_weights ? ' <span class="fill">· open</span>' : ""}</td>
+    <td>${esc(m.lab)}</td><td><span class="dot" style="background:var(--s${m.tier_id})"></span>T${m.tier_id}</td>
+    <td class="num">${m.blended_price.toFixed(3)}</td><td class="num">${m.performance.toFixed(2)}</td><td class="num">${m.n_tests}</td></tr>`).join("");
+  if (charts[0]) charts[0].update();
+}
+
+function highlightToc() {
+  const secs = [...document.querySelectorAll("main section")];
+  const cur = secs.filter(s => s.getBoundingClientRect().top < 120).pop();
+  document.querySelectorAll(".toc a").forEach(a => a.classList.toggle("on", cur && a.getAttribute("href") === "#" + cur.id));
+}
+
+fetch("/site-data").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
+  D = d; fillText(); renderTable();
+  if (window.Chart) drawCharts();
+  else document.querySelectorAll(".chart").forEach(e => e.innerHTML = '<p class="caption">Charts could not load (CDN blocked). The tables show the same data.</p>');
+  ["#q", "#tierf", "#openf"].forEach(s => $(s).addEventListener("input", renderTable));
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => window.Chart && drawCharts());
+}).catch(e => { document.querySelector(".hero").insertAdjacentHTML("beforeend",
+  `<p class="note">Could not load the result data (${esc(e.message)}). Text is shown without numbers.</p>`); });
+addEventListener("scroll", highlightToc, {passive: true});
+</script>
+</body>
+</html>

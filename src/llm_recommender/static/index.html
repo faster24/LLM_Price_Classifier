@@ -73,9 +73,10 @@
 <main>
   <header>
     <h1>LLM Model Recommender</h1>
-    <p>Pick an LLM API model for a task and a monthly budget. ICT324 · Team Straw Hats · RQ4 decision engine.</p>
+    <p>Pick an LLM API model for a task and a monthly budget. ICT324 · Team Straw Hats · RQ3 decision algorithm.</p>
     <nav>
       <span id="snapshot">Loading snapshot…</span>
+      <a href="/">← Project story</a>
       <a href="/docs">API docs</a>
       <a href="https://github.com/faster24/LLM_Price_Classifier" target="_blank" rel="noopener">GitHub</a>
     </nav>
@@ -152,7 +153,7 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({"&": "&amp;", "<": "&l
 
 async function init() {
   try {
-    const [meta, models] = await Promise.all([fetch("meta").then(r => r.json()), fetch("models").then(r => r.json())]);
+    const [meta, models] = await Promise.all([fetch("/meta").then(r => r.json()), fetch("/models").then(r => r.json())]);
     $("snapshot").textContent = `Prices as of ${meta.as_of_week} · ${meta.n_models} models · trend: ${meta.trend_source}`;
     const labs = [...new Set(models.map(m => m.lab))].sort();
     for (const sel of [form.include_lab, form.exclude_lab])
@@ -227,7 +228,7 @@ function renderPicks(res, append) {
 }
 
 async function fetchRecs(body) {
-  const r = await fetch("recommend", {method: "POST", headers: {"content-type": "application/json"}, body: JSON.stringify(body)});
+  const r = await fetch("/recommend", {method: "POST", headers: {"content-type": "application/json"}, body: JSON.stringify(body)});
   const res = await r.json();
   if (!r.ok) throw new Error(typeof res.detail === "string" ? res.detail : (res.detail?.[0]?.msg || r.statusText));
   return res;

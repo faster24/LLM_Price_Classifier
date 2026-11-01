@@ -24,7 +24,8 @@ DEFAULT_SNAPSHOT = os.path.join(os.path.dirname(__file__), "..", "..", "data", "
 SNAPSHOT_PATH = os.environ.get("LLM_RECOMMENDER_SNAPSHOT", DEFAULT_SNAPSHOT)
 SNAPSHOT = engine.load_snapshot(SNAPSHOT_PATH)
 TASKS = tuple(SNAPSHOT["meta"]["task_benchmarks"])
-INDEX_HTML = os.path.join(os.path.dirname(__file__), "static", "index.html")
+STATIC = os.path.join(os.path.dirname(__file__), "static")
+SITE_DATA_PATH = os.environ.get("LLM_SITE_DATA", os.path.join(os.path.dirname(SNAPSHOT_PATH), "site_data.json"))
 
 app = FastAPI(
     title="LLM Model Recommender",
@@ -65,8 +66,20 @@ class RecommendRequest(BaseModel):
 
 
 @app.get("/", include_in_schema=False)
-def index():
-    return FileResponse(INDEX_HTML)
+def story():
+    return FileResponse(os.path.join(STATIC, "story.html"))
+
+
+@app.get("/demo", include_in_schema=False)
+def demo():
+    return FileResponse(os.path.join(STATIC, "index.html"))
+
+
+@app.get("/site-data", include_in_schema=False)
+def site_data():
+    if not os.path.exists(SITE_DATA_PATH):
+        raise HTTPException(404, "site_data.json missing; run build_site_data.py")
+    return FileResponse(SITE_DATA_PATH, media_type="application/json")
 
 
 @app.get("/health")

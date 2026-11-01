@@ -3,6 +3,7 @@ reports/
 data/raw/
 data/processed/*
 !data/processed/recommender_snapshot.json
+!data/processed/site_data.json
 requirements-analysis.txt
 CLAUDE.md
 .claude/
