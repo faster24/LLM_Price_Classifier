@@ -250,21 +250,9 @@
     </table></div>
     <h3 class="ev">Evidence</h3>
     <div class="grid2">
-      <div><p class="chart-title">Silhouette by k (higher is better)</p>
-        <div class="chart sm"><canvas id="k-sil" aria-label="Silhouette by k"></canvas></div></div>
-      <div><p class="chart-title">Davies–Bouldin by k (lower is better)</p>
-        <div class="chart sm"><canvas id="k-db" aria-label="Davies-Bouldin by k"></canvas></div></div>
-      <div><p class="chart-title">Calinski–Harabasz by k (higher is better)</p>
-        <div class="chart sm"><canvas id="k-ch" aria-label="Calinski-Harabasz by k"></canvas></div>
+      <div class="wide"><p class="chart-title">Silhouette by k (higher is better)</p>
+        <div class="chart sm"><canvas id="k-sil" aria-label="Silhouette by k"></canvas></div>
         <p class="caption" id="cap-k">…</p></div>
-      <div><p class="chart-title">Stability (adjusted Rand index)</p>
-        <table><tbody>
-          <tr><td>Ward vs K-means</td><td class="num">0.90</td></tr>
-          <tr><td>K-means, 50 seeds</td><td class="num">0.79</td></tr>
-          <tr><td>Bootstrap 80%, 50 runs</td><td class="num">0.72</td></tr>
-          <tr><td>Re-run on models with ≥ 2 tests</td><td class="num">0.57</td></tr>
-        </tbody></table>
-        <p class="caption">1 = identical tiers. The last row is lowest because many scores rest on 1–2 tests.</p></div>
       <div><p class="chart-title">Price per tier (Q1–Q3, median)</p>
         <div class="chart sm"><canvas id="t-price" aria-label="Price range per tier"></canvas></div>
         <p class="caption" id="cap-kwp">…</p></div>
@@ -469,7 +457,7 @@ function fillText() {
     <td class="num">${t.n}</td><td class="num">$${f2(t.median_price)}</td><td class="num">${f2(t.median_perf)}</td>
     <td class="num">${pct(off(t.tier_id))}</td><td>${esc(t.examples)}</td></tr>`).join("");
   const km7 = D.rq1_k.find(r => r.method === "K-means" && r.k === 7);
-  $("#cap-k").textContent = `k = 7 wins the vote (larger dot). K-means at k = 7: silhouette ${f3(km7.silhouette)}, Davies–Bouldin ${f3(km7.davies_bouldin)}.`;
+  $("#cap-k").textContent = `k = 7 has the highest silhouette for both methods (larger dot). K-means at k = 7: ${f3(km7.silhouette)}.`;
   const kw = Object.fromEntries(D.rq1_kruskal.map(r => [r.axis, r]));
   $("#cap-kwp").textContent = `Log scale. Kruskal–Wallis H = ${kw.log_price.H.toFixed(1)}, ${pval(kw.log_price.p)}.`;
   $("#cap-kws").textContent = `Kruskal–Wallis H = ${kw.performance.H.toFixed(1)}, ${pval(kw.performance.p)}. T6 sits below T5.`;
@@ -569,7 +557,7 @@ function drawCharts() {
       {title: "Text LLMs", tip: i => `${e.labs[i].n} models`}, tip, GRID),
 
     // RQ1 evidence
-    ...[["#k-sil", "silhouette"], ["#k-db", "davies_bouldin"], ["#k-ch", "calinski_harabasz"]].map(([sel, metric]) =>
+    ...[["#k-sil", "silhouette"]].map(([sel, metric]) =>
       mk(sel, "line", {labels: [2, 3, 4, 5, 6, 7, 8], datasets: ["Ward", "K-means"].map((meth, j) => ({label: meth,
         data: D.rq1_k.filter(r => r.method === meth).sort((a, b) => a.k - b.k).map(r => r[metric]),
         borderColor: css(j ? "--s2" : "--s1"), backgroundColor: css(j ? "--s2" : "--s1"), borderDash: j ? [] : [5, 4],
