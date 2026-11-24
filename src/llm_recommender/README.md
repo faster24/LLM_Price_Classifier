@@ -4,7 +4,7 @@ Recommends LLM API models for a task, requirements and monthly budget. It uses t
 
 | File | Role |
 |---|---|
-| `build_snapshot.py` | Builds `data/processed/recommender_snapshot.json` from the clean data (pandas). Re-run it whenever the data or `rq3_trends.csv` changes. |
+| `build_snapshot.py` | Builds `data/processed/recommender_snapshot.json` from the clean data (pandas). Re-run it whenever the data or `rq3_trends.csv` changes. Also merges `data/supplement/new_models_2026-11.csv`: newer models from web sources, reasoning scores (HLE/GPQA) only, tagged `source: web`. Pass `--no-supplement` to reproduce notebook 04 exactly. |
 | `build_site_data.py` | Builds `data/processed/site_data.json` (counts, tiers, RQ2/RQ3 results) for the story page. Re-run after any notebook re-run. |
 | `engine.py` | Filter-then-rank rules in plain Python, with no pandas needed at runtime. |
 | `api.py` | FastAPI service. |

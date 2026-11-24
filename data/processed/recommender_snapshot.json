@@ -2,7 +2,7 @@
  "meta": {
   "snapshot_version": "2026-09-28",
   "as_of_week": "2026-09-28",
-  "built_at": "2026-10-25T07:45:25+00:00",
+  "built_at": "2026-11-24T09:51:28+00:00",
   "source": "data/processed (notebooks 00, 01; rules of notebook 04)",
   "price_rule": "cheapest provider per request; free / zero-price offers excluded; USD per 1M tokens",
   "score_rule": "mean within-test percentile (0 = worst, 1 = best) among models available at as_of_week",
@@ -28,8 +28,10 @@
    ]
   },
   "trend_source": "placeholder: 12-week price momentum (RQ3 not available yet)",
-  "n_models": 132,
-  "n_linked_of_candidates": "143/147"
+  "n_models": 139,
+  "n_linked_of_candidates": "143/147",
+  "n_web_models": 7,
+  "web_note": "models released after the Kaggle data (Oct\u2013Nov 2026), from web sources, unverified; reasoning scores only (HLE / GPQA); tiers estimated with the RQ1 centroids"
  },
  "models": [
   {
@@ -539,7 +541,7 @@
    "trend": "stable",
    "scores": {
     "coding": 0.6429,
-    "reasoning": 0.3599
+    "reasoning": 0.3597
    },
    "offers": [
     {
@@ -682,6 +684,31 @@
    ]
   },
   {
+   "model_id": "alibaba/qwen4-max",
+   "model_name": "Qwen4 Max",
+   "lab": "alibaba",
+   "open_weights": false,
+   "release_date": "2026-11-16",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": false,
+   "tier": "High-price / Mid-performance (estimated)",
+   "trend": "stable",
+   "scores": {
+    "reasoning": 0.3913
+   },
+   "source": "web",
+   "source_note": "llmgateway.io (price) + llm-stats.com (HLE)",
+   "offers": [
+    {
+     "provider": "alibaba",
+     "input_price_per_1m": 1.41,
+     "output_price_per_1m": 4.24
+    }
+   ]
+  },
+  {
    "model_id": "anthropic/claude-3-5-sonnet-20241022",
    "model_name": "Claude Sonnet 3.5 v2",
    "lab": "anthropic",
@@ -791,7 +818,7 @@
    "trend": "falling",
    "scores": {
     "coding": 0.9751,
-    "reasoning": 0.9524
+    "reasoning": 0.913
    },
    "offers": [
     {
@@ -882,6 +909,31 @@
      "provider": "vertex_ai-anthropic_models",
      "input_price_per_1m": 10.0,
      "output_price_per_1m": 50.0
+    }
+   ]
+  },
+  {
+   "model_id": "anthropic/claude-fable-5.2",
+   "model_name": "Claude Fable 5.2",
+   "lab": "anthropic",
+   "open_weights": false,
+   "release_date": "2026-11-09",
+   "context_window": 1000000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": false,
+   "tier": "High-price / High-performance (estimated)",
+   "trend": "stable",
+   "scores": {
+    "reasoning": 1.0
+   },
+   "source": "web",
+   "source_note": "llmgateway.io (price) + llm-stats.com (HLE)",
+   "offers": [
+    {
+     "provider": "anthropic",
+     "input_price_per_1m": 8.0,
+     "output_price_per_1m": 40.0
     }
    ]
   },
@@ -1126,7 +1178,7 @@
    "trend": "falling",
    "scores": {
     "coding": 0.6615,
-    "reasoning": 0.6562
+    "reasoning": 0.6354
    },
    "offers": [
     {
@@ -1180,7 +1232,7 @@
    "trend": "falling",
    "scores": {
     "coding": 0.8031,
-    "reasoning": 0.7619
+    "reasoning": 0.7391
    },
    "offers": [
     {
@@ -1239,7 +1291,7 @@
    "trend": "stable",
    "scores": {
     "coding": 0.9875,
-    "reasoning": 1.0
+    "reasoning": 0.9565
    },
    "offers": [
     {
@@ -1468,7 +1520,7 @@
    "trend": "falling",
    "scores": {
     "coding": 0.1576,
-    "reasoning": 0.3333
+    "reasoning": 0.3043
    },
    "offers": [
     {
@@ -2480,7 +2532,7 @@
    "trend": "falling",
    "scores": {
     "coding": 0.3472,
-    "reasoning": 0.5546,
+    "reasoning": 0.5168,
     "vision": 0.375
    },
    "offers": [
@@ -2530,7 +2582,7 @@
    "trend": "falling",
    "scores": {
     "coding": 0.5543,
-    "reasoning": 0.1429,
+    "reasoning": 0.1304,
     "vision": 1.0
    },
    "offers": [
@@ -2757,7 +2809,7 @@
    "trend": "stable",
    "scores": {
     "coding": 0.5891,
-    "reasoning": 0.3529
+    "reasoning": 0.2727
    },
    "offers": [
     {
@@ -2897,7 +2949,7 @@
    "trend": "stable",
    "scores": {
     "coding": 0.1905,
-    "reasoning": 0.1176
+    "reasoning": 0.0909
    },
    "offers": [
     {
@@ -2936,7 +2988,7 @@
    "trend": "stable",
    "scores": {
     "coding": 0.7011,
-    "reasoning": 0.8571
+    "reasoning": 0.8261
    },
    "offers": [
     {
@@ -3013,6 +3065,31 @@
    ]
   },
   {
+   "model_id": "meta/muse-spark-open",
+   "model_name": "Muse Spark Open",
+   "lab": "meta",
+   "open_weights": true,
+   "release_date": "2026-10-15",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": false,
+   "tier": "High-price / Mid-performance (estimated)",
+   "trend": "stable",
+   "scores": {
+    "reasoning": 0.3182
+   },
+   "source": "web",
+   "source_note": "llmgateway.io (price) + llm-stats.com (GPQA)",
+   "offers": [
+    {
+     "provider": "meta",
+     "input_price_per_1m": 1.25,
+     "output_price_per_1m": 4.25
+    }
+   ]
+  },
+  {
    "model_id": "microsoft/mai-code-1-flash",
    "model_name": "MAI-Code-1-Flash",
    "lab": "microsoft",
@@ -3026,7 +3103,7 @@
    "trend": "stable",
    "scores": {
     "coding": 0.204,
-    "reasoning": 0.1765
+    "reasoning": 0.1364
    },
    "offers": [
     {
@@ -3864,7 +3941,7 @@
    "trend": "stable",
    "scores": {
     "coding": 0.1121,
-    "reasoning": 0.0476
+    "reasoning": 0.0435
    },
    "offers": [
     {
@@ -4461,7 +4538,7 @@
    "trend": "falling",
    "scores": {
     "coding": 0.5184,
-    "reasoning": 0.5084,
+    "reasoning": 0.5128,
     "vision": 0.6875
    },
    "offers": [
@@ -4516,7 +4593,7 @@
    "trend": "falling",
    "scores": {
     "coding": 0.4875,
-    "reasoning": 0.2661,
+    "reasoning": 0.2223,
     "vision": 0.125
    },
    "offers": [
@@ -4566,7 +4643,7 @@
    "trend": "falling",
    "scores": {
     "coding": 0.2625,
-    "reasoning": 0.077,
+    "reasoning": 0.0662,
     "vision": 0.0
    },
    "offers": [
@@ -4615,7 +4692,7 @@
    "tier": "High-price / High-performance",
    "trend": "falling",
    "scores": {
-    "reasoning": 0.8459
+    "reasoning": 0.8004
    },
    "offers": [
     {
@@ -4654,7 +4731,7 @@
    "trend": "falling",
    "scores": {
     "coding": 0.7256,
-    "reasoning": 0.591,
+    "reasoning": 0.58,
     "vision": 0.6875
    },
    "offers": [
@@ -4713,7 +4790,7 @@
    "tier": "High-price / High-performance",
    "trend": "falling",
    "scores": {
-    "reasoning": 0.6905
+    "reasoning": 0.6739
    },
    "offers": [
     {
@@ -4752,7 +4829,7 @@
    "trend": "falling",
    "scores": {
     "coding": 0.8348,
-    "reasoning": 0.4706,
+    "reasoning": 0.4773,
     "vision": 0.25
    },
    "offers": [
@@ -4807,7 +4884,7 @@
    "trend": "falling",
    "scores": {
     "coding": 0.95,
-    "reasoning": 0.9412,
+    "reasoning": 0.8636,
     "vision": 0.875
    },
    "offers": [
@@ -4857,7 +4934,7 @@
    "trend": "falling",
    "scores": {
     "coding": 0.8815,
-    "reasoning": 0.6471,
+    "reasoning": 0.6364,
     "vision": 0.5
    },
    "offers": [
@@ -4912,7 +4989,7 @@
    "trend": "stable",
    "scores": {
     "coding": 0.1739,
-    "reasoning": 0.8452
+    "reasoning": 0.8029
    },
    "offers": [
     {
@@ -4944,6 +5021,56 @@
      "provider": "openrouter",
      "input_price_per_1m": 5.0,
      "output_price_per_1m": 25.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-6.2-astra",
+   "model_name": "GPT-6.2 Astra",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2026-11-17",
+   "context_window": 1050000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": false,
+   "tier": "High-price / High-performance (estimated)",
+   "trend": "stable",
+   "scores": {
+    "reasoning": 1.0
+   },
+   "source": "web",
+   "source_note": "llmgateway.io (price) + llm-stats.com (GPQA)",
+   "offers": [
+    {
+     "provider": "openai",
+     "input_price_per_1m": 8.0,
+     "output_price_per_1m": 40.0
+    }
+   ]
+  },
+  {
+   "model_id": "openai/gpt-6.2-sol",
+   "model_name": "GPT-6.2 Sol",
+   "lab": "openai",
+   "open_weights": false,
+   "release_date": "2026-11-17",
+   "context_window": 1050000,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": false,
+   "tier": "High-price / High-performance (estimated)",
+   "trend": "stable",
+   "scores": {
+    "reasoning": 0.9318
+   },
+   "source": "web",
+   "source_note": "llmgateway.io (price) + llm-stats.com (GPQA)",
+   "offers": [
+    {
+     "provider": "openai",
+     "input_price_per_1m": 2.0,
+     "output_price_per_1m": 10.0
     }
    ]
   },
@@ -5209,6 +5336,31 @@
    ]
   },
   {
+   "model_id": "reflection/beam-1.0",
+   "model_name": "Beam 1.0",
+   "lab": "reflection",
+   "open_weights": true,
+   "release_date": "2026-10-16",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": false,
+   "json_ok": false,
+   "tier": "Low-price / Mid-performance (estimated)",
+   "trend": "stable",
+   "scores": {
+    "reasoning": 0.3636
+   },
+   "source": "web",
+   "source_note": "llmgateway.io (price) + llm-stats.com (GPQA)",
+   "offers": [
+    {
+     "provider": "reflection",
+     "input_price_per_1m": 0.4,
+     "output_price_per_1m": 1.2
+    }
+   ]
+  },
+  {
    "model_id": "stepfun/step-3.5-flash",
    "model_name": "Step 3.5 Flash",
    "lab": "stepfun",
@@ -5245,7 +5397,7 @@
    "trend": "stable",
    "scores": {
     "coding": 0.6257,
-    "reasoning": 0.381
+    "reasoning": 0.3478
    },
    "offers": [
     {
@@ -5329,6 +5481,31 @@
      "provider": "openrouter",
      "input_price_per_1m": 0.18,
      "output_price_per_1m": 0.6
+    }
+   ]
+  },
+  {
+   "model_id": "tencent/hy4",
+   "model_name": "Hy4",
+   "lab": "tencent",
+   "open_weights": true,
+   "release_date": "2026-11-02",
+   "context_window": 1048576,
+   "tool_call": true,
+   "input_image": true,
+   "json_ok": false,
+   "tier": "Mid-price / Mid-performance (estimated)",
+   "trend": "stable",
+   "scores": {
+    "reasoning": 0.4773
+   },
+   "source": "web",
+   "source_note": "llmgateway.io (price) + llm-stats.com (GPQA; Hy4 preview)",
+   "offers": [
+    {
+     "provider": "tencent",
+     "input_price_per_1m": 0.834,
+     "output_price_per_1m": 2.5
     }
    ]
   },
@@ -5503,7 +5680,7 @@
    "trend": "falling",
    "scores": {
     "coding": 0.5042,
-    "reasoning": 0.2353
+    "reasoning": 0.1818
    },
    "offers": [
     {
@@ -5987,7 +6164,7 @@
    "trend": "falling",
    "scores": {
     "coding": 0.7679,
-    "reasoning": 0.4797
+    "reasoning": 0.4763
    },
    "offers": [
     {
@@ -6091,7 +6268,7 @@
    "trend": "stable",
    "scores": {
     "coding": 0.8,
-    "reasoning": 0.9048
+    "reasoning": 0.8696
    },
    "offers": [
     {
@@ -6160,7 +6337,7 @@
    "trend": "stable",
    "scores": {
     "coding": 0.7333,
-    "reasoning": 0.619
+    "reasoning": 0.6087
    },
    "offers": [
     {

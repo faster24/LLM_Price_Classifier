@@ -154,7 +154,9 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({"&": "&amp;", "<": "&l
 async function init() {
   try {
     const [meta, models] = await Promise.all([fetch("/meta").then(r => r.json()), fetch("/models").then(r => r.json())]);
-    $("snapshot").textContent = `Prices as of ${meta.as_of_week} · ${meta.n_models} models · trend: ${meta.trend_source}`;
+    $("snapshot").textContent = `Prices as of ${meta.as_of_week} · ${meta.n_models} models` +
+      (meta.n_web_models ? ` (incl. ${meta.n_web_models} newer models from web sources, reasoning only)` : "") +
+      ` · trend: ${meta.trend_source}`;
     const labs = [...new Set(models.map(m => m.lab))].sort();
     for (const sel of [form.include_lab, form.exclude_lab])
       sel.insertAdjacentHTML("beforeend", labs.map(l => `<option>${esc(l)}</option>`).join(""));
@@ -192,6 +194,7 @@ const card = (r) => `
         <div class="meta">${esc(r.lab)} · via ${esc(r.cheapest_provider)}</div>
         <div class="tags">
           <span class="tag">${esc(r.tier || "untiered")}</span>
+          ${r.source === "web" ? '<span class="tag" title="Released after the Kaggle data; price and score from web sources">web data, unverified</span>' : ""}
           <span class="tag trend-${esc(r.trend)}">${r.trend === "falling" ? "↓" : r.trend === "rising" ? "↑" : "→"} ${esc(r.trend)} price</span>
         </div>
       </div>

@@ -20,6 +20,10 @@ import pandas as pd
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 DATA_DIR = os.path.join(ROOT, "data", "processed")
 OUT_FILE = os.path.join(DATA_DIR, "recommender_snapshot.json")
+# Hand-curated models released after the Kaggle data ends (web sources, unverified).
+# Only scores on the same benchmark and metric as the dataset (HLE, GPQA accuracy) are used.
+SUPPLEMENT = os.path.join(ROOT, "data", "supplement", "new_models_2026-11.csv")
+SUPP_TESTS = {"hle": ("Humanity's Last Exam", "accuracy"), "gpqa": ("GPQA Diamond", "accuracy")}
 
 TASK_BENCH = {
     "coding": ["SWE-Bench Pro", "SWE-Bench Verified", "Aider Polyglot", "Terminal-Bench",
@@ -94,7 +98,7 @@ def trends(h, week):
     return lab, "placeholder: 12-week price momentum (RQ3 not available yet)"
 
 
-def build(week=None):
+def build(week=None, supplement=True):
     models, bench, hist, catalog, tiers = load()
     week = week or hist.week_start.max()
     assert week in set(hist.week_start), f"week {week} not in price history"
@@ -104,6 +108,15 @@ def build(week=None):
     info = models.set_index("model_id")
     available = set(h.loc[h.week_start == week, "bm_model_id"])
     pool = set(info.index[info.release_date <= week]) & available
+
+    sup = pd.read_csv(SUPPLEMENT).set_index("model_id") if supplement and os.path.exists(SUPPLEMENT) else None
+    if sup is not None:
+        assert not set(sup.index) & set(info.index), "supplement model already in the Kaggle data"
+        rows = [pd.DataFrame({"model_id": s.index, "benchmark_clean": name, "metric_clean": metric,
+                              "score": s[col].values, "higher_is_better": True})
+                for col, (name, metric) in SUPP_TESTS.items() for s in [sup[sup[col].notna()]]]
+        bench = pd.concat([bench, *rows], ignore_index=True)
+        pool |= set(sup.index)
     scores = {t: task_scores(bench, pool, t, week) for t in TASK_BENCH}
     trend, trend_source = trends(h, week)
 
@@ -119,6 +132,19 @@ def build(week=None):
         sc = {t: round(float(s[mid]), 4) for t, s in scores.items() if mid in s.index}
         if not sc:
             continue                      # no task score → cannot be ranked
+        if sup is not None and mid in sup.index:
+            r = sup.loc[mid]
+            out.append({
+                "model_id": mid, "model_name": r.model_name, "lab": r.lab,
+                "open_weights": bool(r.open_weights), "release_date": r.release_date,
+                "context_window": int(r.context_window), "tool_call": bool(r.tool_call),
+                "input_image": bool(r.input_image), "json_ok": False,      # unknown → do not claim it
+                "tier": f"{r.tier_estimate} (estimated)", "trend": "stable", "scores": sc,
+                "source": "web", "source_note": r.source,
+                "offers": [{"provider": r.provider, "input_price_per_1m": float(r.input_price_per_1m),
+                            "output_price_per_1m": float(r.output_price_per_1m)}],
+            })
+            continue
         r = info.loc[mid]
         off = offers[offers.bm_model_id == mid]
         out.append({
@@ -140,6 +166,9 @@ def build(week=None):
         "score_rule": "mean within-test percentile (0 = worst, 1 = best) among models available at as_of_week",
         "task_benchmarks": TASK_BENCH, "trend_source": trend_source,
         "n_models": len(out), "n_linked_of_candidates": f"{len(set(key2model.values()))}/{n_cand}",
+        "n_web_models": sum(m.get("source") == "web" for m in out),
+        "web_note": ("models released after the Kaggle data (Oct–Nov 2026), from web sources, unverified; "
+                     "reasoning scores only (HLE / GPQA); tiers estimated with the RQ1 centroids") if sup is not None else None,
     }
     return {"meta": meta, "models": out}
 
@@ -148,8 +177,9 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--week", help="snapshot week (YYYY-MM-DD Monday); default = latest")
     ap.add_argument("--out", default=OUT_FILE)
+    ap.add_argument("--no-supplement", action="store_true", help="Kaggle data only (reproduces notebook 04)")
     a = ap.parse_args()
-    snap = build(a.week)
+    snap = build(a.week, supplement=not a.no_supplement)
     with open(a.out, "w") as f:
         json.dump(snap, f, indent=1)
     m = snap["meta"]

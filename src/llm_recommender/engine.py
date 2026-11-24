@@ -92,7 +92,7 @@ def recommend(snapshot, task, input_m, output_m, budget, requirements=None,
     else:
         fits.sort(key=lambda x: (-x[1], x[2]))
     recs = [{"rank": offset + i + 1, "model_id": m["model_id"], "model_name": m["model_name"], "lab": m["lab"],
-             "tier": m["tier"], "trend": m["trend"], "task_score": round(s, 4),
+             "tier": m["tier"], "trend": m["trend"], "source": m.get("source", "kaggle"), "task_score": round(s, 4),
              "monthly_cost_usd": round(c, 4), "cheapest_provider": p, "budget_used": round(c / budget, 4),
              "value": round(v, 6)}
             for i, (m, s, c, p, v, _) in enumerate(fits[offset:offset + top_n])]        # step 6

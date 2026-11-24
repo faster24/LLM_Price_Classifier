@@ -1,0 +1,8 @@
+model_id,model_name,lab,open_weights,release_date,context_window,tool_call,input_image,provider,input_price_per_1m,output_price_per_1m,hle,gpqa,tier_estimate,source
+openai/gpt-6.2-astra,GPT-6.2 Astra,openai,False,2026-11-17,1050000,True,True,openai,8.00,40.00,,97.0,High-price / High-performance,llmgateway.io (price) + llm-stats.com (GPQA)
+openai/gpt-6.2-sol,GPT-6.2 Sol,openai,False,2026-11-17,1050000,True,True,openai,2.00,10.00,,96.0,High-price / High-performance,llmgateway.io (price) + llm-stats.com (GPQA)
+anthropic/claude-fable-5.2,Claude Fable 5.2,anthropic,False,2026-11-09,1000000,True,True,anthropic,8.00,40.00,73.2,,High-price / High-performance,llmgateway.io (price) + llm-stats.com (HLE)
+alibaba/qwen4-max,Qwen4 Max,alibaba,False,2026-11-16,1000000,True,True,alibaba,1.41,4.24,51.7,,High-price / Mid-performance,llmgateway.io (price) + llm-stats.com (HLE)
+meta/muse-spark-open,Muse Spark Open,meta,True,2026-10-15,1048576,True,True,meta,1.25,4.25,,89.0,High-price / Mid-performance,llmgateway.io (price) + llm-stats.com (GPQA)
+reflection/beam-1.0,Beam 1.0,reflection,True,2026-10-16,1048576,True,False,reflection,0.40,1.20,,90.6,Low-price / Mid-performance,llmgateway.io (price) + llm-stats.com (GPQA)
+tencent/hy4,Hy4,tencent,True,2026-11-02,1048576,True,True,tencent,0.834,2.50,,92.3,Mid-price / Mid-performance,llmgateway.io (price) + llm-stats.com (GPQA; Hy4 preview)
